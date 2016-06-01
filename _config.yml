@@ -5,7 +5,7 @@ meta_description: "Personal blogging website, Blogging about tech"
 aboutPage: true
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 paginate: 20
 baseurl: /
