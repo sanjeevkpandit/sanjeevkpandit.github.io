@@ -4,7 +4,7 @@ meta_description: "Personal blogging website, Blogging about tech"
 
 aboutPage: true
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 
 paginate: 20
