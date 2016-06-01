@@ -1,0 +1,47 @@
+name: Sanjeev Kumar Pandit - Blog
+description: Blogging about tech
+meta_description: "Personal blogging website, Blogging about tech"
+
+aboutPage: true
+
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'http://sanjeevkpandit.com.np'
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url:            'http://sanjeevkpandit.com.np'
+author:         'Sanjeev Kumar Pandit'
+authorTwitter:  'sanjeevkpandit'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
+
+# Gems
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
