@@ -4,12 +4,11 @@ title: "Setup xdebug in Linux"
 date: 2016-05-25
 description: "Debug PHP code using Xdebug."
 tag:
-- xdebug 
+- xdebug
 - php-xdebug
 - php
 - linux
 - ubuntu
-comments: true
 ---
 
 Xdebug's basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.
@@ -23,7 +22,7 @@ Xdebug is a very powerful tool for finding out the errors and testing the implem
    * **Ubuntu**: This will provide you the application compiled during the building of the OS you are using. Thus, you may get older version of the application and might not get updates frequently.
    * **PPA**: You will get the latest version of the application and frequent updates on the application.
 
-* [Optional] Add PPA to your Softwares List. Skip to step #4 if you don't want to use PPA for installation. But, I recommend to use PPA for frequent updates. 
+* [Optional] Add PPA to your Softwares List. Skip to step #4 if you don't want to use PPA for installation. But, I recommend to use PPA for frequent updates.
 Enter these commands in your terminal.
    * `$ sudo add-apt-repository ppa:ondrej/php`
    * `$ sudo apt-get update`
@@ -125,4 +124,6 @@ To change the configurations, just change the `ini` file presented in result of 
 Enjoy debugging with Xdebug in Ubuntu.
 
 #### Resources
-* <a href="https://xdebug.org/" target="_blank">https://xdebug.org/</a>
+* <a href="https://xdebug.org/" target="\_blank">https://xdebug.org/</a>
+
+{% include disqus.html %}

@@ -4,13 +4,12 @@ title: "Setup xdebug in PhpStorm (Linux)"
 date: 2016-05-25
 description: "Debug PHP code in PhpStorm using Xdebug"
 tag:
-- xdebug 
+- xdebug
 - php-xdebug
 - phpstorm
 - php
 - linux
 - ubuntu
-comments: true
 ---
 
 PhpStorm is one of the good IDE for PHP application development available in current era. PHP Xdebug is a very strong tool for debugging, making the life easier for PHP developers to find out the logical mistakes.
@@ -18,11 +17,12 @@ PhpStorm is one of the good IDE for PHP application development available in cur
 Integration of Xdebug into PhpStorm will ease the trouble of debugging for PHP developers. You can easily setup Xdebug in PhpStorm by following these steps.
 
 #### Requirements
-* PhpStorm (get it from <a href="https://www.jetbrains.com/phpstorm/download/" target="_blank">here</a>)
-* Xdebug (get it from <a href="https://xdebug.org/download.php" target="_blank">here</a>)
+* PhpStorm (get it from <a href="https://www.jetbrains.com/phpstorm/download/" target="\_blank">here</a>)
+* Xdebug (get it from <a href="https://xdebug.org/download.php" target="\_blank">here</a>)
+
 
 #### Procedures
-* Setup Xdebug (if you haven't done already). Find the steps <a href="/setup-xdebug-in-linux/" target="_blank">here</a>.
+* Setup Xdebug (if you haven't done already). Find the steps <a href="/setup-xdebug-in-linux/" target="\_blank">here</a>.
 You should be able to see Xdebug while checking the php version.
 
 ```
@@ -120,17 +120,15 @@ Click on `OK` to save this.
 
 ![Alt text](../../assets/images/xdebug-phpstorm/xdebug-phpstorm-10.png "PhpStorm PHP Servers - PhpStorm Breakpoint")
 
-* Now open the link in your browser in debugging mode by navigating `Run > Debug 'TEST_CHROME'`. The browser may ask you to install a <a href="https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji" target="_blank">JetBrains Extension (in Chrome)</a> in your browser.
+* Now open the link in your browser in debugging mode by navigating `Run > Debug 'TEST_CHROME'`. The browser may ask you to install a <a href="https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji" target="\_blank">JetBrains Extension (in Chrome)</a> in your browser.
 * You will see a webpage opening in the browser you set in configurtion. Navigate to the point where you want to check your logic. When you reach to the breakpoint, the browser will keep itself in the loading position. In the mean time, you will see PhpStorm being highlighted in taskbar or focused on top with the breakpoint highlighted with different color as shown below:
 
 ![Alt text](../../assets/images/xdebug-phpstorm/xdebug-phpstorm-11.png "PhpStorm PHP Servers - PhpStorm Highlighted Breakpoint")
 
-You can see the debugging window right at the bottom part of PhpStorm window. You can find `Step Over`, `Step Into`, `Step Out`, `Watch` etc. controls in the Debugging Window. 
+You can see the debugging window right at the bottom part of PhpStorm window. You can find `Step Over`, `Step Into`, `Step Out`, `Watch` etc. controls in the Debugging Window.
 
 See the shortcuts or set up your own shortcuts, they will help you a lot.
 
 Hope you will feel ease to find any logical mistakes in your PHP code by debugging using Xdebug in PhpStorm.
 
-
-
-
+{% include disqus.html %}
