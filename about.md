@@ -9,7 +9,6 @@ profile: true
 ## Technical Skills
 
 * PHP
-    * Tet
 * JAVA
 * MySQL
 * Postgres
