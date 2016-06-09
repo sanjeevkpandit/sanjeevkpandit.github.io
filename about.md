@@ -5,7 +5,6 @@ permalink: /about/
 tags: about
 ---
 
-
 <center>
 #fullStackDeveloper #webDeveloper #softwareDeveloper #softwareEngineer #computerEngineer #football #footballFan #musicLover #fun
 </center>
