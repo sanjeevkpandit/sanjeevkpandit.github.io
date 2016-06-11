@@ -99,32 +99,12 @@ text:
 
 # Build settings
 markdown:     kramdown
-highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
-incremental: false
 redcarpet:
-  extensions: ['fenced_code_blocks', 'tables', 'no_intra_emphasis', 'autolink']
+  extensions: ['smart', 'with_toc_data', 'fenced_code_blocks', 'tables', 'no_intra_emphasis', 'autolink']
 permalink:    pretty
 paginate:     5
 sass:
   compressed: true
-kramdown:
-  input: GFM
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
 gems:
   - jekyll-paginate
   - jekyll-sitemap

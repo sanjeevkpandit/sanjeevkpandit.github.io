@@ -1,14 +1,14 @@
 ---
 layout:     post
-title:      Setup xdebug in Ubuntu
+title:      Setup Xdebug in Ubuntu
 date:       2016-05-24
 summary:    Debug PHP code using Xdebug.
 categories: xdebug php-xdebug php linux ubuntu
 ---
 
-Xdebug's basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.
+<a href="https://xdebug.org/" target="_blank">Xdebug</a>'s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.
 
-Xdebug is a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install xdebug in your machine by following these instructions.
+<a href="https://xdebug.org/" target="_blank">Xdebug</a> is a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install xdebug in your machine by following these instructions.
 
 * Always run `sudo apt-get update` before installing any application.
 
@@ -120,7 +120,7 @@ xdebug.var_display_max_depth => 3 => 3
 
 To change the configurations, just change the `ini` file presented in result of above command.
 
-Enjoy debugging with Xdebug in Ubuntu.
+Enjoy debugging with <a href="https://xdebug.org/" target="_blank">Xdebug</a> in <a href="http://www.ubuntu.com/" target="_blank">Ubuntu</a>.
 
 #### Resources
 * <a href="https://xdebug.org/" target="\_blank">https://xdebug.org/</a>

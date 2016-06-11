@@ -1,6 +1,6 @@
 .site-header {
   padding-top: $space-1;
-  padding-bottom: $space-5;
+  padding-bottom: $space-4;
 }
 
 .site-header a {
@@ -8,6 +8,7 @@
   font-size: $h3;
   font-weight: 300;
   background-image: none;
+  text-decoration: none;
 }
 
 .site-header .site-title {
