@@ -1,29 +1,26 @@
 ---
 layout:     post
-title:      Install Node.js
-date:       2016-06-11
-summary:    Install Node in Windows/Linux/Mac
-categories: install node nodejs node.js linux windows setup
+title:      Install node and npm
+date:       2016-06-10
+summary:    Install node and npm in Windows/Linux/Mac
+categories: install node nodejs node.js npm linux windows mac setup
 ---
 
 <a href="https://nodejs.org/" target="_blank">Node.js</a> is a JavaScript runtime built on Chrome's V8 JavaScript engine. <a href="https://nodejs.org/" target="_blank">Node.js</a> uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. <a href="https://nodejs.org/" target="_blank">Node.js</a>' package ecosystem, <a href="https://www.npmjs.com/" target="_blank">npm</a>, is the largest ecosystem of open source libraries in the world.
 
-The installer for Windows and Macintosh can be downloaded from <a href="https://nodejs.org/en/download/" target="_blank">here</a>.
+<a href="https://www.npmjs.com/" target="_blank">Npm</a> is a package manager for JavaScript. Use <a href="https://www.npmjs.com/" target="_blank">npm</a> to install, share, and distribute code; manage dependencies in your projects; and share & receive feedback with others.
 
-For Linux users, there are different ways available to install <a href="https://nodejs.org/" target="_blank">Node.js</a>:
+## Install node
 
-### From native Software Center
+### For Windows and Mac users
 
-A stable version of node is available built at the time of release of your current OS.
+The installer  can be downloaded from <a href="https://nodejs.org/en/download/" target="_blank">here</a>.
 
-To install, open terminal (Ctrl + Alt + T) and enter:
+### For Linux users,
 
-{% highlight bash %}
-# for ubuntu user
-$ sudo apt-get install nodejs
-{% endhighlight %}
+There are following ways available to install <a href="https://nodejs.org/" target="_blank">Node.js</a>:
 
-### From PPA
+#### 1. From PPA (Recommended)
 
 <a href="https://nodejs.org/" target="_blank">Node.js</a> is available from the NodeSource Debian and Ubuntu binary distributions repository (formerly Chris Lea's Launchpad PPA). Support for this repository, along with its scripts, can be found on GitHub at <a href="https://github.com/nodesource/distributions" target="_blank">nodesource/distributions</a>.
 
@@ -39,7 +36,7 @@ $ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 {% endhighlight %}
 
-### From Node Package Manager(npm)
+#### 2. From Node Package Manager(npm)
 
 Latest and stable, both versions of Node are available. 
 Follow these steps to install node:
@@ -62,11 +59,42 @@ $ sudo n stable
 $ sudo n 6.2.1
 {% endhighlight %}
 
-#### Finally
+#### 3. From native Software Center
+
+A stable version of node is available built at the time of release of your current OS.
+
+To install, open terminal (Ctrl + Alt + T) and enter:
+
+{% highlight bash %}
+# for ubuntu user
+$ sudo apt-get install nodejs
+{% endhighlight %}
+
+
 Once, any of the above step is completed, you can confirm the installation by:
 {% highlight shell %}
 $ node -v
 v6.2.1
+{% endhighlight %}
+
+## Install npm
+
+### For Windows and Macintosh users
+
+<a href="https://www.npmjs.com/" target="_blank">Npm</a> comes along with <a href="https://nodejs.org/" target="_blank">node.js</a> installer which can be found <a href="https://nodejs.org/en/download/" target="_blank">here</a>.
+
+### For Linux users
+
+<a href="https://www.npmjs.com/" target="_blank">Npm</a> is available in native software center
+{% highlight bash %}
+# for ubuntu users
+$ sudo apt-get install npm
+{% endhighlight %}
+
+Check the version of npm by:
+{% highlight bash %}
+$ npm --version
+3.9.3
 {% endhighlight %}
 
 #### Resources
