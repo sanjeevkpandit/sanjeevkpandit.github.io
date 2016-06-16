@@ -19,7 +19,7 @@ categories: basics gulp start setup learn
 
 #### Installation Instructions
 
-- <a href="http://npmjs.com/" target="_blank">Npm</a> needs to be installed in order to install <a href="http://gulpjs.com/" target="_blank">gulp</a>. Please find the installation instructions <a href="{{site.baseurl}}/install/npm/linux/ubuntu/windows/setup/2016/06/10/install-npm/" target="_blank">here</a>.
+- <a href="http://npmjs.com/" target="_blank">Npm</a> needs to be installed in order to install <a href="http://gulpjs.com/" target="_blank">gulp</a>. Please find the installation instructions <a href="{{site.baseurl}}/install-npm/" target="_blank">here</a>.
 
 - Remove gulp (if installed before)
 

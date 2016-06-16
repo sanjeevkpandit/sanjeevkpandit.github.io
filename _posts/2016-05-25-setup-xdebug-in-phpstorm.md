@@ -16,7 +16,7 @@ Integration of Xdebug into <a href="https://www.jetbrains.com/phpstorm/" target=
 
 
 #### Procedures
-* Setup <a href="https://xdebug.org/" target="_blank">Xdebug</a> (if you haven't done already). Find the steps <a href="{{site.baseurl}}/xdebug/php-xdebug/php/linux/ubuntu/2016/05/24/setup-xdebug-in-ubuntu/" target="_blank">here</a>.
+* Setup <a href="https://xdebug.org/" target="_blank">Xdebug</a> (if you haven't done already). Find the steps <a href="{{site.baseurl}}/setup-xdebug-in-ubuntu/" target="_blank">here</a>.
 You should be able to see <a href="https://xdebug.org/" target="_blank">Xdebug</a> while checking the php version.
 
 {% highlight shell %}
