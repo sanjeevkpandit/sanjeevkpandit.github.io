@@ -81,6 +81,7 @@ var SCSS_FILES = 'src/sass/**/*.scss';
 var JS_FILES = 'src/js/**/*.js';
 var ES6_FILES = 'src/js/es6/**/*.js';
 
+// Handle any error that appears during execution of gulp tasks
 var errorHandler = function(error) {
     notify.onError({
         title: 'Task Failed [' + error.plugin + ']',
@@ -92,8 +93,8 @@ var errorHandler = function(error) {
     this.emit('end');
 };
 
+// Convert the sass files to css
 gulp.task('sass', function() {
-    // Convert sass to css
     return gulp.src(SCSS_FILES)
         .pipe(sass())
         .on('error', errorHandler)
@@ -103,23 +104,23 @@ gulp.task('sass', function() {
         }));
 });
 
+// Concat the css files to a single file
 gulp.task('concat-css', function() {
-    // Concat css files to a single file
     return gulp.src(SCSS_FILES)
         .pipe(sass())
         .pipe(concat('compiled.scss'))
         .pipe(gulp.dest('public/css/'));
 });
 
+// Concat the js files to a single file
 gulp.task('concat-js', function() {
-    // Concat js files to a single file
     return gulp.src(JS_FILES)
         .pipe(concat('compiled.js'))
         .pipe(gulp.dest('public/js/'));
 });
 
+// Transpile ES6 into JavaScript(ES5)
 gulp.task('es6', function() {
-    // Transpile ES6 into JavaScript(ES5)
     return gulp.src(ES6_FILES)
         .pipe(babel())
         .on('error', errorHandler)
@@ -129,8 +130,8 @@ gulp.task('es6', function() {
         }));
 });
 
+// Minify js files
 gulp.task('minify-js', function() {
-    // Minify js files
     return gulp.src(JS_FILES)
         .pipe(concat('compiled.js'))
         .pipe(minify())
