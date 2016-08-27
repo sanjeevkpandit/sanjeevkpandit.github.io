@@ -26,7 +26,7 @@ There are following ways available to install <a href="https://nodejs.org/" targ
 
 Open your terminal (Ctrl + Alt + T) and enter:
 
-{% highlight bash %}
+```bash
 #for Node-4.x
 $ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
@@ -34,30 +34,30 @@ $ sudo apt-get install -y nodejs
 #For Node-6.x
 $ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
-{% endhighlight %}
+```
 
 #### 2. From Node Package Manager(npm)
 
-Latest and stable, both versions of Node are available. 
+Latest and stable, both versions of Node are available.
 Follow these steps to install node:
 
 1. Install <a href="https://www.npmjs.com/" target="_blank">npm</a>. If you have already installed it, skip to step 3.
 2. To install <a href="https://www.npmjs.com/" target="_blank">npm</a>, find the instructions <a href="{{site.baseurl}}/install/npm/linux/ubuntu/windows/setup/2016/06/10/install-npm/" target="\_blank">here</a>.
 3. Enter the following commands in terminal to install/upgrade latest stable version <a href="https://nodejs.org/" target="_blank">Node.js</a>:
 
-{% highlight shell %}
+```shell
 $ sudo npm cache clean -f
 $ sudo npm install -g n
 $ sudo n stable
-{% endhighlight %}
+```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The `n` package represents a Node helper.
+&nbsp;&nbsp;&nbsp;&nbsp;The `n` package represents a Node helper.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any specific version can be installed by:
+&nbsp;&nbsp;&nbsp;&nbsp;Any specific version can be installed by:
 
-{% highlight shell %}
+```shell
 $ sudo n 6.2.1
-{% endhighlight %}
+```
 
 #### 3. From native Software Center
 
@@ -65,17 +65,18 @@ A stable version of node is available built at the time of release of your curre
 
 To install, open terminal (Ctrl + Alt + T) and enter:
 
-{% highlight bash %}
+```bash
 # for ubuntu user
 $ sudo apt-get install nodejs
-{% endhighlight %}
+```
 
 
 Once, any of the above step is completed, you can confirm the installation by:
-{% highlight shell %}
+
+```shell
 $ node -v
 v6.2.1
-{% endhighlight %}
+```
 
 ## Install npm
 
@@ -86,16 +87,18 @@ v6.2.1
 ### For Linux users
 
 <a href="https://www.npmjs.com/" target="_blank">Npm</a> is available in native software center
-{% highlight bash %}
+
+```bash
 # for ubuntu users
 $ sudo apt-get install npm
-{% endhighlight %}
+```
 
 Check the version of npm by:
-{% highlight bash %}
+
+```bash
 $ npm --version
 3.9.3
-{% endhighlight %}
+```
 
 #### Resources
 * <a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a>

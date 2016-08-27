@@ -19,27 +19,27 @@ Integration of Xdebug into <a href="https://www.jetbrains.com/phpstorm/" target=
 * Setup <a href="https://xdebug.org/" target="_blank">Xdebug</a> (if you haven't done already). Find the steps <a href="{{site.baseurl}}/setup-xdebug-in-ubuntu/" target="_blank">here</a>.
 You should be able to see <a href="https://xdebug.org/" target="_blank">Xdebug</a> while checking the php version.
 
-{% highlight shell %}
+```shell
 $ php --version
 PHP 7.0.7-2+donate.sury.org~xenial+1 (cli) ( NTS )
 Copyright (c) 1997-2016 The PHP Group
 Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
     with Zend OPcache v7.0.6-dev, Copyright (c) 1999-2016, by Zend Technologies
     with Xdebug v2.4.0, Copyright (c) 2002-2016, by Derick Rethans
-{% endhighlight %}
+```
 
 * Now, configure xdebug for debugging. You need to change the `xdebug.ini` file. You can find the location of file using this command using terminal: `php --ini | grep xdebug`.
 
 Mine returned like this:
 
-{% highlight shell %}
+```shell
 $ php --ini | grep xdebug
 /etc/php/7.0/cli/conf.d/20-xdebug.ini,
-{% endhighlight %}
+```
 
 * Just copy the path of the file and open in your favourite text editor (<a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a> for me). Don't forget to use `sudo` to edit the file otherwise, you won't be able to save the changes you make.
 
-{% highlight shell %}
+```shell
 # for sublime text users
 $ sudo subl /etc/php/7.0/cli/conf.d/20-xdebug.ini
 
@@ -51,16 +51,16 @@ $ sudo vim /etc/php/7.0/cli/conf.d/20-xdebug.ini
 
 # for atom users
 $ sudo atom /etc/php/7.0/cli/conf.d/20-xdebug.ini
-{% endhighlight %}
+```
 
 * Add these lines of code at the end of file.
 
-{% highlight shell %}
+```shell
 xdebug.remote_enable=true
 xdebug.remote_port="9000"   // Port for xdebug. Default is 9000.
 xdebug.profiler_enable=1
 xdebug.profiler_output_dir="/tmp"
-{% endhighlight %}
+```
 
 * Time to change things in <a href="https://www.jetbrains.com/phpstorm/" target="_blank">PhpStorm</a>. Navigate to `File > Settings > Language & Frameworks > PHP`. You will see the following screen.
 

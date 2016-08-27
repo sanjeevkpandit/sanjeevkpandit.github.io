@@ -15,7 +15,7 @@ tags:       postgreSQl postgre psql sql linux ubuntu
 
 * Create a file `/etc/apt/sources.list.d/pgdg.list`, and add following line for the repository
 
-{% highlight bash %}
+```bash
 # for ubuntu 16.04 users
 deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main
 
@@ -27,115 +27,115 @@ deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main
 
 # for ubuntu 12.04 users
 deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main
-{% endhighlight %}
+```
 
 * Import the repository signing key, and update the package lists
 
-{% highlight bash %}
+```bash
 $ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
   sudo apt-key add -
 $ sudo apt-get update
-{% endhighlight %}
+```
 
 * Install postgreSQL and, check version
 
-{% highlight bash %}
+```bash
 $ sudo apt-get install postgresql-9.5
 $ psql --version
-{% endhighlight %}
+```
 
 #### 2. From native store
 
 Enter following commands:
 
-{% highlight bash %}
+```bash
 $ sudo apt-get update
 $ sudo apt-get install postgresql-9.4
 $ psql --version
-{% endhighlight %}
+```
 
 
 ### First time setup
 
 * Connect to the default database with user <strong>postgres</strong>:
 
-{% highlight bash %}
+```bash
 $ sudo -u postgres psql template1
-{% endhighlight %}
+```
 
 * Set the password for user <strong>postgres</strong>, then exit psql (Ctrl+D):
 
-{% highlight sql %}
+```sql
 ALTER USER postgres with encrypted password 'xxxxxxxx';
-{% endhighlight %}
+```
 
 * Edit the `pg_hba.conf` file. And, change 'peer' to 'md5' on the line concerning postgres:
 
-{% highlight bash %}
+```bash
 $ sudo vim /etc/postgresql/9.5/main/pg_hba.conf
-{% endhighlight %}
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp;Before changes:
-{% highlight vim %}
+```vim
 local   all     postgres    peer
-{% endhighlight %}
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp;After changes:
-{% highlight vim %}
+```vim
 local   all     postgres    md5
-{% endhighlight %}
+```
 
 * Restart the database:
 
-{% highlight bash %}
+```bash
 $ sudo service postgresql restart
-{% endhighlight %}
+```
 
 * You can check the password with `psql -U postgres`
 
 * Create a user (with superuser access):
 
-{% highlight bash %}
+```bash
 $ createuser -U postgres -d -e -E -l -P -r -s <new_username>
-{% endhighlight %}
+```
 
 * Again edit `pg_hba.conf` file, and change 'peer' to 'md5' on the line concerning 'all' other users:
 
 &nbsp;&nbsp;&nbsp;&nbsp;Before changes:
-{% highlight vim %}
+```vim
 local   all     all     peer
-{% endhighlight %}
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp;After changes:
-{% highlight vim %}
+```vim
 local   all     all     md5
-{% endhighlight %}
+```
 
 * Restart, and check that you can login with new user
 
-{% highlight bash %}
+```bash
 $ psql -U <new_username> template1
-{% endhighlight %}
+```
 
 #### To access with you as a user
 
 * Create user with your username(can be found by `whoami`):
 
-{% highlight bash %}
+```bash
 $ createuser -U postgres -d -e -E -l -P -r -s <my_name>
-{% endhighlight %}
+```
 
 * Restart postgresql server and check that you can login without `-U postgres`:
 
-{% highlight bash %}
+```bash
 $ psql template1
-{% endhighlight %}
+```
 
 * You can create database easily now:
 
-{% highlight bash %}
+```bash
 $ createdb <db_name>
-{% endhighlight %}
+```
 
 ### Resources
 

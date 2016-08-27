@@ -23,53 +23,53 @@ categories: basics gulp start setup learn
 
 - Remove gulp (if installed before)
 
-{% highlight bash %}
+```bash
 $ npm rm --global gulp
-{% endhighlight %}
+```
 
 - Install gulp
 
-{% highlight bash %}
+```
 # Globally
 npm install --global gulp-cli
 
 # Within a project
 npm install gulp --save-dev
-{% endhighlight %}
+```
 
 #### Implementation in a project
 
 - Create a file `gulpfile.js` in project's root folder and add following contents in it.
 
-{% highlight js %}
+```js
 var gulp = require('gulp');
 
 gulp.task('default', function(){
     // default task
 });
-{% endhighlight %}
+```
 
 - Run gulp. This will run the default task as defined above.
 
-{% highlight bash %}
+```bash
 gulp
-{% endhighlight %}
+```
 
 - For a specific task
 
-{% highlight js %}
+```js
 gulp.task('test', function() {
     console.log('This is a test task');
 });
-{% endhighlight %}
-{% highlight bash %}
+```
+```bash
 # gulp <task_name>
 gulp test
-{% endhighlight %}
+```
 
 #### Sample `gulpfile.js`.
 
-{% highlight js %}
+```js
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var babel = require('gulp-babel');
@@ -146,7 +146,7 @@ gulp.task('watch', function() {
     gulp.watch(SCSS_FILES, ['sass']);
     gulp.watch(ES6_FILES, ['es6']);
 });
-{% endhighlight %}
+```
 
 Download above gulpfile from <a href="https://gist.github.com/sanjeevkpandit/38e690d8c1625ee1486fa13e3d554700" target="_blank">here</a>.
 

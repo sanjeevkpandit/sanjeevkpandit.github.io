@@ -20,38 +20,38 @@ categories: xdebug php-xdebug php linux ubuntu
 * [Optional] Add PPA to your Softwares List. Skip to step #4 if you don't want to use PPA for installation. But, I recommend to use PPA for frequent updates.
 Enter these commands in your terminal.
 
-{% highlight shell %}
+```shell
 $ sudo add-apt-repository ppa:ondrej/php
 $ sudo apt-get update
-{% endhighlight %}
+```
 
 * Enter the following command in your terminal to install xdebug.
 
-{% highlight shell %}
+```shell
 $ sudo apt-get install php-xdebug
-{% endhighlight %}
+```
 
 * After the installation, check the version of xdebug.
 
-{% highlight shell %}
+```shell
 $ php --version
 PHP 7.0.7-2+donate.sury.org~xenial+1 (cli) ( NTS )
 Copyright (c) 1997-2016 The PHP Group
 Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
     with Zend OPcache v7.0.6-dev, Copyright (c) 1999-2016, by Zend Technologies
     with Xdebug v2.4.0, Copyright (c) 2002-2016, by Derick Rethans
-{% endhighlight %}
+```
 
 Also, you can find the xdebug configuration file using this command in terminal:
 
-{% highlight shell %}
+```shell
 $ php --ini | grep xdebug
 /etc/php/7.0/cli/conf.d/20-xdebug.ini,
-{% endhighlight %}
+```
 
 The configuration settings of xdebug can be listed by:
 
-{% highlight shell %}
+```shell
 $ php -i | grep xdebug
 /etc/php/7.0/cli/conf.d/20-xdebug.ini,
 xdebug
@@ -116,7 +116,7 @@ xdebug.trace_output_name => trace.%c => trace.%c
 xdebug.var_display_max_children => 128 => 128
 xdebug.var_display_max_data => 512 => 512
 xdebug.var_display_max_depth => 3 => 3
-{% endhighlight %}
+```
 
 To change the configurations, just change the `ini` file presented in result of above command.
 
