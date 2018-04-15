@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     url: 'http://sanjeevkpandit.com.np',
     title: 'Sanjeev Kumar Pandit',
-    subtitle: '#FullStackDeveloper #FootballFan',
+    subtitle: '#FullStackWebDeveloper',
     copyright: '© All rights reserved.',
-    disqusShortname: '',
+    disqusShortname: 'sanjeevkpanditcomnp',
     menu: [
       {
         label: 'Articles',
@@ -20,13 +20,10 @@ module.exports = {
       }
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vk: '#'
+      name: 'Sanjeev Kumar Pandit',
+      email: 'binarysanjeev@gmail.com',
+      twitter: 'sanjeevkpandit',
+      github: 'sanjeevkpandit'
     }
   },
   plugins: [
@@ -117,7 +114,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-73379983-2' }
+      options: { trackingId: 'UA-78879488-1' }
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
