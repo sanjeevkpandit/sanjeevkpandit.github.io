@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sanjeev Kumar Pandit]]></title><description><![CDATA[#FullStackDeveloper #FootballFan]]></description><link>http://sanjeevkpandit.com.np</link><generator>RSS for Node</generator><lastBuildDate>Sun, 15 Apr 2018 11:37:54 GMT</lastBuildDate><item><title><![CDATA[Setup postgresql in Ubuntu]]></title><description><![CDATA[Install PostgreSQL and know about first time setup.]]></description><link>http://sanjeevkpandit.com.np/posts/setup-postgresql-in-ubuntu/</link><guid isPermaLink="false">http://sanjeevkpandit.com.np/posts/setup-postgresql-in-ubuntu/</guid><pubDate>Sun, 19 Jun 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.postgresql.org/&quot; target=&quot;_blank&quot;&gt;PostgreSQL&lt;/a&gt; is a powerful, open source object-relational database system.&lt;/p&gt;
+&lt;h3&gt;Install PostgreSQL&lt;/h3&gt;
+&lt;h4&gt;1. From PPA (Recommended)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a file &lt;code class=&quot;language-text&quot;&gt;/etc/apt/sources.list.d/pgdg.list&lt;/code&gt;, and add following line for the repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# for ubuntu 16.04 users&lt;/span&gt;
+deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main
+
+&lt;span class=&quot;token comment&quot;&gt;# for ubuntu 15.10 users&lt;/span&gt;
+deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main
+
+&lt;span class=&quot;token comment&quot;&gt;# for ubuntu 14.04 users&lt;/span&gt;
+deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main
+
+&lt;span class=&quot;token comment&quot;&gt;# for ubuntu 12.04 users&lt;/span&gt;
+deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Import the repository signing key, and update the package lists&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;wget&lt;/span&gt; --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; \
+  &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; apt-key add -
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; update&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Install postgreSQL and, check version&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; postgresql-9.5
+$ psql --version&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h4&gt;2. From native store&lt;/h4&gt;
+&lt;p&gt;Enter following commands:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; update
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; postgresql-9.4
+$ psql --version&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;First time setup&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Connect to the default database with user &lt;strong&gt;postgres&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; -u postgres psql template1&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Set the password for user &lt;strong&gt;postgres&lt;/strong&gt;, then exit psql (Ctrl+D):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;USER&lt;/span&gt; postgres &lt;span class=&quot;token keyword&quot;&gt;with&lt;/span&gt; encrypted password &lt;span class=&quot;token string&quot;&gt;&apos;xxxxxxxx&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Edit the &lt;code class=&quot;language-text&quot;&gt;pg_hba.conf&lt;/code&gt; file. And, change ‘peer’ to ‘md5’ on the line concerning postgres:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; vim /etc/postgresql/9.5/main/pg_hba.conf&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;    Before changes:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-vim&quot;&gt;&lt;code class=&quot;language-vim&quot;&gt;local   &lt;span class=&quot;token keyword&quot;&gt;all&lt;/span&gt;     postgres    peer&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;    After changes:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-vim&quot;&gt;&lt;code class=&quot;language-vim&quot;&gt;local   &lt;span class=&quot;token keyword&quot;&gt;all&lt;/span&gt;     postgres    md5&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Restart the database:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;service&lt;/span&gt; postgresql restart&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can check the password with &lt;code class=&quot;language-text&quot;&gt;psql -U postgres&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a user (with superuser access):&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ createuser -U postgres -d -e -E -l -P -r -s &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;new_username&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Again edit &lt;code class=&quot;language-text&quot;&gt;pg_hba.conf&lt;/code&gt; file, and change ‘peer’ to ‘md5’ on the line concerning ‘all’ other users:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;    Before changes:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-vim&quot;&gt;&lt;code class=&quot;language-vim&quot;&gt;local   &lt;span class=&quot;token keyword&quot;&gt;all&lt;/span&gt;     &lt;span class=&quot;token keyword&quot;&gt;all&lt;/span&gt;     peer&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;    After changes:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-vim&quot;&gt;&lt;code class=&quot;language-vim&quot;&gt;local   &lt;span class=&quot;token keyword&quot;&gt;all&lt;/span&gt;     &lt;span class=&quot;token keyword&quot;&gt;all&lt;/span&gt;     md5&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Restart, and check that you can login with new user&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ psql -U &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;new_username&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; template1&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h4&gt;To access with you as a user&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Create user with your username(can be found by &lt;code class=&quot;language-text&quot;&gt;whoami&lt;/code&gt;):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ createuser -U postgres -d -e -E -l -P -r -s &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;my_name&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Restart postgresql server and check that you can login without &lt;code class=&quot;language-text&quot;&gt;-U postgres&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ psql template1&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;You can create database easily now:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ createdb &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;db_name&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.postgresql.org/download/linux/ubuntu/&quot; target=&quot;_blank&quot;&gt;https://www.postgresql.org/download/linux/ubuntu/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time&quot; target=&quot;_blank&quot;&gt;http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Install node and npm]]></title><description><![CDATA[Install node and npm in Windows/Linux/Mac]]></description><link>http://sanjeevkpandit.com.np/posts/install-node-and-npm/</link><guid isPermaLink="false">http://sanjeevkpandit.com.np/posts/install-node-and-npm/</guid><pubDate>Sun, 12 Jun 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://nodejs.org/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; is a JavaScript runtime built on Chrome’s V8 JavaScript engine. &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt;’ package ecosystem, &lt;a href=&quot;https://www.npmjs.com/&quot; target=&quot;_blank&quot;&gt;npm&lt;/a&gt;, is the largest ecosystem of open source libraries in the world.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/&quot; target=&quot;_blank&quot;&gt;Npm&lt;/a&gt; is a package manager for JavaScript. Use &lt;a href=&quot;https://www.npmjs.com/&quot; target=&quot;_blank&quot;&gt;npm&lt;/a&gt; to install, share, and distribute code; manage dependencies in your projects; and share &amp;#x26; receive feedback with others.&lt;/p&gt;
+&lt;h2&gt;Install node&lt;/h2&gt;
+&lt;h3&gt;For Windows and Mac users&lt;/h3&gt;
+&lt;p&gt;The installer  can be downloaded from &lt;a href=&quot;https://nodejs.org/en/download/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;For Linux users,&lt;/h3&gt;
+&lt;p&gt;There are following ways available to install &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt;:&lt;/p&gt;
+&lt;h4&gt;1. From PPA (Recommended)&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://nodejs.org/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; is available from the NodeSource Debian and Ubuntu binary distributions repository (formerly Chris Lea’s Launchpad PPA). Support for this repository, along with its scripts, can be found on GitHub at &lt;a href=&quot;https://github.com/nodesource/distributions&quot; target=&quot;_blank&quot;&gt;nodesource/distributions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Open your terminal (Ctrl + Alt + T) and enter:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#for Node-4.x&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -sL https://deb.nodesource.com/setup_4.x &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; -E &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt; -
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -y nodejs
+
+&lt;span class=&quot;token comment&quot;&gt;#For Node-6.x&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -sL https://deb.nodesource.com/setup_6.x &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; -E &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt; -
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -y nodejs&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h4&gt;2. From Node Package Manager(npm)&lt;/h4&gt;
+&lt;p&gt;Latest and stable, both versions of Node are available.
+Follow these steps to install node:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install &lt;a href=&quot;https://www.npmjs.com/&quot; target=&quot;_blank&quot;&gt;npm&lt;/a&gt;. If you have already installed it, skip to step 3.&lt;/li&gt;
+&lt;li&gt;To install &lt;a href=&quot;https://www.npmjs.com/&quot; target=&quot;_blank&quot;&gt;npm&lt;/a&gt;, find the instructions &lt;a href=&quot;{{site.baseurl}}/install/npm/linux/ubuntu/windows/setup/2016/06/10/install-npm/&quot; target=&quot;\_blank&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Enter the following commands in terminal to install/upgrade latest stable version &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; cache clean -f
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -g n
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; n stable&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;    The &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; package represents a Node helper.&lt;/p&gt;
+&lt;p&gt;    Any specific version can be installed by:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; n 6.2.1&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h4&gt;3. From native Software Center&lt;/h4&gt;
+&lt;p&gt;A stable version of node is available built at the time of release of your current OS.&lt;/p&gt;
+&lt;p&gt;To install, open terminal (Ctrl + Alt + T) and enter:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# for ubuntu user&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; nodejs&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Once, any of the above step is completed, you can confirm the installation by:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ node -v
+v6.2.1&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;Install npm&lt;/h2&gt;
+&lt;h3&gt;For Windows and Macintosh users&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/&quot; target=&quot;_blank&quot;&gt;Npm&lt;/a&gt; comes along with &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;_blank&quot;&gt;node.js&lt;/a&gt; installer which can be found &lt;a href=&quot;https://nodejs.org/en/download/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;For Linux users&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/&quot; target=&quot;_blank&quot;&gt;Npm&lt;/a&gt; is available in native software center&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# for ubuntu users&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Check the version of npm by:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; --version
+3.9.3&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h4&gt;Resources&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;https://nodejs.org/en/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/download/package-manager/&quot; target=&quot;_blank&quot;&gt;https://nodejs.org/en/download/package-manager/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Getting started with gulp]]></title><description><![CDATA[Learn basics of gulp.]]></description><link>http://sanjeevkpandit.com.np/posts/getting-started-with-gulp/</link><guid isPermaLink="false">http://sanjeevkpandit.com.np/posts/getting-started-with-gulp/</guid><pubDate>Sat, 11 Jun 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;http://gulpjs.com/&quot; target=&quot;_blank&quot;&gt;Gulp&lt;/a&gt; is an automated tool that helps to enhance workflow.&lt;/p&gt;
+&lt;h3&gt;Why gulp?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Simple&lt;/li&gt;
+&lt;li&gt;Automation of tasks&lt;/li&gt;
+&lt;li&gt;Platform independent&lt;/li&gt;
+&lt;li&gt;Plugins available in large number&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;h4&gt;Installation Instructions&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://npmjs.com/&quot; target=&quot;_blank&quot;&gt;Npm&lt;/a&gt; needs to be installed in order to install &lt;a href=&quot;http://gulpjs.com/&quot; target=&quot;_blank&quot;&gt;gulp&lt;/a&gt;. Please find the installation instructions &lt;a href=&quot;{{site.baseurl}}/install-node-and-npm/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove gulp (if installed before)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;rm&lt;/span&gt; --global gulp&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Install gulp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Globally
+npm install --global gulp-cli
+
+# Within a project
+npm install gulp --save-dev&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h4&gt;Implementation in a project&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a file &lt;code class=&quot;language-text&quot;&gt;gulpfile.js&lt;/code&gt; in project’s root folder and add following contents in it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; gulp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;gulp&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;default&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// default task&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Run gulp. This will run the default task as defined above.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;gulp&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;For a specific task&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;test&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;This is a test task&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# gulp &amp;lt;task_name&gt;&lt;/span&gt;
+gulp &lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h4&gt;Sample &lt;code class=&quot;language-text&quot;&gt;gulpfile.js&lt;/code&gt;.&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; gulp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;gulp&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; sass &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;gulp-sass&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; babel &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;gulp-babel&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; notify &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;gulp-notify&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; minify &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;gulp-minify&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; concat &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;gulp-concat&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;SCSS_FILES&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;src/sass/**/*.scss&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;JS_FILES&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;src/js/**/*.js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;ES6_FILES&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;src/js/es6/**/*.js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Handle any error that appears during execution of gulp tasks&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;errorHandler&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    notify&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;onError&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        title&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Task Failed [&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; error&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;plugin &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;]&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        message&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Oops! Something went north!&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        sound&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;// Prevent gulp watch from stopping&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;emit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;end&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Convert the sass files to css&lt;/span&gt;
+gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;sass&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;SCSS_FILES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; errorHandler&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;public/css/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;notify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            message&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;SCSS completed&quot;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Concat the css files to a single file&lt;/span&gt;
+gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;concat-css&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;SCSS_FILES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;compiled.scss&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;public/css/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Concat the js files to a single file&lt;/span&gt;
+gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;concat-js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JS_FILES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;compiled.js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;public/js/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Transpile ES6 into JavaScript(ES5)&lt;/span&gt;
+gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;es6&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;ES6_FILES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;babel&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; errorHandler&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;public/js/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;notify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            message&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;ES6 Compiled&quot;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Minify js files&lt;/span&gt;
+gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;minify-js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JS_FILES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;compiled.js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;minify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;public/js/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Default task&lt;/span&gt;
+gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;default&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;sass&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;es6&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Watch files for any change&lt;/span&gt;
+gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;watch&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;SCSS_FILES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;sass&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;ES6_FILES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;es6&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Download above gulpfile from &lt;a href=&quot;https://gist.github.com/sanjeevkpandit/38e690d8c1625ee1486fa13e3d554700&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Resources&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://gulpjs.com/&quot; target=&quot;_blank&quot;&gt;http://gulpjs.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/sanjeevkpandit/gulp-step-by-step&quot; target=&quot;_blank&quot;&gt;https://github.com/sanjeevkpandit/gulp-step-by-step&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Setup XDebug in PhpStorm]]></title><description><![CDATA[Debug PHP code in PhpStorm using XDebug.]]></description><link>http://sanjeevkpandit.com.np/posts/setup-xdebug-in-phpstorm/</link><guid isPermaLink="false">http://sanjeevkpandit.com.np/posts/setup-xdebug-in-phpstorm/</guid><pubDate>Wed, 25 May 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot;&gt;PhpStorm&lt;/a&gt; is one of the good IDE for PHP application development available in current era. &lt;a href=&quot;https://xdebug.org/&quot; target=&quot;_blank&quot;&gt;PHP Xdebug&lt;/a&gt; is a very strong tool for debugging, making the life easier for &lt;a class=&quot;http://www.php.net/&quot; target=&quot;_blank&quot;&gt;PHP&lt;/a&gt; developers to find out the logical mistakes.&lt;/p&gt;
+&lt;p&gt;Integration of Xdebug into &lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot;&gt;PhpStorm&lt;/a&gt; will ease the trouble of debugging for &lt;a class=&quot;http://www.php.net/&quot; target=&quot;_blank&quot;&gt;PHP&lt;/a&gt; developers. You can easily setup &lt;a href=&quot;https://xdebug.org/&quot; target=&quot;_blank&quot;&gt;Xdebug&lt;/a&gt; in &lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot;&gt;PhpStorm&lt;/a&gt; by following these steps.&lt;/p&gt;
+&lt;h4&gt;Requirements&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot;&gt;PhpStorm&lt;/a&gt; (get it from &lt;a href=&quot;https://www.jetbrains.com/phpstorm/download/&quot; target=&quot;\_blank&quot;&gt;here&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://xdebug.org/&quot; target=&quot;_blank&quot;&gt;Xdebug&lt;/a&gt; (get it from &lt;a href=&quot;https://xdebug.org/download.php&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Procedures&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Setup &lt;a href=&quot;https://xdebug.org/&quot; target=&quot;_blank&quot;&gt;Xdebug&lt;/a&gt; (if you haven’t done already). Find the steps &lt;a href=&quot;{{site.baseurl}}/setup-xdebug-in-ubuntu/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
+You should be able to see &lt;a href=&quot;https://xdebug.org/&quot; target=&quot;_blank&quot;&gt;Xdebug&lt;/a&gt; while checking the php version.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ php --version
+PHP 7.0.7-2+donate.sury.org~xenial+1 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;cli&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; NTS &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+Copyright &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 1997-2016 The PHP Group
+Zend Engine v3.0.0, Copyright &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 1998-2016 Zend Technologies
+    with Zend OPcache v7.0.6-dev, Copyright &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 1999-2016, by Zend Technologies
+    with Xdebug v2.4.0, Copyright &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 2002-2016, by Derick Rethans&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Now, configure xdebug for debugging. You need to change the &lt;code class=&quot;language-text&quot;&gt;xdebug.ini&lt;/code&gt; file. You can find the location of file using this command using terminal: &lt;code class=&quot;language-text&quot;&gt;php --ini | grep xdebug&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mine returned like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ php --ini &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; xdebug
+/etc/php/7.0/cli/conf.d/20-xdebug.ini,&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Just copy the path of the file and open in your favourite text editor (&lt;a href=&quot;https://www.sublimetext.com/&quot; target=&quot;_blank&quot;&gt;Sublime Text&lt;/a&gt; for me). Don’t forget to use &lt;code class=&quot;language-text&quot;&gt;sudo&lt;/code&gt; to edit the file otherwise, you won’t be able to save the changes you make.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# for sublime text users&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; subl /etc/php/7.0/cli/conf.d/20-xdebug.ini
+
+&lt;span class=&quot;token comment&quot;&gt;# for gedit users&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; gedit /etc/php/7.0/cli/conf.d/20-xdebug.ini
+
+&lt;span class=&quot;token comment&quot;&gt;# for vim users&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; vim /etc/php/7.0/cli/conf.d/20-xdebug.ini
+
+&lt;span class=&quot;token comment&quot;&gt;# for atom users&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; atom /etc/php/7.0/cli/conf.d/20-xdebug.ini&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Add these lines of code at the end of file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;xdebug.remote_enable&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;true
+xdebug.remote_port&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;9000&quot;&lt;/span&gt;   // Port &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; xdebug. Default is 9000.
+xdebug.profiler_enable&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;1
+xdebug.profiler_output_dir&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/tmp&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Time to change things in &lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot;&gt;PhpStorm&lt;/a&gt;. Navigate to &lt;code class=&quot;language-text&quot;&gt;File &amp;gt; Settings &amp;gt; Language &amp;amp; Frameworks &amp;gt; PHP&lt;/code&gt;. You will see the following screen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xdebug-phpstorm-1-56893fac9f2b5721ffc6d9710e1e7219-da6c5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 54.133064516129025%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABsklEQVQoz4WS2W7bMBBF9S1N48TxEi2OJGujSIqULMmKY7kLgqL/0cfmob99M6QNowbq5uHgjjjUnQFnnKFtoNsOvKpQSmmVawWhNalGqRQKKZALjoQVH+KIzQjVjuD1DpnoEbMGs5hhnnA8RDlu/RiTE5+9CDePIWmMT6SGGzc6xid12uErDLnowOQWabnBYs3g5QLLROJJbOHmFfxCkyosswrLVGBKRachFfTCU8HIqqO7EcP+FZI6LCsy5BvqsMD9KsEkSPAQc9xHzDI1xCXuVimRWKxZsMYdMQnIsO6/4PnwA1sybShOeQuXafhk7JWNjb2yhmtgtf02scldQPcXmYCTHd4gXv8gGd8Q7X4jefllf/RFe4FHPFU9Qj0gkJ39vrzT4TGTcJjeox9/QnXfUag9crU7dmhMTJd/EdDZisz+lTOGC3pbh1HVfvcNVfMMrrY0nPaq4f8w962hoGHU/YEMX2jnBjtt80a+7aQ76keQWUCNWcNC9tbETNewpvczU56vS8yuYHO0NmdozczZNMzgTLzovLhn6Oz2CjbnhrT0GU1XYRHnmFM8C1OKC7wDob94mx4/CEoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PhpStorm PHP&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xdebug-phpstorm-1-56893fac9f2b5721ffc6d9710e1e7219-c83f1.png&quot;
+        srcset=&quot;/static/xdebug-phpstorm-1-56893fac9f2b5721ffc6d9710e1e7219-569e3.png 240w,
+/static/xdebug-phpstorm-1-56893fac9f2b5721ffc6d9710e1e7219-93400.png 480w,
+/static/xdebug-phpstorm-1-56893fac9f2b5721ffc6d9710e1e7219-c83f1.png 960w,
+/static/xdebug-phpstorm-1-56893fac9f2b5721ffc6d9710e1e7219-da6c5.png 992w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Click on the &lt;code class=&quot;language-text&quot;&gt;...&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;Interpreters&lt;/code&gt; option to see more. You will get this:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xdebug-phpstorm-2-f66fef6bfddfe407d5cc3c19e19dff85-8acc8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 824px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 43.567961165048544%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABOElEQVQoz3VRWW4CMRSbw3R2YPZ9S2YBgVSpPUKv0J+qp3cdwhRo4cPyU+L4vecYr0uLw2nC8TiiHwoMYw8xjRCzZC0wTELzM0wSclZ6DcORHyjfv+HsP2EtX/C7N/h5DTdrYUbFGVZcPoQZkdMGfjnAKzp4eUfDTMItFtj5DCtf4BeCaOGkNQUtNhQ6SaWRPkFSwlasDM0ogxmmsMgvQXLulE4nxN2EiMjkAbtaYFsNcNlETWYrAzawWavGYSMR9jPi8QTjboUwh8fxg+GAgCa7WiKgOKJ4W3ETmvqNgEWzNQ4dSXWJIP9jyEsva5hfc/dAg/er7qL9B57/N2RuybAg5lRqOtVAwee5m9XXdR+wytO4NTvXF9afUN8jqX6brxlqs7V+MKH1bJ0b2DSP5R6bsr+Cn6n4B1icImrV2ML/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PhpStorm PHP Debugger&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xdebug-phpstorm-2-f66fef6bfddfe407d5cc3c19e19dff85-8acc8.png&quot;
+        srcset=&quot;/static/xdebug-phpstorm-2-f66fef6bfddfe407d5cc3c19e19dff85-a6c71.png 240w,
+/static/xdebug-phpstorm-2-f66fef6bfddfe407d5cc3c19e19dff85-109bf.png 480w,
+/static/xdebug-phpstorm-2-f66fef6bfddfe407d5cc3c19e19dff85-8acc8.png 824w&quot;
+        sizes=&quot;(max-width: 824px) 100vw, 824px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;If you are not able to see &lt;code class=&quot;language-text&quot;&gt;Debugger: Xdebug 2.4.0&lt;/code&gt;, try to refresh by clicking the refresh button on the right of &lt;code class=&quot;language-text&quot;&gt;PHP exectable&lt;/code&gt;. Again, if not seen, check the status of &lt;a href=&quot;https://xdebug.org/&quot; target=&quot;_blank&quot;&gt;Xdebug&lt;/a&gt; and try again.&lt;/p&gt;
+&lt;p&gt;This shows that that &lt;a href=&quot;https://xdebug.org/&quot; target=&quot;_blank&quot;&gt;Xdebug&lt;/a&gt; is ready in &lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot;&gt;PhpStorm&lt;/a&gt;. Save before you exit!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Now, you need to set up a server. Navaigate to &lt;code class=&quot;language-text&quot;&gt;File &amp;gt; Settings &amp;gt; Language &amp;amp; Framework &amp;gt; PHP &amp;gt; Servers&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xdebug-phpstorm-3-516db07cebd31c53cf7290f795052ebd-da6c5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 38.810483870967744%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABEklEQVQoz52STU7DMBCFfRYoCWorlTTQ/DWO4zpOnKIkLYKqohuOwQaQOPjDdiOBIKKIxad5tmeeZjQmjaoglELGuSUXAryU+q7SsQQrBHIpkYkVKM+RsAxxRn9CKZb6nbByA1HfgckWVDSImIJ7k2AcpnD8GBfzyDLyQoyuApxrzmaLQcwbqW+3uN8d0HQPqOoOvFjj0tcmXgBnHsLVOFYfz6cgVB1QtE9I5B5xsQerHzFeLDHRGOPhwgHzvgESdC9gu3fE21cE3RvC9hmuGdX7LPqqT3eYS1TrDqVqYLTB/WZi9K+YnD6PmCXwamOXErP6uJR+VGPs+uGfu7Md/mcsk+teR5ilHFP9G6ZBauNExw/Sfgcxi7PxPQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PhpStorm PHP Servers&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xdebug-phpstorm-3-516db07cebd31c53cf7290f795052ebd-c83f1.png&quot;
+        srcset=&quot;/static/xdebug-phpstorm-3-516db07cebd31c53cf7290f795052ebd-569e3.png 240w,
+/static/xdebug-phpstorm-3-516db07cebd31c53cf7290f795052ebd-93400.png 480w,
+/static/xdebug-phpstorm-3-516db07cebd31c53cf7290f795052ebd-c83f1.png 960w,
+/static/xdebug-phpstorm-3-516db07cebd31c53cf7290f795052ebd-da6c5.png 992w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Let’s add a server. Click on &lt;span class=&quot;dark-green&quot;&gt;+&lt;/span&gt; icon to add. You will get the same window changed to this:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xdebug-phpstorm-4-8144ef4c93ebb0f397c33fc77955e96b-da6c5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 38.810483870967744%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABSUlEQVQoz42R2U7CQBSG+zC0gxWslkKXoe10X6UFo4TIjeHKR/BGTXzw35kWSEMw8eLL37Of6ZFWRY64KOCHYUcQRwgShigLEHL1Y+5LE/hRBI/HKfPh+N4FvY8GDBLL1ojLJ7C05cWPsFgNLTtAr99BggNUO8at6WI8X0J+sDAaIOvWwGeCGBRSWW/wvN1j1b4gLxuEaQ2V1iBWBWJXuHNCTMwlb7qEuqBQ55TbLjTKYLAUU8vDzdzpYoQPkLxij6R5A013cJIdguoVY32BkTaDcm9gbDiY8KKp7XcqthV6gsxsKLyR0m1rQjLbT7DtD5zNF8z2G1bzwZNoF1T0Pnl0vzgj/IJLu88XGwYp8qpFVqwgvgXkOO08+ajXkIeIDW1WIMzX/CgNHFZC2KdniMZk9neza0jD9/+3SO4uakNz+cEst/+vZq+/Q+UJpPXwwsAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PhpStorm PHP Servers - Add new&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xdebug-phpstorm-4-8144ef4c93ebb0f397c33fc77955e96b-c83f1.png&quot;
+        srcset=&quot;/static/xdebug-phpstorm-4-8144ef4c93ebb0f397c33fc77955e96b-569e3.png 240w,
+/static/xdebug-phpstorm-4-8144ef4c93ebb0f397c33fc77955e96b-93400.png 480w,
+/static/xdebug-phpstorm-4-8144ef4c93ebb0f397c33fc77955e96b-c83f1.png 960w,
+/static/xdebug-phpstorm-4-8144ef4c93ebb0f397c33fc77955e96b-da6c5.png 992w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;By default, it tries to create a unnamed server. Let’s change this to &lt;code class=&quot;language-text&quot;&gt;TEST_SERVER&lt;/code&gt; and fill the other fields as well as shown below.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xdebug-phpstorm-5-c3afc49c46c2ce0782433d568d6ec4e6-da6c5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 38.810483870967744%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABS0lEQVQoz5VRy1KDMBTlY0qhL6nQQiACIUBpgD6dOq61Lhy31YU/fwyh1I4bdXHmvk5O7kNbiwKZEIh4IsGRZCl4zpAWibJxJnOLHFHKFYeyGEEc/UCbowmDxoo9uNgjrw7gyz0Iq2EtnuGuX2EmRwxIhqF7hxGJodsEvdtvNLF+iT0YMwpNlCvcHx5R1hvki1J2JTCiNUy/gkEq2HEBO+QYk1AKUwznFGMvhEUZZizHxI8wmAeqZsgPNH/9Af7wCbI6wa3fEe1OMB0PPcuGPnUU8SZgmJBIikYYSbHx2W9gOD76UqjvNN160ILlEenuDUyOGIgXUPEEcxaoYt+WZGl7U/eCJq9f5bq45csOo6TAstqiKDeIpR9KNL92hN+gX0N1yIQ8xhZhWqPxfbaUI7djNDsxHPIn4Q5a9/A/j3R1UR/W+Vhqr15rvwCz0gnMqOhB0QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PhpStorm PHP Servers - Test Server&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xdebug-phpstorm-5-c3afc49c46c2ce0782433d568d6ec4e6-c83f1.png&quot;
+        srcset=&quot;/static/xdebug-phpstorm-5-c3afc49c46c2ce0782433d568d6ec4e6-569e3.png 240w,
+/static/xdebug-phpstorm-5-c3afc49c46c2ce0782433d568d6ec4e6-93400.png 480w,
+/static/xdebug-phpstorm-5-c3afc49c46c2ce0782433d568d6ec4e6-c83f1.png 960w,
+/static/xdebug-phpstorm-5-c3afc49c46c2ce0782433d568d6ec4e6-da6c5.png 992w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Choose &lt;code class=&quot;language-text&quot;&gt;Xdebug&lt;/code&gt; as the &lt;code class=&quot;language-text&quot;&gt;Debugger&lt;/code&gt; option on the right. You can choose different port (default is 80).&lt;/p&gt;
+&lt;p&gt;Save before you close the window!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Now a server is ready, configure debug options. Navigate to &lt;code class=&quot;language-text&quot;&gt;Run &amp;gt; Edit Configurations&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xdebug-phpstorm-6-47809c422b282a6f7d6a7cf2d4cdd900-c61d2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 812px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.66009852216749%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAAA/klEQVQoz5WS7U6DMBSGey1OPgYbsDFoYbPtiGGIAb0AL8Ms/vHaX1scrgTQ+eNJT/rxvCcnJY9VgbY5oWlKVHUBIRm4PIAfpULMUwiIQg7Q+4S/npG+fMIr3+HXZ3jVB9y8xTLNsGQcPuXw6AN8XXcIrBROnGMRplhEQ8jh9Ia1aGHTJzisVjzDTdSDHYO7y2dx4gz2lo0gd0GE+zCGHcWwejaJgv7Jt4QOhfZ2OukWrlJDaPUpOlXX3SWz/l/IVaglG0N+qc0urBsCOqHJXIe9bDzD/vxnhhRTWBMDH0sM+WUlv8vGAkd9maSsEewlov0R60wgzCUCta7Uf/0CvH8/TzGI7YEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PhpStorm PHP Servers - Configure Debug Options&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xdebug-phpstorm-6-47809c422b282a6f7d6a7cf2d4cdd900-c61d2.png&quot;
+        srcset=&quot;/static/xdebug-phpstorm-6-47809c422b282a6f7d6a7cf2d4cdd900-fa0b5.png 240w,
+/static/xdebug-phpstorm-6-47809c422b282a6f7d6a7cf2d4cdd900-b9d74.png 480w,
+/static/xdebug-phpstorm-6-47809c422b282a6f7d6a7cf2d4cdd900-c61d2.png 812w&quot;
+        sizes=&quot;(max-width: 812px) 100vw, 812px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Add new option by clicking on &lt;span class=&quot;dark-green&quot;&gt;+&lt;/span&gt; icon on top left. Choose &lt;code class=&quot;language-text&quot;&gt;PHP Web Application&lt;/code&gt; from number of options.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xdebug-phpstorm-7-8f835bb9cdaf52b0968321e4ca788ead-c61d2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 812px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.66009852216749%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABQ0lEQVQoz42Sz07CQBDG9zW8mdBarECxhW7/4LaFWiy1Figm9ULCC3Dzondf+3NYq9LQiIdfJtmd+fabmWVx+oAsz5E+ZkSKKA4RTAOI6AyUE0zDBodzJpIF4nSNkGLXiXDR96GYPnTnDtfEDRfQOUVH1AToEZrloWPY6AybsMXLDiIviQ0VClwObJncHbk1Xiua5eLKdE5g8fMWk6zEKM6lE3U4pgsO9fY8XyK8KZiUFex5AWuWyfYUYwyt5eU2fkWPBGerCpwE7eRJOlSkw0MyJbQUnINFRSXbtedLOfCDwx9BkzdcqP94gCWbClFRIshJkNOGaVNtDr/FTmfoHBkgwfn2DWKzh7vaQ/dSqIbVcPjXzBridWT3uw8461fY5Tv0yZJaNinZrYtPBTT6MmP6swM/xNCP0HcDGF6IAcUe7eATZclGa4fptXYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PhpStorm PHP Servers - New Configuration&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xdebug-phpstorm-7-8f835bb9cdaf52b0968321e4ca788ead-c61d2.png&quot;
+        srcset=&quot;/static/xdebug-phpstorm-7-8f835bb9cdaf52b0968321e4ca788ead-fa0b5.png 240w,
+/static/xdebug-phpstorm-7-8f835bb9cdaf52b0968321e4ca788ead-b9d74.png 480w,
+/static/xdebug-phpstorm-7-8f835bb9cdaf52b0968321e4ca788ead-c61d2.png 812w&quot;
+        sizes=&quot;(max-width: 812px) 100vw, 812px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;You will get a unnamed configuration as shown below.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xdebug-phpstorm-8-2e6bf16cd262afa95df6ec51460e7363-c61d2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 812px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.66009852216749%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABWUlEQVQoz31S23KCMBDlO/rQmY4igoLcAwl3kFbHUX+g//8Zp5sgI7TFhzO7kyznskTrLyfc7jdcbld8Xc4omwpVW6PuGrR9h4Zq3dV/ULaVmlGzxwbNsVW9JqoGYd5jH2cwWYaNx7ANBXZJATstoQccazrTvUTVtTv2Ccw4x4buLVbQfIltJKC112+E/R1b/ol3N8ObnWLtc/hFByvk8A4R7CCBQbBIdJ8Qic8ICREz1eveE1qQn2CRmw8nxopUJaSDg6jh8hJ+miv3O0nGcqqCEnAFc1KHPoW2ciPobgyDFAdlptzsKIaTCoRlBTMiQjZgcJUsQhubcVBXO+QUjfYiHRHkLuXZdGYJmj5xpvrHR0aQzjAVfelQkswgHS64+O1uSiT3/ojM8MTwNBj9CD+rVWybVxS5+NfdjHyMPCdkL2PJO4N2GfVnOKKCSy9B7vdAog5V+Qp+AIn0QH4mrWqiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PhpStorm PHP Servers - PHP Web Application&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xdebug-phpstorm-8-2e6bf16cd262afa95df6ec51460e7363-c61d2.png&quot;
+        srcset=&quot;/static/xdebug-phpstorm-8-2e6bf16cd262afa95df6ec51460e7363-fa0b5.png 240w,
+/static/xdebug-phpstorm-8-2e6bf16cd262afa95df6ec51460e7363-b9d74.png 480w,
+/static/xdebug-phpstorm-8-2e6bf16cd262afa95df6ec51460e7363-c61d2.png 812w&quot;
+        sizes=&quot;(max-width: 812px) 100vw, 812px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Set up a configuration for &lt;code class=&quot;language-text&quot;&gt;TEST_SERVER&lt;/code&gt; created earlier. I have named it to &lt;code class=&quot;language-text&quot;&gt;TEST_CHROME&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xdebug-phpstorm-9-4984da769c2207b176c0b171c0ee06a3-c61d2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 812px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.66009852216749%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABX0lEQVQoz4WSW3KCQBBFWUc+8iMogg8QZAaQ14AYLSokK8j+V3HT04gRUql8nOquedy+c2uMtrui/+jR9e94624oVImyrlA1CnXboLk03FdNNaGoS17ns2cFda65N9JSIcxauMcUa3HC0hewwxSuzLGJC66mJ2D5Eibt/fQS6yjDMkjgiJzOFbBJw1D9F8L2E/uqw6uX4WUbwwxSBHkDJzphnxTM6iDh0sCNIJGDICQJC+51HTGC7AqH1Bc0eUFTNXpjc3e4TRTjkrgbpVztMCYSrImxDn0MY7EPYXnRferAKpD8VC/NIc83uAlFElfseHAl/8QYG52LdX/GKoj5snNMsIlo+nGYrteX/vSJcwyLBcUkF5suupSVEw1ot1rsP3fskF2N+PIhalIM49SxH/dGnoUeDp+zY/wft3PmQlPxmE39FtTfYBbDM9rt7qQQqAt9pxJbikOzK67YZRd8A3KcQJvS8mvKAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PhpStorm PHP Servers - New Configuration&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xdebug-phpstorm-9-4984da769c2207b176c0b171c0ee06a3-c61d2.png&quot;
+        srcset=&quot;/static/xdebug-phpstorm-9-4984da769c2207b176c0b171c0ee06a3-fa0b5.png 240w,
+/static/xdebug-phpstorm-9-4984da769c2207b176c0b171c0ee06a3-b9d74.png 480w,
+/static/xdebug-phpstorm-9-4984da769c2207b176c0b171c0ee06a3-c61d2.png 812w&quot;
+        sizes=&quot;(max-width: 812px) 100vw, 812px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Choose the created server and appropriate browser availabe from the options. Also, you can see the url that will open in the browser.&lt;/p&gt;
+&lt;p&gt;Click on &lt;code class=&quot;language-text&quot;&gt;OK&lt;/code&gt; to save this.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Now, open the project in &lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot;&gt;PhpStorm&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Set a breakpoint where you want to check your logic. To set a breakpoint, just click on the left side of the line of code. Click on the position of red round mark. Click on th same position to remove the breakpoint.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xdebug-phpstorm-10-01381f1e3343e9057328fc3f88c95a09-d60f7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 654px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 12.691131498470948%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsSAAALEgHS3X78AAAAdklEQVQI12XITQ7CIBBA4Z5F5g9mmGIrKCF15f3PJN01mnx5i7e8e+9ZWt5evm/mmdiQzhIZ4YlxHgPQP8tnDAvQU+lWjvXZba3JDm/D748c67TG5lqFC4QCcLX4XpGZRGPKKflsIJaoFBUiUxJUIRUUviH++AIJ7x345Moq1QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PhpStorm PHP Servers - PhpStorm Breakpoint&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xdebug-phpstorm-10-01381f1e3343e9057328fc3f88c95a09-d60f7.png&quot;
+        srcset=&quot;/static/xdebug-phpstorm-10-01381f1e3343e9057328fc3f88c95a09-1b5e2.png 240w,
+/static/xdebug-phpstorm-10-01381f1e3343e9057328fc3f88c95a09-18287.png 480w,
+/static/xdebug-phpstorm-10-01381f1e3343e9057328fc3f88c95a09-d60f7.png 654w&quot;
+        sizes=&quot;(max-width: 654px) 100vw, 654px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Now open the link in your browser in debugging mode by navigating &lt;code class=&quot;language-text&quot;&gt;Run &amp;gt; Debug &amp;#39;TEST_CHROME&amp;#39;&lt;/code&gt;. The browser may ask you to install a &lt;a href=&quot;https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji&quot; target=&quot;_blank&quot;&gt;JetBrains Extension (in Chrome)&lt;/a&gt; in your browser.&lt;/li&gt;
+&lt;li&gt;You will see a webpage opening in the browser you set in configurtion. Navigate to the point where you want to check your logic. When you reach to the breakpoint, the browser will keep itself in the loading position. In the mean time, you will see &lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot;&gt;PhpStorm&lt;/a&gt; being highlighted in taskbar or focused on top with the breakpoint highlighted with different color as shown below:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xdebug-phpstorm-11-de5b9e67b73915f01e16018edb2ef217-f31cf.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 32.84457478005865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAAA+UlEQVQY04XRzU6EMBAH8D6MhbaUhXboBwuULUtxjbi7HIyJJxN9/2ewSDQe1pj8MvlnOofJFCXSbrC0QlldO64GIh2BLoU2lV0ibkulQ7jUWJhEmFiltjvluA5cHTM1MO2oOiTCYdHdhIrmmJmeaEeUK23PC5kyziXQvCRsR3lJ8wJThmmGWRZDQtkdWcUOCpfX/XjR/txMi5+f9+EK/SMc5rVuYv7hZzOelX+Cfq4OM5KndxHeiukDxhfv700/ZSZu21DV/tJ8a5lpc+syvTZRFRYYrxCWvJsoWAL1eryvE/wlDpCqjgFJf4pgeMgbvz2k8I/td2L4BO0jVuJqgkFFAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PhpStorm PHP Servers - PhpStorm Highlighted Breakpoint&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xdebug-phpstorm-11-de5b9e67b73915f01e16018edb2ef217-c83f1.png&quot;
+        srcset=&quot;/static/xdebug-phpstorm-11-de5b9e67b73915f01e16018edb2ef217-569e3.png 240w,
+/static/xdebug-phpstorm-11-de5b9e67b73915f01e16018edb2ef217-93400.png 480w,
+/static/xdebug-phpstorm-11-de5b9e67b73915f01e16018edb2ef217-c83f1.png 960w,
+/static/xdebug-phpstorm-11-de5b9e67b73915f01e16018edb2ef217-f31cf.png 1364w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;You can see the debugging window right at the bottom part of &lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot;&gt;PhpStorm&lt;/a&gt; window. You can find &lt;code class=&quot;language-text&quot;&gt;Step Over&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Step Into&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Step Out&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Watch&lt;/code&gt; etc. controls in the Debugging Window.&lt;/p&gt;
+&lt;p&gt;See the shortcuts or set up your own shortcuts, they will help you a lot.&lt;/p&gt;
+&lt;p&gt;Hope you will feel ease to find any logical mistakes in your PHP code by debugging using &lt;a href=&quot;https://xdebug.org/&quot; target=&quot;_blank&quot;&gt;Xdebug&lt;/a&gt; in &lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot;&gt;PhpStorm&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Setup XDebug in Ubuntu]]></title><description><![CDATA[Debug PHP code using XDebug.]]></description><link>http://sanjeevkpandit.com.np/posts/setup-xdebug-in-ubuntu/</link><guid isPermaLink="false">http://sanjeevkpandit.com.np/posts/setup-xdebug-in-ubuntu/</guid><pubDate>Tue, 24 May 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://xdebug.org/&quot; target=&quot;_blank&quot;&gt;Xdebug&lt;/a&gt;’s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://xdebug.org/&quot; target=&quot;_blank&quot;&gt;Xdebug&lt;/a&gt; is a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install xdebug in your machine by following these instructions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Always run &lt;code class=&quot;language-text&quot;&gt;sudo apt-get update&lt;/code&gt; before installing any application.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There are two sources for installation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ubuntu&lt;/strong&gt;: This will provide you the application compiled during the building of the OS you are using. Thus, you may get older version of the application and might not get updates frequently.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PPA&lt;/strong&gt;: You will get the latest version of the application and frequent updates on the application.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[Optional] Add PPA to your Softwares List. Skip to step #4 if you don’t want to use PPA for installation. But, I recommend to use PPA for frequent updates.
+Enter these commands in your terminal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ sudo add-apt-repository ppa:ondrej/php
+$ sudo apt-get update&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Enter the following command in your terminal to install xdebug.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ sudo apt-get install php-xdebug&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;After the installation, check the version of xdebug.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ php --version
+PHP 7.0.7-2+donate.sury.org~xenial+1 (cli) ( NTS )
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
+    with Zend OPcache v7.0.6-dev, Copyright (c) 1999-2016, by Zend Technologies
+    with Xdebug v2.4.0, Copyright (c) 2002-2016, by Derick Rethans&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Also, you can find the xdebug configuration file using this command in terminal:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ php --ini | grep xdebug
+/etc/php/7.0/cli/conf.d/20-xdebug.ini,&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;The configuration settings of xdebug can be listed by:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ php -i | grep xdebug
+/etc/php/7.0/cli/conf.d/20-xdebug.ini,
+xdebug
+xdebug support =&amp;gt; enabled
+xdebug.auto_trace =&amp;gt; Off =&amp;gt; Off
+xdebug.cli_color =&amp;gt; 0 =&amp;gt; 0
+xdebug.collect_assignments =&amp;gt; Off =&amp;gt; Off
+xdebug.collect_includes =&amp;gt; On =&amp;gt; On
+xdebug.collect_params =&amp;gt; 0 =&amp;gt; 0
+xdebug.collect_return =&amp;gt; Off =&amp;gt; Off
+xdebug.collect_vars =&amp;gt; Off =&amp;gt; Off
+xdebug.coverage_enable =&amp;gt; On =&amp;gt; On
+xdebug.default_enable =&amp;gt; On =&amp;gt; On
+xdebug.dump.COOKIE =&amp;gt; no value =&amp;gt; no value
+xdebug.dump.ENV =&amp;gt; no value =&amp;gt; no value
+xdebug.dump.FILES =&amp;gt; no value =&amp;gt; no value
+xdebug.dump.GET =&amp;gt; no value =&amp;gt; no value
+xdebug.dump.POST =&amp;gt; no value =&amp;gt; no value
+xdebug.dump.REQUEST =&amp;gt; no value =&amp;gt; no value
+xdebug.dump.SERVER =&amp;gt; no value =&amp;gt; no value
+xdebug.dump.SESSION =&amp;gt; no value =&amp;gt; no value
+xdebug.dump_globals =&amp;gt; On =&amp;gt; On
+xdebug.dump_once =&amp;gt; On =&amp;gt; On
+xdebug.dump_undefined =&amp;gt; Off =&amp;gt; Off
+xdebug.extended_info =&amp;gt; On =&amp;gt; On
+xdebug.file_link_format =&amp;gt; no value =&amp;gt; no value
+xdebug.force_display_errors =&amp;gt; Off =&amp;gt; Off
+xdebug.force_error_reporting =&amp;gt; 0 =&amp;gt; 0
+xdebug.halt_level =&amp;gt; 0 =&amp;gt; 0
+xdebug.idekey =&amp;gt; no value =&amp;gt; no value
+xdebug.max_nesting_level =&amp;gt; 256 =&amp;gt; 256
+xdebug.max_stack_frames =&amp;gt; -1 =&amp;gt; -1
+xdebug.overload_var_dump =&amp;gt; On =&amp;gt; On
+xdebug.profiler_aggregate =&amp;gt; Off =&amp;gt; Off
+xdebug.profiler_append =&amp;gt; Off =&amp;gt; Off
+xdebug.profiler_enable =&amp;gt; On =&amp;gt; On
+xdebug.profiler_enable_trigger =&amp;gt; Off =&amp;gt; Off
+xdebug.profiler_enable_trigger_value =&amp;gt; no value =&amp;gt; no value
+xdebug.profiler_output_dir =&amp;gt; /tmp =&amp;gt; /tmp
+xdebug.profiler_output_name =&amp;gt; cachegrind.out.%p =&amp;gt; cachegrind.out.%p
+xdebug.remote_addr_header =&amp;gt; no value =&amp;gt; no value
+xdebug.remote_autostart =&amp;gt; Off =&amp;gt; Off
+xdebug.remote_connect_back =&amp;gt; Off =&amp;gt; Off
+xdebug.remote_cookie_expire_time =&amp;gt; 3600 =&amp;gt; 3600
+xdebug.remote_enable =&amp;gt; On =&amp;gt; On
+xdebug.remote_handler =&amp;gt; dbgp =&amp;gt; dbgp
+xdebug.remote_host =&amp;gt; localhost =&amp;gt; localhost
+xdebug.remote_log =&amp;gt; no value =&amp;gt; no value
+xdebug.remote_mode =&amp;gt; req =&amp;gt; req
+xdebug.remote_port =&amp;gt; 9000 =&amp;gt; 9000
+xdebug.scream =&amp;gt; Off =&amp;gt; Off
+xdebug.show_error_trace =&amp;gt; Off =&amp;gt; Off
+xdebug.show_exception_trace =&amp;gt; Off =&amp;gt; Off
+xdebug.show_local_vars =&amp;gt; Off =&amp;gt; Off
+xdebug.show_mem_delta =&amp;gt; Off =&amp;gt; Off
+xdebug.trace_enable_trigger =&amp;gt; Off =&amp;gt; Off
+xdebug.trace_enable_trigger_value =&amp;gt; no value =&amp;gt; no value
+xdebug.trace_format =&amp;gt; 0 =&amp;gt; 0
+xdebug.trace_options =&amp;gt; 0 =&amp;gt; 0
+xdebug.trace_output_dir =&amp;gt; /tmp =&amp;gt; /tmp
+xdebug.trace_output_name =&amp;gt; trace.%c =&amp;gt; trace.%c
+xdebug.var_display_max_children =&amp;gt; 128 =&amp;gt; 128
+xdebug.var_display_max_data =&amp;gt; 512 =&amp;gt; 512
+xdebug.var_display_max_depth =&amp;gt; 3 =&amp;gt; 3&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;To change the configurations, just change the &lt;code class=&quot;language-text&quot;&gt;ini&lt;/code&gt; file presented in result of above command.&lt;/p&gt;
+&lt;p&gt;Enjoy debugging with &lt;a href=&quot;https://xdebug.org/&quot; target=&quot;_blank&quot;&gt;Xdebug&lt;/a&gt; in &lt;a href=&quot;http://www.ubuntu.com/&quot; target=&quot;_blank&quot;&gt;Ubuntu&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Resources&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://xdebug.org/&quot; target=&quot;\_blank&quot;&gt;https://xdebug.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item></channel></rss>

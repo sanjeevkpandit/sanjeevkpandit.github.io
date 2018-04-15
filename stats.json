@@ -1,0 +1,154 @@
+{
+  "assetsByChunkName": {
+    "component---src-templates-tag-template-jsx": [
+      "component---src-templates-tag-template-jsx-ed5d90d698ceea63ea43.js",
+      "component---src-templates-tag-template-jsx-ed5d90d698ceea63ea43.js.map"
+    ],
+    "path---posts-getting-started-with-gulp": [
+      "path---posts-getting-started-with-gulp-9937c5579333a6f1d2c7.js",
+      "path---posts-getting-started-with-gulp-9937c5579333a6f1d2c7.js.map"
+    ],
+    "component---src-templates-page-template-jsx": [
+      "component---src-templates-page-template-jsx-994fa15cdac2f9049e27.js",
+      "component---src-templates-page-template-jsx-994fa15cdac2f9049e27.js.map"
+    ],
+    "path---posts-setup-xdebug-in-phpstorm": [
+      "path---posts-setup-xdebug-in-phpstorm-d80524a2ad70d806ef50.js",
+      "path---posts-setup-xdebug-in-phpstorm-d80524a2ad70d806ef50.js.map"
+    ],
+    "path---posts-setup-xdebug-in-ubuntu": [
+      "path---posts-setup-xdebug-in-ubuntu-81c3cc7c44e8a7675fb8.js",
+      "path---posts-setup-xdebug-in-ubuntu-81c3cc7c44e8a7675fb8.js.map"
+    ],
+    "path---tags-php-xdebug": [
+      "path---tags-php-xdebug-701a79c4befac852fb33.js",
+      "path---tags-php-xdebug-701a79c4befac852fb33.js.map"
+    ],
+    "path---categories": [
+      "path---categories-83be71fec684281eafdf.js",
+      "path---categories-83be71fec684281eafdf.js.map"
+    ],
+    "path---posts-setup-postgresql-in-ubuntu": [
+      "path---posts-setup-postgresql-in-ubuntu-87a63849270aeff353e5.js",
+      "path---posts-setup-postgresql-in-ubuntu-87a63849270aeff353e5.js.map"
+    ],
+    "component---src-pages-tags-jsx": [
+      "component---src-pages-tags-jsx-e1306667a369780294ff.js",
+      "component---src-pages-tags-jsx-e1306667a369780294ff.js.map"
+    ],
+    "path---tags-nodejs": [
+      "path---tags-nodejs-d1b9105fccd893e7ed0a.js",
+      "path---tags-nodejs-d1b9105fccd893e7ed0a.js.map"
+    ],
+    "path---posts-install-node-and-npm": [
+      "path---posts-install-node-and-npm-298106565d7b1206f796.js",
+      "path---posts-install-node-and-npm-298106565d7b1206f796.js.map"
+    ],
+    "path---tags": [
+      "path---tags-4c3024893d337f206bf5.js",
+      "path---tags-4c3024893d337f206bf5.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---tags-node": [
+      "path---tags-node-5a4386435ea76432c9ca.js",
+      "path---tags-node-5a4386435ea76432c9ca.js.map"
+    ],
+    "component---src-layouts-index-jsx": [
+      "component---src-layouts-index-jsx-cef20ec68cf1e76471f7.js",
+      "component---src-layouts-index-jsx-cef20ec68cf1e76471f7.js.map"
+    ],
+    "path---tags-ubuntu": [
+      "path---tags-ubuntu-e7072b28eb015eeabb2d.js",
+      "path---tags-ubuntu-e7072b28eb015eeabb2d.js.map"
+    ],
+    "path---categories-tech": [
+      "path---categories-tech-8276c63104bb67b107ed.js",
+      "path---categories-tech-8276c63104bb67b107ed.js.map"
+    ],
+    "path---tags-xdebug": [
+      "path---tags-xdebug-0d46c5dfbc796eb2e053.js",
+      "path---tags-xdebug-0d46c5dfbc796eb2e053.js.map"
+    ],
+    "component---src-templates-category-template-jsx": [
+      "component---src-templates-category-template-jsx-b755cb17ab99eccccdc1.js",
+      "component---src-templates-category-template-jsx-b755cb17ab99eccccdc1.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "component---src-templates-post-template-jsx": [
+      "component---src-templates-post-template-jsx-2f9681c92a2209f62036.js",
+      "component---src-templates-post-template-jsx-2f9681c92a2209f62036.js.map"
+    ],
+    "path---tags-php": [
+      "path---tags-php-db4e3743544cc742961b.js",
+      "path---tags-php-db4e3743544cc742961b.js.map"
+    ],
+    "path---tags-phpstorm": [
+      "path---tags-phpstorm-10749ae9fbbfe5e19e3f.js",
+      "path---tags-phpstorm-10749ae9fbbfe5e19e3f.js.map"
+    ],
+    "component---src-pages-categories-jsx": [
+      "component---src-pages-categories-jsx-dc892dc56898ecd4183e.js",
+      "component---src-pages-categories-jsx-dc892dc56898ecd4183e.js.map"
+    ],
+    "path---index": [
+      "path---index-e558f519e49da0977c45.js",
+      "path---index-e558f519e49da0977c45.js.map"
+    ],
+    "commons": [
+      "commons-c0629a452dfff28ea3ef.js",
+      "build-js-styles.css",
+      "commons-c0629a452dfff28ea3ef.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---tags-gulp": [
+      "path---tags-gulp-24272bc234ef5396ee51.js",
+      "path---tags-gulp-24272bc234ef5396ee51.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-8504cc9f51e6fb9f1152.js",
+      "path---404-html-8504cc9f51e6fb9f1152.js.map"
+    ],
+    "component---src-pages-404-jsx": [
+      "component---src-pages-404-jsx-3d0441dd1a11b2f3a35b.js",
+      "component---src-pages-404-jsx-3d0441dd1a11b2f3a35b.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a3a4be52a0f2a379703a.js",
+      "path---contact-a3a4be52a0f2a379703a.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-index-jsx": [
+      "component---src-pages-index-jsx-6c38fc1ad9979dc9d50f.js",
+      "component---src-pages-index-jsx-6c38fc1ad9979dc9d50f.js.map"
+    ],
+    "app": [
+      "app-8a9fac09243d7932a775.js",
+      "app-8a9fac09243d7932a775.js.map"
+    ],
+    "path---404": [
+      "path---404-8504cc9f51e6fb9f1152.js",
+      "path---404-8504cc9f51e6fb9f1152.js.map"
+    ],
+    "path---tags-npm": [
+      "path---tags-npm-2fa0e705ab19f82cfc48.js",
+      "path---tags-npm-2fa0e705ab19f82cfc48.js.map"
+    ],
+    "path---about": [
+      "path---about-1678b8a72c45b57763e3.js",
+      "path---about-1678b8a72c45b57763e3.js.map"
+    ],
+    "path---tags-postgres": [
+      "path---tags-postgres-3311c174a1b5e3e232a4.js",
+      "path---tags-postgres-3311c174a1b5e3e232a4.js.map"
+    ]
+  }
+}
