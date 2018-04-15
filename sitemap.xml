@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>http://sanjeevkpandit.com.np/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/posts/setup-xdebug-in-ubuntu/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/tags/php/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/categories/tech/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/contact</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://sanjeevkpandit.com.np/posts/getting-started-with-gulp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://sanjeevkpandit.com.np/tags/gulp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://sanjeevkpandit.com.np/tags/nodejs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://sanjeevkpandit.com.np/posts/install-node-and-npm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://sanjeevkpandit.com.np/tags/node/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://sanjeevkpandit.com.np/tags/npm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/posts/setup-xdebug-in-phpstorm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/tags/xdebug/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/tags/php-xdebug/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/tags/phpstorm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/posts/install-node-and-npm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/node/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/nodejs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/npm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/posts/getting-started-with-gulp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/gulp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/posts/setup-postgresql-in-ubuntu/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/tags/postgres/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/tags/ubuntu/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://sanjeevkpandit.com.np/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://sanjeevkpandit.com.np/contact</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/categories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://sanjeevkpandit.com.np/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
