@@ -1,2 +1,0 @@
-webpackJsonp([30875753179511],{389:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Sanjeev Kumar Pandit",subtitle:"#FullStackDeveloper #FootballFan",copyright:"© All rights reserved.",menu:[{label:"Articles",path:"/"},{label:"About me",path:"/about/"},{label:"Contact me",path:"/contact/"}],author:{name:"John Doe",email:"#",telegram:"#",twitter:"#",github:"#",rss:"#",vk:"#"}}},allMarkdownRemark:{group:[{fieldValue:"Tech",totalCount:5}]}},pathContext:{}}}});
-//# sourceMappingURL=path---categories-83be71fec684281eafdf.js.map
