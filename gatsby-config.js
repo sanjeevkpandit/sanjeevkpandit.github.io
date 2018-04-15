@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
-    subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    url: 'http://sanjeevkpandit.com.np',
+    title: 'Sanjeev Kumar Pandit',
+    subtitle: '#FullStackDeveloper #FootballFan',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
