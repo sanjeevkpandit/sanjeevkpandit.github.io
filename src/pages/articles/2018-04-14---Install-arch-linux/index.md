@@ -4,7 +4,7 @@ date: "2018-04-14T00:00:00Z"
 layout: post
 draft: false
 path: "/posts/install-arch-linux/"
-category: "Tech"
+category: "Linux"
 tags:
   - "arch"
   - "arch linux"
@@ -14,7 +14,7 @@ tags:
 description: "Learn how to install arch linux."
 ---
 
-It's been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it's a pain to setup all those applications and configuration. That's why I am writing this where I can find the steps I have been following to install and setup my machine my way :smile:.
+It's been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it's a pain to setup all those applications and configuration. That's why I am writing this where I can find the steps I have been following to install and setup my machine my way :).
 
 Okay, let's start with the installation. Previously, I tried to run a live Ubuntu OS and then install either by the bootstrap image or using the LiveCD Image. But, nowadays, it seems the installing from live arch USB seems to be the easiest and quickest as it skips a lot of steps.
 
@@ -129,7 +129,16 @@ Okay, let's start with the installation. Previously, I tried to run a live Ubunt
       ```console
       # grub-mkconfig -o /boot/grub/grub.cfg
       ```
+
+      _**Note:** For NVIDIA card holders, unless you install the `nvidia` drivers, add `modprobe.blacklist=nouveau` in `/etc/default/grub` and re-generate the main configuration file._
+
+      ```bash
+      GRUB_CMDLINE_LINUX_DEFAULT="quiet modprobe.blacklist=nouveau"
+      ```
+
+      _Remove `modprobe.blacklist=nouveau` after installing `nvidia` drivers._
 6. Reboot, enjoy.
+7. For post-installation steps, refer to <a href="/posts/arch-linux-post-installation/">Arch Linux post installation</a>.
 
 #### Reference:
 
