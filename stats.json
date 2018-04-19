@@ -29,8 +29,8 @@
       "path---tags-php-xdebug-0c23c3422e9e09e1334c.js.map"
     ],
     "path---categories": [
-      "path---categories-03e659d1e7284f3e41a0.js",
-      "path---categories-03e659d1e7284f3e41a0.js.map"
+      "path---categories-70fee97727f39dd8e409.js",
+      "path---categories-70fee97727f39dd8e409.js.map"
     ],
     "path---posts-setup-postgresql-in-ubuntu": [
       "path---posts-setup-postgresql-in-ubuntu-2e90684ffee3e2c7e7b1.js",
@@ -49,16 +49,16 @@
       "path---posts-install-node-and-npm-9a374ef59a300398272c.js.map"
     ],
     "path---categories-linux": [
-      "path---categories-linux-3afd20ae81950ccf4db9.js",
-      "path---categories-linux-3afd20ae81950ccf4db9.js.map"
+      "path---categories-linux-13cb20ce434d05ef8dbf.js",
+      "path---categories-linux-13cb20ce434d05ef8dbf.js.map"
     ],
     "path---tags-arch": [
-      "path---tags-arch-ba93e8efdeb5b73ae642.js",
-      "path---tags-arch-ba93e8efdeb5b73ae642.js.map"
+      "path---tags-arch-9cc706c17eb26f1381a5.js",
+      "path---tags-arch-9cc706c17eb26f1381a5.js.map"
     ],
     "path---tags": [
-      "path---tags-998a2d8deb56a1b6debe.js",
-      "path---tags-998a2d8deb56a1b6debe.js.map"
+      "path---tags-5d3034f3960ac8450d58.js",
+      "path---tags-5d3034f3960ac8450d58.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -105,8 +105,8 @@
       "component---src-templates-post-template-jsx-2f9681c92a2209f62036.js.map"
     ],
     "path---tags-linux": [
-      "path---tags-linux-45d562f293d72aea99e1.js",
-      "path---tags-linux-45d562f293d72aea99e1.js.map"
+      "path---tags-linux-4acac163a0e2f6b55d76.js",
+      "path---tags-linux-4acac163a0e2f6b55d76.js.map"
     ],
     "path---tags-php": [
       "path---tags-php-0706d7ae78b0a338b1bc.js",
@@ -121,14 +121,22 @@
       "component---src-pages-categories-jsx-dc892dc56898ecd4183e.js.map"
     ],
     "path---index": [
-      "path---index-ecfd7a1f5de3d202832b.js",
-      "path---index-ecfd7a1f5de3d202832b.js.map"
+      "path---index-cf27fdeeae309e6a9192.js",
+      "path---index-cf27fdeeae309e6a9192.js.map"
+    ],
+    "path---tags-terminal": [
+      "path---tags-terminal-0d676c64f795ea0c2b58.js",
+      "path---tags-terminal-0d676c64f795ea0c2b58.js.map"
     ],
     "commons": [
       "commons-13892b00070173ad68ef.js",
       "build-js-styles.css",
       "commons-13892b00070173ad68ef.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---posts-terminal-enhancements": [
+      "path---posts-terminal-enhancements-d803a97cc50bdee8841b.js",
+      "path---posts-terminal-enhancements-d803a97cc50bdee8841b.js.map"
     ],
     "path---tags-gulp": [
       "path---tags-gulp-f7448ae49ae7de720b46.js",
@@ -155,12 +163,12 @@
       "component---src-pages-index-jsx-6c38fc1ad9979dc9d50f.js.map"
     ],
     "path---tags-arch-linux": [
-      "path---tags-arch-linux-8f4877eacd1f6d3b90f6.js",
-      "path---tags-arch-linux-8f4877eacd1f6d3b90f6.js.map"
+      "path---tags-arch-linux-f53e11f425d385ae308a.js",
+      "path---tags-arch-linux-f53e11f425d385ae308a.js.map"
     ],
     "app": [
-      "app-ae73fdb64c655aed0c59.js",
-      "app-ae73fdb64c655aed0c59.js.map"
+      "app-1efd3e7e8d274e71ecec.js",
+      "app-1efd3e7e8d274e71ecec.js.map"
     ],
     "path---tags-post-installation": [
       "path---tags-post-installation-2865ee48d5e15fcff1d7.js",

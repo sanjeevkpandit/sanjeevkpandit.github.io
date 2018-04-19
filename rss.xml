@@ -1,4 +1,105 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sanjeev Kumar Pandit]]></title><description><![CDATA[#FullStackWebDeveloper]]></description><link>http://sanjeevkpandit.com.np</link><generator>RSS for Node</generator><lastBuildDate>Thu, 19 Apr 2018 16:55:44 GMT</lastBuildDate><item><title><![CDATA[Arch Linux post installation]]></title><description><![CDATA[Post installation steps for arch linux users.]]></description><link>http://sanjeevkpandit.com.np/posts/arch-linux-post-installation/</link><guid isPermaLink="false">http://sanjeevkpandit.com.np/posts/arch-linux-post-installation/</guid><pubDate>Mon, 16 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Update your system&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sanjeev Kumar Pandit]]></title><description><![CDATA[#FullStackWebDeveloper]]></description><link>http://sanjeevkpandit.com.np</link><generator>RSS for Node</generator><lastBuildDate>Thu, 19 Apr 2018 17:29:14 GMT</lastBuildDate><item><title><![CDATA[Terminal enhancements]]></title><description><![CDATA[Tweaks to make optimum use of terminal.]]></description><link>http://sanjeevkpandit.com.np/posts/terminal-enhancements/</link><guid isPermaLink="false">http://sanjeevkpandit.com.np/posts/terminal-enhancements/</guid><pubDate>Fri, 20 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Dropdown terminal&lt;/h3&gt;
+&lt;p&gt;It seems &lt;a href=&quot;http://guake-project.org/&quot; target=&quot;_blank&quot;&gt;guake&lt;/a&gt; is an obvious choice for everyone, but &lt;a href=&quot;https://gnunn1.github.io/tilix-web/&quot; target=&quot;_blank&quot;&gt;tilix&lt;/a&gt; gives terminator features of splitting a window.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-console&quot;&gt;&lt;code class=&quot;language-console&quot;&gt;$ yaourt -S tilix-bin&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;To use tilix as a dropdown terminal, you need to setup a key with &lt;code class=&quot;language-text&quot;&gt;tilix -q&lt;/code&gt; as action.&lt;/p&gt;
+&lt;h3&gt;Install zsh&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-console&quot;&gt;&lt;code class=&quot;language-console&quot;&gt;$ sudo pacman -S zsh&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;Install git&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-console&quot;&gt;&lt;code class=&quot;language-console&quot;&gt;$ sudo pacman -S git&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;Setup oh-my-zsh&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-console&quot;&gt;&lt;code class=&quot;language-console&quot;&gt;$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+$ chsh -s `which zsh`&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;ZSH Theme&lt;/h3&gt;
+&lt;p&gt;I am using a custom theme inspired from &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/wiki/themes#juanghurtado&quot; target=&quot;_blank&quot;&gt;juanghurtado&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-console&quot;&gt;&lt;code class=&quot;language-console&quot;&gt;# Color shortcuts
+RED=$fg[red]
+YELLOW=$fg[yellow]
+GREEN=$fg[green]
+WHITE=$fg[white]
+BLUE=$fg[blue]
+RED_BOLD=$fg_bold[red]
+YELLOW_BOLD=$fg_bold[yellow]
+GREEN_BOLD=$fg_bold[green]
+WHITE_BOLD=$fg_bold[white]
+BLUE_BOLD=$fg_bold[blue]
+RESET_COLOR=$reset_color
+
+# Format for git_prompt_info()
+ZSH_THEME_GIT_PROMPT_PREFIX=&amp;quot;&amp;quot;
+ZSH_THEME_GIT_PROMPT_SUFFIX=&amp;quot;&amp;quot;
+
+# Format for parse_git_dirty()
+ZSH_THEME_GIT_PROMPT_DIRTY=&amp;quot; %{$RED%}(*)&amp;quot;
+ZSH_THEME_GIT_PROMPT_CLEAN=&amp;quot;&amp;quot;
+
+# Format for git_prompt_status()
+ZSH_THEME_GIT_PROMPT_UNMERGED=&amp;quot; %{$RED%}unmerged&amp;quot;
+ZSH_THEME_GIT_PROMPT_DELETED=&amp;quot; %{$RED%}deleted&amp;quot;
+ZSH_THEME_GIT_PROMPT_RENAMED=&amp;quot; %{$YELLOW%}renamed&amp;quot;
+ZSH_THEME_GIT_PROMPT_MODIFIED=&amp;quot; %{$YELLOW%}modified&amp;quot;
+ZSH_THEME_GIT_PROMPT_ADDED=&amp;quot; %{$GREEN%}added&amp;quot;
+ZSH_THEME_GIT_PROMPT_UNTRACKED=&amp;quot; %{$WHITE%}untracked&amp;quot;
+
+# Format for git_prompt_ahead()
+ZSH_THEME_GIT_PROMPT_AHEAD=&amp;quot; %{$RED%}(!)&amp;quot;
+
+# Format for git_prompt_long_sha() and git_prompt_short_sha()
+ZSH_THEME_GIT_PROMPT_SHA_BEFORE=&amp;quot; %{$WHITE%}[%{$YELLOW%}&amp;quot;
+ZSH_THEME_GIT_PROMPT_SHA_AFTER=&amp;quot;%{$WHITE%}]&amp;quot;
+
+# Prompt format
+PROMPT=&amp;#39;
+%{$GREEN_BOLD%}%{$YELLOW%}%~%u$(parse_git_dirty)$(git_prompt_ahead)%{$RESET_COLOR%} %{$GREEN_BOLD%}$(git_current_branch)
+%{$BLUE%}&amp;gt;%{$RESET_COLOR%} &amp;#39;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/my-custom-theme-6b4793be91a7b938f3f5c5e8b69b4859-4e7e8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 530px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.98113207547169%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAABdklEQVQ4y9WR207CQBCG+zaoLTtoOSR2SziUQhE8xPc2RokUKFixomDbGb1v1xYMJnpBTbzx4suf2fz7ZbIrra4G8bt7Jezltbj1J4L8d7HyQ/Hqo/ADFN5iKdz5QsxcT8y9l/X5Tzb91WsYSc54Fg+Ho+jmbhgN7HFkj6bR2HEjZzpf52RyH9n2NDl3Yns0ie2xEzszN370FvHLcrXFe3qOHuZeLDXqHE1Dp1ZTR8usUrulU9eqUr9XpU4y11qc6m1OmqahpnHcpIacc9R1fUs6p0hm95j6pyWqNxiabaCOBdQyAM0moFEHLFYVLNcUVBQ5kOXdSBUDqGIUUNWTyzXAUiKSgYW5HAv29lmQP4BA2YcAAMIsSCeWTqfdMrWNI+x1VEo56xXp8rxIPUulYxOIJ1unZcbYTrF0fnHxxrUKFgr5UFVhS/EzC0cQHqqbciahfCAH+TwLGIN1fieVsM/MIpW+BrbzfTJt+Jtypk/5C8n/En4AejvgArIl3YUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;My Custom ZSH Theme&quot;
+        title=&quot;&quot;
+        src=&quot;/static/my-custom-theme-6b4793be91a7b938f3f5c5e8b69b4859-4e7e8.png&quot;
+        srcset=&quot;/static/my-custom-theme-6b4793be91a7b938f3f5c5e8b69b4859-2fecf.png 240w,
+/static/my-custom-theme-6b4793be91a7b938f3f5c5e8b69b4859-cb8e2.png 480w,
+/static/my-custom-theme-6b4793be91a7b938f3f5c5e8b69b4859-4e7e8.png 530w&quot;
+        sizes=&quot;(max-width: 530px) 100vw, 530px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h3&gt;Reboot or log out - log in&lt;/h3&gt;
+&lt;h4&gt;References&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/wiki/themes&quot; target=&quot;_blank&quot;&gt;ZSH Themes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gist.github.com/tsabat/1498393&quot; target=&quot;_blank&quot;&gt;Getting oh-my-zsh to work in Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Arch Linux post installation]]></title><description><![CDATA[Post installation steps for arch linux users.]]></description><link>http://sanjeevkpandit.com.np/posts/arch-linux-post-installation/</link><guid isPermaLink="false">http://sanjeevkpandit.com.np/posts/arch-linux-post-installation/</guid><pubDate>Mon, 16 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Update your system&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-console&quot;&gt;&lt;code class=&quot;language-console&quot;&gt;# pacman -Syu&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
