@@ -17,7 +17,7 @@ Okay, let's start with the installation. Previously, I tried to run a live Ubunt
    - Use ethernet or run `wifi-menu` command to connect to a WiFi Connection.
    - Check connection:
 
-   ```console
+   ```shell
    # ping archlinux.org
    ```
 
@@ -25,27 +25,27 @@ Okay, let's start with the installation. Previously, I tried to run a live Ubunt
 
    - The partitions can be listed from:
 
-   ```console
+   ```shell
    # fdisk -l
    ```
 
    - Usually, I prefer to prepare the partition before the installation. Still, you can find the steps <a target="_blank" href="https://wiki.archlinux.org/index.php/installation_guide#Partition_the_disks">here</a> to perform the partition actions.
    - Format the partition
 
-   ```console
+   ```shell
    # mkfs.ext4 /dev/sda1
    ```
 
 3. Mount the file system
 
-   ```console
+   ```shell
    # mount /dev/sda1 /mnt
    ```
 
 4. Installation
 
    - Select and rank the mirros, ranking the mirrors would help to perform the installation quicker.
-     ```console
+     ```shell
      // Backup
      # cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
      // Uncomment every mirror
@@ -54,7 +54,7 @@ Okay, let's start with the installation. Previously, I tried to run a live Ubunt
      # rankmirrors /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
      ```
    - Install the base packages:
-     ```console
+     ```shell
      # pacstrap /mnt base base-devel
      ```
      `base-devel` is optional, can be installed later.
@@ -62,87 +62,87 @@ Okay, let's start with the installation. Previously, I tried to run a live Ubunt
 5. Configure the system
 
    - Fstab
-     ```console
+     ```shell
      # genfstab -U /mnt >> /mnt/etc/fstab
      ```
    - Chroot
-     ```console
+     ```shell
      # arch-chroot /mnt
      ```
    - Time zone
-     ```console
+     ```shell
      # ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
      # hwclock --systohc
      ```
    - Locale
      Uncomment `en_US.UTF-8 UTF-8` and other needed localizations in `/etc/locale.gen`, and generate them with:
-     ```console
+     ```shell
      # locale-gen
      ```
      Set the LANG variable in `/etc/locale.conf` accordingly:
-     ```console
+     ```shell
      LANG=en_US.UTF-8
      ```
-     To set the keyboard layout, make the changes persistent in `/etc/vconsole.conf`:
-     ```console
+     To set the keyboard layout, make the changes persistent in `/etc/shell.conf`:
+     ```shell
      KEYMAP=us
      ```
    - Hostname
      Create the `hostname` file `/etc/hostname`:
-     ```console
+     ```shell
      myhostname
      ```
      Add matching entries to `/etc/hosts`:
-     ```console
+     ```shell
      127.0.0.1    localhost
      ::1          localhost
      127.0.1.1    myhostname.localdomain	myhostname
      ```
    - Network configuration
-     ```console
+     ```shell
      # pacman -S networkmanager dhclient
      ```
      For wifi:
-     ```console
+     ```shell
      # pacman -S iw wpa_supplicant dialog
      ```
    - Initramfs
-     ```console
+     ```shell
      # mkinitcpio -p linux
      ```
    - Root password
-     ```console
+     ```shell
      # passwd
      ```
    - Boot loader (GRUB - UEFI)
      Install the package `grub` and `efibootmgr`:
 
-     ```console
+     ```shell
      # pacman -S grub efibootmgr
      ```
 
      Mount EFI partition(/dev/sda3):
 
-     ```console
+     ```shell
      # mkir /boot/efi
      # mount /dev/sda3 /boot/efi
      ```
 
      Install GRUB UEFI to `/boot/efi`:
 
-     ```console
+     ```shell
      # grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub
      ```
 
      Generate the main configuration file:
 
-     ```console
+     ```shell
      # grub-mkconfig -o /boot/grub/grub.cfg
      ```
 
      _**Note:** For NVIDIA card holders, unless you install the `nvidia` drivers, add `modprobe.blacklist=nouveau` in `/etc/default/grub` and re-generate the main configuration file._
 
-     ```bash
+     ```shell
      GRUB_CMDLINE_LINUX_DEFAULT="quiet modprobe.blacklist=nouveau"
      ```
 
