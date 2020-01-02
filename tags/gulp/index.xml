@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gulp on Sanjeev</title>
+    <title>gulp on Sanjeev</title>
     <link>http://sanjeevkpandit.github.io/tags/gulp/</link>
-    <description>Recent content in Gulp on Sanjeev</description>
+    <description>Recent content in gulp on Sanjeev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 11 Jun 2016 00:00:00 +0000</lastBuildDate>
@@ -17,10 +17,10 @@
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</guid>
-      <description>Gulp is an automated tool that helps to enhance workflow.
-Why gulp?  Simple Automation of tasks Platform independent Plugins available in large number  Getting started Installation Instructions  Npm needs to be installed in order to install gulp. Please find the installation instructions here.
- Remove gulp (if installed before)
-  1  $ npm rm --global gulp    Install gulp  1 2 3 4 5  # Globally npm install --global gulp-cli # Within a project npm install gulp --save-dev   Implementation in a project  Create a file gulpfile.</description>
+      <description>Gulpis an automated tool that helps to enhance workflow.
+Why gulp?  Simple Automation of tasks Platform independent Plugins available in large number  Getting started Installation Instructions   Npmneeds to be installed in order to install gulp. Please find the installation instructions here.
+  Remove gulp (if installed before)
+  $ npm rm --global gulp  Install gulp  # Globally npm install --global gulp-cli # Within a project npm install gulp --save-dev Implementation in a project  Create a file gulpfile.</description>
     </item>
     
   </channel>

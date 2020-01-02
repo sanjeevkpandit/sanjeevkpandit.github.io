@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Sanjeev</title>
@@ -17,9 +17,9 @@
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</guid>
-      <description>Dropdown terminal It seems guake is an obvious choice for everyone, but tilix gives terminator features of splitting a window.
-1  $ yaourt -S tilix-bin   To use tilix as a dropdown terminal, you need to setup a key with tilix -q as action.
-Install zsh 1  $ sudo pacman -S zsh   Install git 1  $ sudo pacman -S git   Setup oh-my-zsh 1 2  $ wget https://github.</description>
+      <description>Dropdown terminal It seems guakeis an obvious choice for everyone, but tilixgives terminator features of splitting a window.
+$ yaourt -S tilix-bin To use tilix as a dropdown terminal, you need to setup a key with tilix -q as action.
+Install zsh $ sudo pacman -S zsh Install git $ sudo pacman -S git Setup oh-my-zsh $ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh $ chsh -s `which zsh` ZSH Theme I am using a custom theme inspired from juanghurtado.</description>
     </item>
     
     <item>
@@ -28,11 +28,13 @@ Install zsh 1  $ sudo pacman -S zsh   Install git 1  $ sudo pacman -S git   Setu
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</guid>
-      <description>Update your system 1  # pacman -Syu   Install X server, Desktop Environment and Display Manager 1  # pacman -S xorg   To install GNOME:
-1  # pacman -S gnome gnome-extra   To install Cinnamon:
-1  # pacman -S cinnamon nemo-file-roller   To install XFCE:
-1  # pacman -S xfce4 xfce4-goodies   To install KDE:
-1  # pacman -S plasma   To install MATE:</description>
+      <description>Update your system # pacman -Syu Install X server, Desktop Environment and Display Manager # pacman -S xorg To install GNOME:
+# pacman -S gnome gnome-extra To install Cinnamon:
+# pacman -S cinnamon nemo-file-roller To install XFCE:
+# pacman -S xfce4 xfce4-goodies To install KDE:
+# pacman -S plasma To install MATE:
+# pacman -S mate mate-extra To install a display manager:
+# pacman -S lightdm # systemctl enable lightdm.service Add user [Add new user] # useradd -m -G wheel -s /bin/bash username # passwd username [Uncomment wheel group] # visudo %wheel ALL=(ALL) ALL [Install sudo package] # pacman -S sudo Install yaourt Add followings to /etc/pacman.</description>
     </item>
     
     <item>
@@ -41,7 +43,7 @@ Install zsh 1  $ sudo pacman -S zsh   Install git 1  $ sudo pacman -S git   Setu
       <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/install-arch-linux/</guid>
-      <description>It&amp;rsquo;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&amp;rsquo;s a pain to setup all those applications and configuration.</description>
+      <description>It&#39;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&#39;s a pain to setup all those applications and configuration.</description>
     </item>
     
     <item>
@@ -50,8 +52,8 @@ Install zsh 1  $ sudo pacman -S zsh   Install git 1  $ sudo pacman -S git   Setu
       <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/</guid>
-      <description>PostgreSQL is a powerful, open source object-relational database system.
-Install PostgreSQL 1. From PPA (Recommended)  Create a file /etc/apt/sources.list.d/pgdg.list, and add following line for the repository  1 2 3 4 5 6 7 8 9 10 11  # for ubuntu 16.04 users deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main # for ubuntu 15.10 users deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main # for ubuntu 14.04 users deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main # for ubuntu 12.</description>
+      <description>PostgreSQLis a powerful, open source object-relational database system.
+Install PostgreSQL 1. From PPA (Recommended)  Create a file /etc/apt/sources.list.d/pgdg.list, and add following line for the repository  # for ubuntu 16.04 users deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main # for ubuntu 15.10 users deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main # for ubuntu 14.04 users deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main # for ubuntu 12.04 users deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main  Import the repository signing key, and update the package lists  $ wget --quiet -O - https://www.</description>
     </item>
     
     <item>
@@ -60,8 +62,8 @@ Install PostgreSQL 1. From PPA (Recommended)  Create a file /etc/apt/sources.lis
       <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</guid>
-      <description>Node.js is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
-Npm is a package manager for JavaScript. Use npm to install, share, and distribute code; manage dependencies in your projects; and share &amp;amp; receive feedback with others.
+      <description>Node.jsis a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine. Node.jsuses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+Npmis a package manager for JavaScript. Use npmto install, share, and distribute code; manage dependencies in your projects; and share &amp;amp; receive feedback with others.
 Install node For Windows and Mac users The installer can be downloaded from here.</description>
     </item>
     
@@ -71,10 +73,10 @@ Install node For Windows and Mac users The installer can be downloaded from here
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</guid>
-      <description>Gulp is an automated tool that helps to enhance workflow.
-Why gulp?  Simple Automation of tasks Platform independent Plugins available in large number  Getting started Installation Instructions  Npm needs to be installed in order to install gulp. Please find the installation instructions here.
- Remove gulp (if installed before)
-  1  $ npm rm --global gulp    Install gulp  1 2 3 4 5  # Globally npm install --global gulp-cli # Within a project npm install gulp --save-dev   Implementation in a project  Create a file gulpfile.</description>
+      <description>Gulpis an automated tool that helps to enhance workflow.
+Why gulp?  Simple Automation of tasks Platform independent Plugins available in large number  Getting started Installation Instructions   Npmneeds to be installed in order to install gulp. Please find the installation instructions here.
+  Remove gulp (if installed before)
+  $ npm rm --global gulp  Install gulp  # Globally npm install --global gulp-cli # Within a project npm install gulp --save-dev Implementation in a project  Create a file gulpfile.</description>
     </item>
     
     <item>
@@ -83,9 +85,9 @@ Why gulp?  Simple Automation of tasks Platform independent Plugins available in 
       <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</guid>
-      <description>PhpStorm is one of the good IDE for PHP application development available in current era. PHP Xdebug is a very strong tool for debugging, making the life easier for PHP developers to find out the logical mistakes.
-Integration of Xdebug into PhpStorm will ease the trouble of debugging for PHP developers. You can easily setup Xdebug in PhpStorm by following these steps.
-Requirements  PhpStorm (get it from here) Xdebug (get it from here)  Procedures  Setup Xdebug (if you haven&amp;rsquo;t done already).</description>
+      <description>PhpStormis one of the good IDE for PHP application development available in current era. PHP Xdebugis a very strong tool for debugging, making the life easier for PHPdevelopers to find out the logical mistakes.
+Integration of Xdebug into PhpStormwill ease the trouble of debugging for PHPdevelopers. You can easily setup Xdebugin PhpStormby following these steps.
+Requirements  PhpStorm(get it from here) Xdebug(get it from here)  Procedures  Setup Xdebug(if you haven&#39;t done already).</description>
     </item>
     
     <item>
@@ -94,10 +96,10 @@ Requirements  PhpStorm (get it from here) Xdebug (get it from here)  Procedures 
       <pubDate>Tue, 24 May 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-ubuntu/</guid>
-      <description>Xdebug&amp;rsquo;s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.
-Xdebug is a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install xdebug in your machine by following these instructions.
- Always run sudo apt-get update before installing any application.
- There are two sources for installation.
+      <description>Xdebug&#39;s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.
+Xdebugis a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install xdebug in your machine by following these instructions.
+  Always run sudo apt-get update before installing any application.
+  There are two sources for installation.
  Ubuntu: This will provide you the application compiled during the building of the OS you are using.</description>
     </item>
     

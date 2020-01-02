@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post Installation on Sanjeev</title>
+    <title>post installation on Sanjeev</title>
     <link>http://sanjeevkpandit.github.io/tags/post-installation/</link>
-    <description>Recent content in Post Installation on Sanjeev</description>
+    <description>Recent content in post installation on Sanjeev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
@@ -17,11 +17,13 @@
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</guid>
-      <description>Update your system 1  # pacman -Syu   Install X server, Desktop Environment and Display Manager 1  # pacman -S xorg   To install GNOME:
-1  # pacman -S gnome gnome-extra   To install Cinnamon:
-1  # pacman -S cinnamon nemo-file-roller   To install XFCE:
-1  # pacman -S xfce4 xfce4-goodies   To install KDE:
-1  # pacman -S plasma   To install MATE:</description>
+      <description>Update your system # pacman -Syu Install X server, Desktop Environment and Display Manager # pacman -S xorg To install GNOME:
+# pacman -S gnome gnome-extra To install Cinnamon:
+# pacman -S cinnamon nemo-file-roller To install XFCE:
+# pacman -S xfce4 xfce4-goodies To install KDE:
+# pacman -S plasma To install MATE:
+# pacman -S mate mate-extra To install a display manager:
+# pacman -S lightdm # systemctl enable lightdm.service Add user [Add new user] # useradd -m -G wheel -s /bin/bash username # passwd username [Uncomment wheel group] # visudo %wheel ALL=(ALL) ALL [Install sudo package] # pacman -S sudo Install yaourt Add followings to /etc/pacman.</description>
     </item>
     
   </channel>
