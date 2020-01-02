@@ -1,2 +1,0 @@
-webpackJsonp([30875753179511],{389:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Sanjeev Kumar Pandit",subtitle:"#FullStackWebDeveloper",copyright:"© All rights reserved.",menu:[{label:"Articles",path:"/"},{label:"About me",path:"/about/"},{label:"Contact me",path:"/contact/"}],author:{name:"Sanjeev Kumar Pandit",email:"binarysanjeev@gmail.com",twitter:"sanjeevkpandit",github:"sanjeevkpandit"}}},allMarkdownRemark:{group:[{fieldValue:"Tech",totalCount:5}]}},pathContext:{}}}});
-//# sourceMappingURL=path---categories-143db876bb7a4ed6a1a8.js.map
