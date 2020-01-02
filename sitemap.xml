@@ -1,35 +1,242 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>http://sanjeevkpandit.com.np/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/posts/setup-xdebug-in-ubuntu/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/php/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/categories/tech/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/posts/setup-xdebug-in-phpstorm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/xdebug/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/php-xdebug/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/phpstorm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/posts/install-node-and-npm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/node/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/nodejs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/npm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/posts/setup-postgresql-in-ubuntu/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/postgres/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/ubuntu/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/posts/getting-started-with-gulp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/gulp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/contact</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/posts/install-arch-linux/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/arch/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/arch-linux/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/linux/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/setup/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/installation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/categories/linux/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/posts/arch-linux-post-installation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/post-installation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/posts/terminal-enhancements/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/terminal/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/categories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://sanjeevkpandit.com.np/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/about/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/posts/install-arch-linux/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/</loc>
+    <lastmod>2016-06-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</loc>
+    <lastmod>2016-06-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</loc>
+    <lastmod>2016-06-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</loc>
+    <lastmod>2016-05-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-ubuntu/</loc>
+    <lastmod>2016-05-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/arch/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/arch-linux/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/categories/development/</loc>
+    <lastmod>2016-06-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/gulp/</loc>
+    <lastmod>2016-06-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/installation/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/categories/linux/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/linux/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/node/</loc>
+    <lastmod>2016-06-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/nodejs/</loc>
+    <lastmod>2016-06-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/npm/</loc>
+    <lastmod>2016-06-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/php/</loc>
+    <lastmod>2016-05-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/php-xdebug/</loc>
+    <lastmod>2016-05-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/phpstorm/</loc>
+    <lastmod>2016-05-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/post-installation/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/postgres/</loc>
+    <lastmod>2016-06-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/post/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/setup/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/categories/tech/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/categories/terminal/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/terminal/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/ubuntu/</loc>
+    <lastmod>2016-06-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sanjeevkpandit.github.io/tags/xdebug/</loc>
+    <lastmod>2016-05-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
 </urlset>

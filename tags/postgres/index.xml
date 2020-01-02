@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Postgres on Sanjeev</title>
+    <link>http://sanjeevkpandit.github.io/tags/postgres/</link>
+    <description>Recent content in Postgres on Sanjeev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Jun 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://sanjeevkpandit.github.io/tags/postgres/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setup postgresql in Ubuntu</title>
+      <link>http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/</guid>
+      <description>PostgreSQL is a powerful, open source object-relational database system.
+Install PostgreSQL 1. From PPA (Recommended)  Create a file /etc/apt/sources.list.d/pgdg.list, and add following line for the repository  1 2 3 4 5 6 7 8 9 10 11  # for ubuntu 16.04 users deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main # for ubuntu 15.10 users deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main # for ubuntu 14.04 users deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main # for ubuntu 12.</description>
+    </item>
+    
+  </channel>
+</rss>

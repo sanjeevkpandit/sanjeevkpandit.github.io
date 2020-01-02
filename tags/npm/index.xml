@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Npm on Sanjeev</title>
+    <link>http://sanjeevkpandit.github.io/tags/npm/</link>
+    <description>Recent content in Npm on Sanjeev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Jun 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://sanjeevkpandit.github.io/tags/npm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install node and npm</title>
+      <link>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</link>
+      <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</guid>
+      <description>Node.js is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+Npm is a package manager for JavaScript. Use npm to install, share, and distribute code; manage dependencies in your projects; and share &amp;amp; receive feedback with others.
+Install node For Windows and Mac users The installer can be downloaded from here.</description>
+    </item>
+    
+  </channel>
+</rss>

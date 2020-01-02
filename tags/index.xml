@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Sanjeev</title>
+    <link>http://sanjeevkpandit.github.io/tags/</link>
+    <description>Recent content in Tags on Sanjeev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://sanjeevkpandit.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Arch</title>
+      <link>http://sanjeevkpandit.github.io/tags/arch/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/arch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arch Linux</title>
+      <link>http://sanjeevkpandit.github.io/tags/arch-linux/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/arch-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gulp</title>
+      <link>http://sanjeevkpandit.github.io/tags/gulp/</link>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/gulp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>http://sanjeevkpandit.github.io/tags/installation/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://sanjeevkpandit.github.io/tags/linux/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node</title>
+      <link>http://sanjeevkpandit.github.io/tags/node/</link>
+      <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nodejs</title>
+      <link>http://sanjeevkpandit.github.io/tags/nodejs/</link>
+      <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Npm</title>
+      <link>http://sanjeevkpandit.github.io/tags/npm/</link>
+      <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/npm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php</title>
+      <link>http://sanjeevkpandit.github.io/tags/php/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php Xdebug</title>
+      <link>http://sanjeevkpandit.github.io/tags/php-xdebug/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/php-xdebug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phpstorm</title>
+      <link>http://sanjeevkpandit.github.io/tags/phpstorm/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/phpstorm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post Installation</title>
+      <link>http://sanjeevkpandit.github.io/tags/post-installation/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/post-installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Postgres</title>
+      <link>http://sanjeevkpandit.github.io/tags/postgres/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/postgres/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Setup</title>
+      <link>http://sanjeevkpandit.github.io/tags/setup/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/setup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>http://sanjeevkpandit.github.io/tags/terminal/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>http://sanjeevkpandit.github.io/tags/ubuntu/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xdebug</title>
+      <link>http://sanjeevkpandit.github.io/tags/xdebug/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/xdebug/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

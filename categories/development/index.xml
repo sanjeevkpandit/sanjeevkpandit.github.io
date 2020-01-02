@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Sanjeev</title>
+    <link>http://sanjeevkpandit.github.io/categories/development/</link>
+    <description>Recent content in Development on Sanjeev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Jun 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://sanjeevkpandit.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setup postgresql in Ubuntu</title>
+      <link>http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/</guid>
+      <description>PostgreSQL is a powerful, open source object-relational database system.
+Install PostgreSQL 1. From PPA (Recommended)  Create a file /etc/apt/sources.list.d/pgdg.list, and add following line for the repository  1 2 3 4 5 6 7 8 9 10 11  # for ubuntu 16.04 users deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main # for ubuntu 15.10 users deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main # for ubuntu 14.04 users deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main # for ubuntu 12.</description>
+    </item>
+    
+    <item>
+      <title>Install node and npm</title>
+      <link>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</link>
+      <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</guid>
+      <description>Node.js is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+Npm is a package manager for JavaScript. Use npm to install, share, and distribute code; manage dependencies in your projects; and share &amp;amp; receive feedback with others.
+Install node For Windows and Mac users The installer can be downloaded from here.</description>
+    </item>
+    
+    <item>
+      <title>Getting started with gulp</title>
+      <link>http://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</link>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</guid>
+      <description>Gulp is an automated tool that helps to enhance workflow.
+Why gulp?  Simple Automation of tasks Platform independent Plugins available in large number  Getting started Installation Instructions  Npm needs to be installed in order to install gulp. Please find the installation instructions here.
+ Remove gulp (if installed before)
+  1  $ npm rm --global gulp    Install gulp  1 2 3 4 5  # Globally npm install --global gulp-cli # Within a project npm install gulp --save-dev   Implementation in a project  Create a file gulpfile.</description>
+    </item>
+    
+    <item>
+      <title>Setup XDebug in PhpStorm</title>
+      <link>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</guid>
+      <description>PhpStorm is one of the good IDE for PHP application development available in current era. PHP Xdebug is a very strong tool for debugging, making the life easier for PHP developers to find out the logical mistakes.
+Integration of Xdebug into PhpStorm will ease the trouble of debugging for PHP developers. You can easily setup Xdebug in PhpStorm by following these steps.
+Requirements  PhpStorm (get it from here) Xdebug (get it from here)  Procedures  Setup Xdebug (if you haven&amp;rsquo;t done already).</description>
+    </item>
+    
+    <item>
+      <title>Setup XDebug in Ubuntu</title>
+      <link>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-ubuntu/</link>
+      <pubDate>Tue, 24 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-ubuntu/</guid>
+      <description>Xdebug&amp;rsquo;s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.
+Xdebug is a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install xdebug in your machine by following these instructions.
+ Always run sudo apt-get update before installing any application.
+ There are two sources for installation.
+ Ubuntu: This will provide you the application compiled during the building of the OS you are using.</description>
+    </item>
+    
+  </channel>
+</rss>
