@@ -40,11 +40,16 @@ defaultContentLanguage = "en"           # Default language to use
   weight = 10
   identifier = "home"
   url = "/"
-[[menu.main]]
-  name = "Blog"
-  weight = 20
-  identifier = "posts"
-  url = "/post/"
+# [[menu.main]]
+#   name = "Blog"
+#   weight = 20
+#   identifier = "post"
+#   url = "/post/"
+# [[menu.main]]
+#   name = "Blogs"
+#   weight = 600
+#   identifier = "posts"
+#   url = "/posts/"
 #[[menu.main]]
 #  name = "Tags"
 #  weight = 30
@@ -60,6 +65,8 @@ defaultContentLanguage = "en"           # Default language to use
 #  weight = 50
 #  url = "https://gohugo.io"
 
+[permalinks]
+  post = "/posts/:slug"
 
 [params]
   since = "2016"            # Site creation time          # 站点建立时间
