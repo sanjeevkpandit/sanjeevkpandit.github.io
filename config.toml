@@ -6,7 +6,7 @@ baseURL = "http://sanjeevkpandit.github.io"
 title = "Sanjeev"
 enableRobotsTXT = true
 enableEmoji = true
-theme = "jane"
+theme = "hugo-theme-jane"
 
 hasCJKLanguage = false     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 3              # Number of articles displayed on the homepage  # 首页每页显示的文章数
