@@ -1,7 +1,7 @@
 ---
 title: Filter emails using multiple senders in GMail
 date: '2020-01-29T00:00:00Z'
-draft: true
+draft: false
 slug: 'filter-emails-using-multiple-senders-in-gmail'
 categories: ['Tech']
 tags: ['email', 'gmail', 'multiple', 'filter', 'senders']
