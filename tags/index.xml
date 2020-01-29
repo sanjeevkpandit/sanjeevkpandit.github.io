@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Sanjeev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://sanjeevkpandit.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>email</title>
+      <link>http://sanjeevkpandit.github.io/tags/email/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>filter</title>
+      <link>http://sanjeevkpandit.github.io/tags/filter/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/filter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gmail</title>
+      <link>http://sanjeevkpandit.github.io/tags/gmail/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/gmail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multiple</title>
+      <link>http://sanjeevkpandit.github.io/tags/multiple/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/multiple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>senders</title>
+      <link>http://sanjeevkpandit.github.io/tags/senders/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/senders/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>arch</title>
@@ -143,24 +188,6 @@
       <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/tags/php-xdebug/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>phpstorm</title>
-      <link>http://sanjeevkpandit.github.io/tags/phpstorm/</link>
-      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://sanjeevkpandit.github.io/tags/phpstorm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>xdebug</title>
-      <link>http://sanjeevkpandit.github.io/tags/xdebug/</link>
-      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://sanjeevkpandit.github.io/tags/xdebug/</guid>
       <description></description>
     </item>
     
