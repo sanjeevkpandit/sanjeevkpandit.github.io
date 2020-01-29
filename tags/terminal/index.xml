@@ -17,7 +17,7 @@
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</guid>
-      <description>Dropdown terminal It seems guakeis an obvious choice for everyone, but tilixgives terminator features of splitting a window.
+      <description>Dropdown terminal It seems Guakeis an obvious choice for everyone, but Tilixgives terminator features of splitting a window with flavor of Guake.
 $ yaourt -S tilix-bin To use tilix as a dropdown terminal, you need to setup a key with tilix -q as action.
 Install zsh $ sudo pacman -S zsh Install git $ sudo pacman -S git Setup oh-my-zsh $ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh $ chsh -s `which zsh` ZSH Theme I am using a custom theme inspired from juanghurtado.</description>
     </item>

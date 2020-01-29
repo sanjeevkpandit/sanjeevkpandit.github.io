@@ -57,7 +57,7 @@
       <guid>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</guid>
       
         <description>&lt;h3 id=&#34;dropdown-terminal&#34;&gt;Dropdown terminal&lt;/h3&gt;
-&lt;p&gt;It seems &lt;!-- raw HTML omitted --&gt;guake&lt;!-- raw HTML omitted --&gt; is an obvious choice for everyone, but &lt;!-- raw HTML omitted --&gt;tilix&lt;!-- raw HTML omitted --&gt; gives terminator features of splitting a window.&lt;/p&gt;
+&lt;p&gt;It seems &lt;!-- raw HTML omitted --&gt;Guake&lt;!-- raw HTML omitted --&gt; is an obvious choice for everyone, but &lt;!-- raw HTML omitted --&gt;Tilix&lt;!-- raw HTML omitted --&gt; gives terminator features of splitting a window with flavor of Guake.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ yaourt -S tilix-bin
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To use tilix as a dropdown terminal, you need to setup a key with &lt;code&gt;tilix -q&lt;/code&gt; as action.&lt;/p&gt;
 &lt;h3 id=&#34;install-zsh&#34;&gt;Install zsh&lt;/h3&gt;
@@ -134,7 +134,7 @@ PROMPT=&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install GNOME:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S gnome gnome-extra
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install Cinnamon:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S cinnamon nemo-file-roller
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S cinnamon nemo-fileroller
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install XFCE:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S xfce4 xfce4-goodies
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install KDE:&lt;/p&gt;
@@ -230,8 +230,8 @@ $ yaourt -S datagrip
       
       <guid>http://sanjeevkpandit.github.io/posts/install-arch-linux/</guid>
       
-        <description>&lt;p&gt;It&#39;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&#39;s a pain to setup all those applications and configuration. That&#39;s why I am writing this where I can find the steps I have been following to install and setup my machine my way :).&lt;/p&gt;
-&lt;p&gt;Okay, let&#39;s start with the installation. Previously, I tried to run a live Ubuntu OS and then install either by the bootstrap image or using the LiveCD Image. But, nowadays, it seems the installing from live arch USB seems to be the easiest and quickest as it skips a lot of steps.&lt;/p&gt;
+        <description>&lt;p&gt;It&amp;rsquo;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&amp;rsquo;s a pain to setup all those applications and configuration. That&amp;rsquo;s why I am writing this where I can find the steps I have been following to install and setup my machine my way :).&lt;/p&gt;
+&lt;p&gt;Okay, let&amp;rsquo;s start with the installation. Previously, I tried to run a live Ubuntu OS and then install either by the bootstrap image or using the LiveCD Image. But, nowadays, it seems the installing from live arch USB seems to be the easiest and quickest as it skips a lot of steps.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Connect to the internet&lt;/p&gt;
@@ -450,8 +450,8 @@ $ psql --version
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ createdb &amp;lt;db_name&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://www.postgresql.org/download/linux/ubuntu/%3C/a%3E&#34;&gt;https://www.postgresql.org/download/linux/ubuntu/&amp;lt;/a&amp;gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time%3C/a%3E&#34;&gt;http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time&amp;lt;/a&amp;gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://www.postgresql.org/download/linux/ubuntu/&#34;&gt;https://www.postgresql.org/download/linux/ubuntu/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time&#34;&gt;http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       
@@ -464,7 +464,7 @@ $ psql --version
       
       <guid>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</guid>
       
-        <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt; is a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine. &lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt; uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. &lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt;&amp;rsquo; package ecosystem, &lt;!-- raw HTML omitted --&gt;npm&lt;!-- raw HTML omitted --&gt;, is the largest ecosystem of open source libraries in the world.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt; is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. &lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt; uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. &lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt;&amp;rsquo; package ecosystem, &lt;!-- raw HTML omitted --&gt;npm&lt;!-- raw HTML omitted --&gt;, is the largest ecosystem of open source libraries in the world.&lt;/p&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;Npm&lt;!-- raw HTML omitted --&gt; is a package manager for JavaScript. Use &lt;!-- raw HTML omitted --&gt;npm&lt;!-- raw HTML omitted --&gt; to install, share, and distribute code; manage dependencies in your projects; and share &amp;amp; receive feedback with others.&lt;/p&gt;
 &lt;h2 id=&#34;install-node&#34;&gt;Install node&lt;/h2&gt;
 &lt;h3 id=&#34;for-windows-and-mac-users&#34;&gt;For Windows and Mac users&lt;/h3&gt;
@@ -472,7 +472,7 @@ $ psql --version
 &lt;h3 id=&#34;for-linux-users&#34;&gt;For Linux users,&lt;/h3&gt;
 &lt;p&gt;There are following ways available to install &lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt;:&lt;/p&gt;
 &lt;h4 id=&#34;1-from-ppa-recommended&#34;&gt;1. From PPA (Recommended)&lt;/h4&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt; is available from the NodeSource Debian and Ubuntu binary distributions repository (formerly Chris Lea&#39;s Launchpad PPA). Support for this repository, along with its scripts, can be found on GitHub at &lt;!-- raw HTML omitted --&gt;nodesource/distributions&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt; is available from the NodeSource Debian and Ubuntu binary distributions repository (formerly Chris Lea&amp;rsquo;s Launchpad PPA). Support for this repository, along with its scripts, can be found on GitHub at &lt;!-- raw HTML omitted --&gt;nodesource/distributions&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
 &lt;p&gt;Open your terminal (Ctrl + Alt + T) and enter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#for Node-4.x&lt;/span&gt;
 $ curl -sL https://deb.nodesource.com/setup_4.x &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo -E bash -
@@ -515,8 +515,8 @@ $ sudo apt-get install npm
 3.9.3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;resources&#34;&gt;Resources&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://nodejs.org/en/%3C/a%3E&#34;&gt;https://nodejs.org/en/&amp;lt;/a&amp;gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://nodejs.org/en/download/package-manager/%3C/a%3E&#34;&gt;https://nodejs.org/en/download/package-manager/&amp;lt;/a&amp;gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://nodejs.org/en/&#34;&gt;https://nodejs.org/en/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://nodejs.org/en/download/package-manager/&#34;&gt;https://nodejs.org/en/download/package-manager/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       
@@ -558,7 +558,7 @@ npm install --global gulp-cli
 npm install gulp --save-dev
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;implementation-in-a-project&#34;&gt;Implementation in a project&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Create a file &lt;code&gt;gulpfile.js&lt;/code&gt; in project&#39;s root folder and add following contents in it.&lt;/li&gt;
+&lt;li&gt;Create a file &lt;code&gt;gulpfile.js&lt;/code&gt; in project&amp;rsquo;s root folder and add following contents in it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gulp&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 
@@ -666,8 +666,8 @@ gulp &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Download above gulpfile from &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;resources&#34;&gt;Resources&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://gulpjs.com/%3C/a%3E&#34;&gt;http://gulpjs.com/&amp;lt;/a&amp;gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://github.com/sanjeevkpandit/gulp-step-by-step%3C/a%3E&#34;&gt;https://github.com/sanjeevkpandit/gulp-step-by-step&amp;lt;/a&amp;gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://gulpjs.com/&#34;&gt;http://gulpjs.com/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://github.com/sanjeevkpandit/gulp-step-by-step&#34;&gt;https://github.com/sanjeevkpandit/gulp-step-by-step&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       
@@ -689,7 +689,7 @@ gulp &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;procedures&#34;&gt;Procedures&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Setup &lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; (if you haven&#39;t done already). Find the steps &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.
+&lt;li&gt;Setup &lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; (if you haven&amp;rsquo;t done already). Find the steps &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.
 You should be able to see &lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; while checking the php version.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ php --version
@@ -705,7 +705,7 @@ Zend Engine v3.0.0, Copyright &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;c&lt;s
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ php --ini &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep xdebug
 /etc/php/7.0/cli/conf.d/20-xdebug.ini,
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Just copy the path of the file and open in your favourite text editor (&lt;!-- raw HTML omitted --&gt;Sublime Text&lt;!-- raw HTML omitted --&gt; for me). Don&#39;t forget to use &lt;code&gt;sudo&lt;/code&gt; to edit the file otherwise, you won&#39;t be able to save the changes you make.&lt;/li&gt;
+&lt;li&gt;Just copy the path of the file and open in your favourite text editor (&lt;!-- raw HTML omitted --&gt;Sublime Text&lt;!-- raw HTML omitted --&gt; for me). Don&amp;rsquo;t forget to use &lt;code&gt;sudo&lt;/code&gt; to edit the file otherwise, you won&amp;rsquo;t be able to save the changes you make.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# for sublime text users&lt;/span&gt;
 $ sudo subl /etc/php/7.0/cli/conf.d/20-xdebug.ini
@@ -737,9 +737,9 @@ xdebug.profiler_output_dir&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span c
 &lt;li&gt;Now, you need to set up a server. Navaigate to &lt;code&gt;File &amp;gt; Settings &amp;gt; Language &amp;amp; Framework &amp;gt; PHP &amp;gt; Servers&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-3.png&#34; alt=&#34;PhpStorm PHP Servers&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Let&#39;s add a server. Click on &lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt; icon to add. You will get the same window changed to this:&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s add a server. Click on &lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt; icon to add. You will get the same window changed to this:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-4.png&#34; alt=&#34;PhpStorm PHP Servers - Add new&#34;&gt;&lt;/p&gt;
-&lt;p&gt;By default, it tries to create a unnamed server. Let&#39;s change this to &lt;code&gt;TEST_SERVER&lt;/code&gt; and fill the other fields as well as shown below.&lt;/p&gt;
+&lt;p&gt;By default, it tries to create a unnamed server. Let&amp;rsquo;s change this to &lt;code&gt;TEST_SERVER&lt;/code&gt; and fill the other fields as well as shown below.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-5.png&#34; alt=&#34;PhpStorm PHP Servers - Test Server&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Choose &lt;code&gt;Xdebug&lt;/code&gt; as the &lt;code&gt;Debugger&lt;/code&gt; option on the right. You can choose different port (default is 80).&lt;/p&gt;
 &lt;p&gt;Save before you close the window!&lt;/p&gt;
@@ -793,7 +793,7 @@ xdebug.profiler_output_dir&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span c
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;[Optional] Add PPA to your Softwares List. Skip to step #4 if you don&#39;t want to use PPA for installation. But, I recommend to use PPA for frequent updates.
+&lt;p&gt;[Optional] Add PPA to your Softwares List. Skip to step #4 if you don&amp;rsquo;t want to use PPA for installation. But, I recommend to use PPA for frequent updates.
 Enter these commands in your terminal.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -884,7 +884,7 @@ xdebug.var_display_max_depth &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt
 &lt;p&gt;Enjoy debugging with &lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; in &lt;!-- raw HTML omitted --&gt;Ubuntu&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;resources&#34;&gt;Resources&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://xdebug.org/%3C/a%3E&#34;&gt;https://xdebug.org/&amp;lt;/a&amp;gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://xdebug.org/&#34;&gt;https://xdebug.org/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       

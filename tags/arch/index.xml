@@ -17,7 +17,7 @@
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</guid>
-      <description>Dropdown terminal It seems guakeis an obvious choice for everyone, but tilixgives terminator features of splitting a window.
+      <description>Dropdown terminal It seems Guakeis an obvious choice for everyone, but Tilixgives terminator features of splitting a window with flavor of Guake.
 $ yaourt -S tilix-bin To use tilix as a dropdown terminal, you need to setup a key with tilix -q as action.
 Install zsh $ sudo pacman -S zsh Install git $ sudo pacman -S git Setup oh-my-zsh $ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh $ chsh -s `which zsh` ZSH Theme I am using a custom theme inspired from juanghurtado.</description>
     </item>
@@ -30,7 +30,7 @@ Install zsh $ sudo pacman -S zsh Install git $ sudo pacman -S git Setup oh-my-zs
       <guid>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</guid>
       <description>Update your system # pacman -Syu Install X server, Desktop Environment and Display Manager # pacman -S xorg To install GNOME:
 # pacman -S gnome gnome-extra To install Cinnamon:
-# pacman -S cinnamon nemo-file-roller To install XFCE:
+# pacman -S cinnamon nemo-fileroller To install XFCE:
 # pacman -S xfce4 xfce4-goodies To install KDE:
 # pacman -S plasma To install MATE:
 # pacman -S mate mate-extra To install a display manager:
@@ -43,7 +43,7 @@ Install zsh $ sudo pacman -S zsh Install git $ sudo pacman -S git Setup oh-my-zs
       <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/install-arch-linux/</guid>
-      <description>It&#39;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&#39;s a pain to setup all those applications and configuration.</description>
+      <description>It&amp;rsquo;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&amp;rsquo;s a pain to setup all those applications and configuration.</description>
     </item>
     
   </channel>

@@ -19,7 +19,7 @@
       <guid>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</guid>
       <description>Update your system # pacman -Syu Install X server, Desktop Environment and Display Manager # pacman -S xorg To install GNOME:
 # pacman -S gnome gnome-extra To install Cinnamon:
-# pacman -S cinnamon nemo-file-roller To install XFCE:
+# pacman -S cinnamon nemo-fileroller To install XFCE:
 # pacman -S xfce4 xfce4-goodies To install KDE:
 # pacman -S plasma To install MATE:
 # pacman -S mate mate-extra To install a display manager:
@@ -32,7 +32,7 @@
       <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/install-arch-linux/</guid>
-      <description>It&#39;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&#39;s a pain to setup all those applications and configuration.</description>
+      <description>It&amp;rsquo;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&amp;rsquo;s a pain to setup all those applications and configuration.</description>
     </item>
     
     <item>
@@ -51,7 +51,7 @@ Install PostgreSQL 1. From PPA (Recommended)  Create a file /etc/apt/sources.lis
       <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</guid>
-      <description>Node.jsis a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine. Node.jsuses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+      <description>Node.jsis a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. Node.jsuses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 Npmis a package manager for JavaScript. Use npmto install, share, and distribute code; manage dependencies in your projects; and share &amp;amp; receive feedback with others.
 Install node For Windows and Mac users The installer can be downloaded from here.</description>
     </item>
@@ -76,7 +76,7 @@ Why gulp?  Simple Automation of tasks Platform independent Plugins available in 
       <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</guid>
       <description>PhpStormis one of the good IDE for PHP application development available in current era. PHP Xdebugis a very strong tool for debugging, making the life easier for PHPdevelopers to find out the logical mistakes.
 Integration of Xdebug into PhpStormwill ease the trouble of debugging for PHPdevelopers. You can easily setup Xdebugin PhpStormby following these steps.
-Requirements  PhpStorm(get it from here) Xdebug(get it from here)  Procedures  Setup Xdebug(if you haven&#39;t done already).</description>
+Requirements  PhpStorm(get it from here) Xdebug(get it from here)  Procedures  Setup Xdebug(if you haven&amp;rsquo;t done already).</description>
     </item>
     
     <item>

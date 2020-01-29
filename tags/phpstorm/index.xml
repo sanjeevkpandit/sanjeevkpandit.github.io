@@ -19,7 +19,7 @@
       <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</guid>
       <description>PhpStormis one of the good IDE for PHP application development available in current era. PHP Xdebugis a very strong tool for debugging, making the life easier for PHPdevelopers to find out the logical mistakes.
 Integration of Xdebug into PhpStormwill ease the trouble of debugging for PHPdevelopers. You can easily setup Xdebugin PhpStormby following these steps.
-Requirements  PhpStorm(get it from here) Xdebug(get it from here)  Procedures  Setup Xdebug(if you haven&#39;t done already).</description>
+Requirements  PhpStorm(get it from here) Xdebug(get it from here)  Procedures  Setup Xdebug(if you haven&amp;rsquo;t done already).</description>
     </item>
     
   </channel>

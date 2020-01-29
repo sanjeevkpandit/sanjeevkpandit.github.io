@@ -27,7 +27,7 @@ Install PostgreSQL 1. From PPA (Recommended)  Create a file /etc/apt/sources.lis
       <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</guid>
-      <description>Node.jsis a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine. Node.jsuses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+      <description>Node.jsis a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. Node.jsuses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 Npmis a package manager for JavaScript. Use npmto install, share, and distribute code; manage dependencies in your projects; and share &amp;amp; receive feedback with others.
 Install node For Windows and Mac users The installer can be downloaded from here.</description>
     </item>
@@ -52,7 +52,7 @@ Why gulp?  Simple Automation of tasks Platform independent Plugins available in 
       <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</guid>
       <description>PhpStormis one of the good IDE for PHP application development available in current era. PHP Xdebugis a very strong tool for debugging, making the life easier for PHPdevelopers to find out the logical mistakes.
 Integration of Xdebug into PhpStormwill ease the trouble of debugging for PHPdevelopers. You can easily setup Xdebugin PhpStormby following these steps.
-Requirements  PhpStorm(get it from here) Xdebug(get it from here)  Procedures  Setup Xdebug(if you haven&#39;t done already).</description>
+Requirements  PhpStorm(get it from here) Xdebug(get it from here)  Procedures  Setup Xdebug(if you haven&amp;rsquo;t done already).</description>
     </item>
     
     <item>
