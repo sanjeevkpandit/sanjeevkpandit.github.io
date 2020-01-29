@@ -5,7 +5,7 @@ draft: false
 slug: 'setup-postgresql-in-ubuntu'
 categories: ['Tech', 'Development']
 tags: ['postgres', 'ubuntu']
-description: 'Install PostgreSQL and know about first time setup.'
+description: 'Install PostgreSQL and know about first time setup including user management.'
 ---
 
 <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> is a powerful, open source object-relational database system.

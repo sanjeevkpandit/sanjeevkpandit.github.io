@@ -6,7 +6,7 @@ draft: false
 slug: 'setup-xdebug-in-phpstorm'
 categories: ['Tech', 'Development']
 tags: ['php', 'xdebug', 'php-xdebug', 'phpstorm']
-description: 'Debug PHP code in PhpStorm using XDebug.'
+description: 'Debug PHP code in PhpStorm using XDebug in Ubuntu'
 ---
 
 <a href="https://www.jetbrains.com/phpstorm/" target="_blank">PhpStorm</a> is one of the good IDE for PHP application development available in current era. <a href="https://xdebug.org/" target="_blank">PHP Xdebug</a> is a very strong tool for debugging, making the life easier for <a class="http://www.php.net/" target="_blank">PHP</a> developers to find out the logical mistakes.

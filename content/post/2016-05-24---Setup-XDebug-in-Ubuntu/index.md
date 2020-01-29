@@ -6,7 +6,7 @@ draft: false
 slug: 'setup-xdebug-in-ubuntu'
 categories: ['Tech', 'Development']
 tags: ['php', 'xdebug', 'php-xdebug', 'ubuntu', 'linux']
-description: 'Debug PHP code using XDebug.'
+description: 'Debug PHP code using XDebug in Ubuntu'
 ---
 
 <a href="https://xdebug.org/" target="_blank">Xdebug</a>'s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.

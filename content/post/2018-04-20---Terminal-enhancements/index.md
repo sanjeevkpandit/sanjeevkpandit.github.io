@@ -5,12 +5,12 @@ draft: false
 slug: 'terminal-enhancements'
 categories: ['Linux', 'Terminal']
 tags: ['arch', 'arch linux', 'linux', 'terminal']
-description: 'Tweaks to make optimum use of terminal.'
+description: 'Tweaks to make optimum use of terminal in Arch Linux'
 ---
 
 ### Dropdown terminal
 
-It seems <a href="http://guake-project.org/" target="_blank">guake</a> is an obvious choice for everyone, but <a href="https://gnunn1.github.io/tilix-web/" target="_blank">tilix</a> gives terminator features of splitting a window.
+It seems <a href="http://guake-project.org/" target="_blank">Guake</a> is an obvious choice for everyone, but <a href="https://gnunn1.github.io/tilix-web/" target="_blank">Tilix</a> gives terminator features of splitting a window with flavor of Guake.
 
 ```console
 $ yaourt -S tilix-bin

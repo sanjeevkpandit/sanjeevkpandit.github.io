@@ -5,7 +5,7 @@ draft: false
 slug: 'arch-linux-post-installation'
 categories: ['Linux', 'Tech']
 tags: ['arch', 'arch linux', 'linux', 'post installation']
-description: 'Post installation steps for arch linux users.'
+description: 'Post installation steps for arch linux users including user management and installation of apps.'
 ---
 
 ### Update your system
@@ -29,7 +29,7 @@ To install GNOME:
 To install Cinnamon:
 
 ```console
-# pacman -S cinnamon nemo-file-roller
+# pacman -S cinnamon nemo-fileroller
 ```
 
 To install XFCE:
