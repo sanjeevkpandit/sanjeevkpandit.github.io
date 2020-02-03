@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>element on Sanjeev</title>
+    <link>http://sanjeevkpandit.github.io/tags/element/</link>
+    <description>Recent content in element on Sanjeev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://sanjeevkpandit.github.io/tags/element/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Avoid using &lt;object&gt; tag inside anchor &lt;a&gt; tag</title>
+      <link>http://sanjeevkpandit.github.io/posts/avoid-using-object-tag-inside-anchor-tag/</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/avoid-using-object-tag-inside-anchor-tag/</guid>
+      <description>I have been recently working on a project where I got an issue with the anchor &amp;lt;a&amp;gt; tag. The issue was with the hover effect on the anchor tag. There was no hover effect over the link. Plus, the link was not working either. However, the hover effect was seen below the link for small space. The anchor element had a &amp;lt;object&amp;gt; element inside it and that was the reason of the issue.</description>
+    </item>
+    
+  </channel>
+</rss>

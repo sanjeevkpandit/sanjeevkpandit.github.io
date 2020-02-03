@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Sanjeev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://sanjeevkpandit.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>anchor</title>
+      <link>http://sanjeevkpandit.github.io/tags/anchor/</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/anchor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>element</title>
+      <link>http://sanjeevkpandit.github.io/tags/element/</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/element/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>http://sanjeevkpandit.github.io/tags/html/</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/html/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>email</title>
@@ -161,33 +188,6 @@
       <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/tags/npm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gulp</title>
-      <link>http://sanjeevkpandit.github.io/tags/gulp/</link>
-      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://sanjeevkpandit.github.io/tags/gulp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>php</title>
-      <link>http://sanjeevkpandit.github.io/tags/php/</link>
-      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://sanjeevkpandit.github.io/tags/php/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>php-xdebug</title>
-      <link>http://sanjeevkpandit.github.io/tags/php-xdebug/</link>
-      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://sanjeevkpandit.github.io/tags/php-xdebug/</guid>
       <description></description>
     </item>
     

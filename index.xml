@@ -6,7 +6,7 @@
     <description>Recent content on Sanjeev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://sanjeevkpandit.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -45,6 +45,41 @@
 &lt;li&gt;Capistrano&lt;/li&gt;
 &lt;li&gt;Boss-CLI&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Avoid using &lt;object&gt; tag inside anchor &lt;a&gt; tag</title>
+      <link>http://sanjeevkpandit.github.io/posts/avoid-using-object-tag-inside-anchor-tag/</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/avoid-using-object-tag-inside-anchor-tag/</guid>
+      
+        <description>&lt;p&gt;I have been recently working on a project where I got an issue with the anchor
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a&#34;&gt;&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/a&gt; tag. The issue was with the hover effect on the
+anchor tag. There was no hover effect over the link. Plus, the link was not working either. However,
+the hover effect was seen below the link for small space. The anchor element had a
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object&#34;&gt;&lt;code&gt;&amp;lt;object&amp;gt;&lt;/code&gt;&lt;/a&gt; element inside it and that was the
+reason of the issue. The link element looked like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;...&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;object&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;image/svg&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;path/to/svg/image&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;some-class-name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;object&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;With the help of some searches, I tried different solutions through CSS. But, could not get any luck. Later on, there
+was an easy fix to the solution. I replaced the
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object&#34;&gt;&lt;code&gt;&amp;lt;object&amp;gt;&lt;/code&gt;&lt;/a&gt; tag with
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img&#34;&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/a&gt; element and it worked like a charm without
+making any extra changes for the hover effect and link to work. The solution looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;...&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;path/to/svg/image&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;some-class-name&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The same class provided the same design as earlier. Also, it could not hamper the SEO as well.&lt;/p&gt;
+&lt;p&gt;Also, there was a similar case with the use of &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label&#34;&gt;&lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;&lt;/a&gt;
+inside the&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a&#34;&gt;&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/a&gt; element. Removing the
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label&#34;&gt;&lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;&lt;/a&gt; element resolved the issue. You can use a
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span&#34;&gt;&lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;&lt;/a&gt; element if needed.&lt;/p&gt;
+&lt;p&gt;Hope it helps.&lt;/p&gt;
+&lt;p&gt;Happy coding!!!&lt;/p&gt;
 </description>
       
     </item>
