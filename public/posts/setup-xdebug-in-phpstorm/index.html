@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    
+
+    <meta name="author" content="Sanjeev Kumar Pandit">
+    <meta name="description" content="Debug PHP code in PhpStorm using XDebug in Ubuntu">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup XDebug in PhpStorm"/>
+<meta name="twitter:description" content="Debug PHP code in PhpStorm using XDebug in Ubuntu"/>
+
+    <meta property="og:title" content="Setup XDebug in PhpStorm" />
+<meta property="og:description" content="Debug PHP code in PhpStorm using XDebug in Ubuntu" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/" />
+<meta property="article:published_time" content="2016-05-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-05-25T00:00:00+00:00" />
+
+
+    <title>
+  Setup XDebug in PhpStorm · Sanjeev Kumar Pandit
+</title>
+
+    
+      <link rel="canonical" href="http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/">
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.f48a4da9bd32cecaff90717ae85529411dd087c10fc0dfca9c9c329c7327e5e1.css" integrity="sha256-9IpNqb0yzsr/kHF66FUpQR3Qh8EPwN/KnJwynHMn5eE=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.89c82b6022b96f77aeb521b240daec4f87ea029d84d1c78b8acd0735b91b3c92.css" integrity="sha256-icgrYCK5b3eutSGyQNrsT4fqAp2E0ceLis0HNbkbPJI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
+        integrity="sha384-5f4X0lBluNY/Ib4VhGx0Pf6iDCF99VGXJIyYy7dDLY5QlEd7Ap0hICSSZA1XYbc4" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.80.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Sanjeev Kumar Pandit
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/">
+              Setup XDebug in PhpStorm
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2016-05-25T00:00:00Z'>
+                May 25, 2016
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/tech/">Tech</a>
+      <span class="separator">•</span>
+    <a href="/categories/development/">Development</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/php/">php</a>
+      <span class="separator">•</span>
+    <a href="/tags/xdebug/">xdebug</a>
+      <span class="separator">•</span>
+    <a href="/tags/php-xdebug/">php-xdebug</a>
+      <span class="separator">•</span>
+    <a href="/tags/phpstorm/">phpstorm</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p><a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a> is one of the good IDE for PHP application development available in current era. <a href="https://xdebug.org/">PHP Xdebug</a> is a very strong tool for debugging, making the life easier for <a href="http://www.php.net/">PHP</a> developers to find out the logical mistakes.</p>
+<p>Integration of Xdebug into <a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a> will ease the trouble of debugging for <a href="http://www.php.net/">PHP</a> developers. You can easily setup <a href="https://xdebug.org/">Xdebug</a> in <a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a> by following these steps.</p>
+<h4 id="requirements">
+  Requirements
+  <a class="heading-link" href="#requirements">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<ul>
+<li><a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a> (get it from <a href="https://www.jetbrains.com/phpstorm/download/">here</a>)</li>
+<li><a href="https://xdebug.org/">Xdebug</a> (get it from <a href="https://xdebug.org/download.php">here</a>)</li>
+</ul>
+<h4 id="procedures">
+  Procedures
+  <a class="heading-link" href="#procedures">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<ul>
+<li>
+<p>Setup <a href="https://xdebug.org/">Xdebug</a> (if you haven&rsquo;t done already). Find the steps <a href="/posts/setup-xdebug-in-ubuntu">here</a>.
+You should be able to see <a href="https://xdebug.org/">Xdebug</a> while checking the php version.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ php --version
+PHP 7.0.7-2+donate.sury.org~xenial+1 <span style="color:#ff79c6">(</span>cli<span style="color:#ff79c6">)</span> <span style="color:#ff79c6">(</span> NTS <span style="color:#ff79c6">)</span>
+Copyright <span style="color:#ff79c6">(</span>c<span style="color:#ff79c6">)</span> 1997-2016 The PHP Group
+Zend Engine v3.0.0, Copyright <span style="color:#ff79c6">(</span>c<span style="color:#ff79c6">)</span> 1998-2016 Zend Technologies
+    with Zend OPcache v7.0.6-dev, Copyright <span style="color:#ff79c6">(</span>c<span style="color:#ff79c6">)</span> 1999-2016, by Zend Technologies
+    with Xdebug v2.4.0, Copyright <span style="color:#ff79c6">(</span>c<span style="color:#ff79c6">)</span> 2002-2016, by Derick Rethans
+</code></pre></div></li>
+<li>
+<p>Now, configure xdebug for debugging. You need to change the <code>xdebug.ini</code> file. You can find the location of file using this command using terminal: <code>php --ini | grep xdebug</code>.</p>
+</li>
+</ul>
+<p>Mine returned like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ php --ini | grep xdebug
+/etc/php/7.0/cli/conf.d/20-xdebug.ini,
+</code></pre></div><ul>
+<li>
+<p>Just copy the path of the file and open in your favourite text editor (<a href="https://www.sublimetext.com/">Sublime Text</a> for me). Don&rsquo;t forget to use <code>sudo</code> to edit the file otherwise, you won&rsquo;t be able to save the changes you make.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#6272a4"># for sublime text users</span>
+$ sudo subl /etc/php/7.0/cli/conf.d/20-xdebug.ini
+
+<span style="color:#6272a4"># for gedit users</span>
+$ sudo gedit /etc/php/7.0/cli/conf.d/20-xdebug.ini
+
+<span style="color:#6272a4"># for vim users</span>
+$ sudo vim /etc/php/7.0/cli/conf.d/20-xdebug.ini
+
+<span style="color:#6272a4"># for atom users</span>
+$ sudo atom /etc/php/7.0/cli/conf.d/20-xdebug.ini
+</code></pre></div></li>
+<li>
+<p>Add these lines of code at the end of file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">xdebug.remote_enable<span style="color:#ff79c6">=</span><span style="color:#8be9fd;font-style:italic">true</span>
+xdebug.remote_port<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;9000&#34;</span>   // Port <span style="color:#ff79c6">for</span> xdebug. Default is 9000.
+xdebug.profiler_enable<span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span>
+xdebug.profiler_output_dir<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;/tmp&#34;</span>
+</code></pre></div></li>
+<li>
+<p>Time to change things in <a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a>. Navigate to <code>File &gt; Settings &gt; Language &amp; Frameworks &gt; PHP</code>. You will see the following screen.</p>
+<p><img src="./xdebug-phpstorm-1.png" alt="PhpStorm PHP"></p>
+<p>Click on the <code>...</code> in <code>Interpreters</code> option to see more. You will get this:</p>
+<p><img src="./xdebug-phpstorm-2.png" alt="PhpStorm PHP Debugger"></p>
+<p>If you are not able to see <code>Debugger: Xdebug 2.4.0</code>, try to refresh by clicking the refresh button on the right of <code>PHP exectable</code>. Again, if not seen, check the status of <a href="https://xdebug.org/">Xdebug</a> and try again.</p>
+<p>This shows that that <a href="https://xdebug.org/">Xdebug</a> is ready in <a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a>. Save before you exit!</p>
+</li>
+<li>
+<p>Now, you need to set up a server. Navigate to <code>File &gt; Settings &gt; Language &amp; Framework &gt; PHP &gt; Servers</code>.</p>
+<p><img src="./xdebug-phpstorm-3.png" alt="PhpStorm PHP Servers"></p>
+<p>Let&rsquo;s add a server. Click on <strong>+</strong> icon to add. You will get the same window changed to this:</p>
+<p><img src="./xdebug-phpstorm-4.png" alt="PhpStorm PHP Servers - Add new"></p>
+<p>By default, it tries to create a unnamed server. Let&rsquo;s change this to <code>TEST_SERVER</code> and fill the other fields as well as shown below.</p>
+<p><img src="./xdebug-phpstorm-5.png" alt="PhpStorm PHP Servers - Test Server"></p>
+<p>Choose <code>Xdebug</code> as the <code>Debugger</code> option on the right. You can choose different port (default is 80).</p>
+<p>Save before you close the window!</p>
+</li>
+<li>
+<p>Now a server is ready, configure debug options. Navigate to <code>Run &gt; Edit Configurations</code>.</p>
+<p><img src="./xdebug-phpstorm-6.png" alt="PhpStorm PHP Servers - Configure Debug Options"></p>
+<p>Add new option by clicking on <strong>+</strong> icon on top left. Choose <code>PHP Web Application</code> from number of options.</p>
+<p><img src="./xdebug-phpstorm-7.png" alt="PhpStorm PHP Servers - New Configuration"></p>
+<p>You will get a unnamed configuration as shown below.</p>
+<p><img src="./xdebug-phpstorm-8.png" alt="PhpStorm PHP Servers - PHP Web Application"></p>
+<p>Set up a configuration for <code>TEST_SERVER</code> created earlier. I have named it to <code>TEST_CHROME</code>.</p>
+<p><img src="./xdebug-phpstorm-9.png" alt="PhpStorm PHP Servers - New Configuration"></p>
+<p>Choose the created server and appropriate browser available from the options. Also, you can see the url that will open in the browser.</p>
+<p>Click on <code>OK</code> to save this.</p>
+</li>
+<li>
+<p>Now, open the project in <a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a>.</p>
+</li>
+<li>
+<p>Set a breakpoint where you want to check your logic. To set a breakpoint, just click on the left side of the line of code. Click on the position of red round mark. Click on th same position to remove the breakpoint.</p>
+<p><img src="./xdebug-phpstorm-10.png" alt="PhpStorm PHP Servers - PhpStorm Breakpoint"></p>
+</li>
+<li>
+<p>Now open the link in your browser in debugging mode by navigating <code>Run &gt; Debug 'TEST_CHROME'</code>. The browser may ask you to install a <a href="https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji">JetBrains Extension (in Chrome)</a> in your browser.</p>
+</li>
+<li>
+<p>You will see a webpage opening in the browser you set in configuration. Navigate to the point where you want to check your logic. When you reach to the breakpoint, the browser will keep itself in the loading position. In the mean time, you will see <a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a> being highlighted in taskbar or focused on top with the breakpoint highlighted with different color as shown below:</p>
+<p><img src="./xdebug-phpstorm-11.png" alt="PhpStorm PHP Servers - PhpStorm Highlighted Breakpoint"></p>
+<p>You can see the debugging window right at the bottom part of <a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a> window. You can find <code>Step Over</code>, <code>Step Into</code>, <code>Step Out</code>, <code>Watch</code> etc. controls in the Debugging Window.</p>
+</li>
+</ul>
+<p>See the shortcuts or set up your own shortcuts, they will help you a lot.</p>
+<p>Hope you will feel ease to find any logical mistakes in your PHP code by debugging using <a href="https://xdebug.org/">Xdebug</a> in <a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a>.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2016 -
+        
+        2021
+         Sanjeev Kumar Pandit 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-78879488-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

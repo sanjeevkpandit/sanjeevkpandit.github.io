@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sanjeev Kumar Pandit</title>
+    <link>http://sanjeevkpandit.github.io/</link>
+    <description>Recent content on Sanjeev Kumar Pandit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://sanjeevkpandit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Avoid using &lt;object&gt; tag inside anchor &lt;a&gt; tag</title>
+      <link>http://sanjeevkpandit.github.io/posts/avoid-using-object-tag-inside-anchor-tag/</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/avoid-using-object-tag-inside-anchor-tag/</guid>
+      <description>I have been recently working on a project where I got an issue with the anchor &amp;lt;a&amp;gt; tag. The issue was with the hover effect on the anchor tag. There was no hover effect over the link. Plus, the link was not working either. However, the hover effect was seen below the link for small space. The anchor element had a &amp;lt;object&amp;gt; element inside it and that was the reason of the issue.</description>
+    </item>
+    
+    <item>
+      <title>Filter emails using multiple senders in GMail</title>
+      <link>http://sanjeevkpandit.github.io/posts/filter-emails-using-multiple-senders-in-gmail/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/filter-emails-using-multiple-senders-in-gmail/</guid>
+      <description>Have you ever tried running filter with multiple senders or recipients in GMail? I was working on filtering a list of emails coming from GitHub and forward it to another email address.
+However, there was always an option to create individual filter. But, it felt hard or boring or lazy to do the same for 8 filters. So, I went for a search and found a solution after some time and would like to share it with you all.</description>
+    </item>
+    
+    <item>
+      <title>Terminal enhancements</title>
+      <link>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</guid>
+      <description>Dropdown terminal    It seems Guake is an obvious choice for everyone, but Tilix gives terminator features of splitting a window with flavor of Guake.
+yaourt -S tilix-bin To use tilix as a dropdown terminal, you need to setup a key with tilix -q as action.
+Install zsh    sudo pacman -S zsh Install git    sudo pacman -S git Setup oh-my-zsh    wget https://github.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux post installation</title>
+      <link>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</guid>
+      <description>Update your system    pacman -Syu Install X server, Desktop Environment and Display Manager    pacman -S xorg To install GNOME:
+pacman -S gnome gnome-extra To install Cinnamon:
+pacman -S cinnamon nemo-fileroller To install XFCE:
+pacman -S xfce4 xfce4-goodies To install KDE:
+pacman -S plasma To install MATE:
+pacman -S mate mate-extra To install a display manager:
+pacman -S lightdm systemctl enable lightdm.service Add user    # Add new user useradd -m -G wheel -s /bin/bash username passwd username # Uncomment wheel group visudo %wheel ALL=(ALL) ALL # Install sudo package pacman -S sudo Install yaourt    Add followings to /etc/pacman.</description>
+    </item>
+    
+    <item>
+      <title>Install Arch Linux</title>
+      <link>http://sanjeevkpandit.github.io/posts/install-arch-linux/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/install-arch-linux/</guid>
+      <description>It&amp;rsquo;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&amp;rsquo;s a pain to setup all those applications and configuration.</description>
+    </item>
+    
+    <item>
+      <title>Setup PostgreSQL in Ubuntu</title>
+      <link>http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/</guid>
+      <description>PostgreSQL is a powerful, open source object-relational database system.
+Install PostgreSQL    1. From PPA (Recommended)      Create a file /etc/apt/sources.list.d/pgdg.list, and add following line for the repository
+# for ubuntu 16.04 users deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main # for ubuntu 15.10 users deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main # for ubuntu 14.04 users deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main # for ubuntu 12.04 users deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main   Import the repository signing key, and update the package lists</description>
+    </item>
+    
+    <item>
+      <title>Install node and npm</title>
+      <link>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</link>
+      <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</guid>
+      <description>Node.js is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo;s package ecosystem, NPM, is the largest ecosystem of open source libraries in the world.
+NPM is a package manager for JavaScript. Use NPM to install, share, and distribute code; manage dependencies in your projects; and share &amp;amp; receive feedback with others.
+Install node    For Windows and Mac users    The installer can be downloaded from here.</description>
+    </item>
+    
+    <item>
+      <title>Getting started with gulp</title>
+      <link>http://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</link>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</guid>
+      <description>Gulp is an automated tool that helps to enhance workflow.
+Why gulp?     Simple Automation of tasks Platform independent Plugins available in large number  Getting started    Installation Instructions      NPM needs to be installed in order to install gulp. Please find the installation instructions here.
+  Remove gulp (if installed before)
+npm rm --global gulp   Install gulp</description>
+    </item>
+    
+    <item>
+      <title>Setup XDebug in PhpStorm</title>
+      <link>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</guid>
+      <description>PhpStorm is one of the good IDE for PHP application development available in current era. PHP Xdebug is a very strong tool for debugging, making the life easier for PHP developers to find out the logical mistakes.
+Integration of Xdebug into PhpStorm will ease the trouble of debugging for PHP developers. You can easily setup Xdebug in PhpStorm by following these steps.
+Requirements     PhpStorm (get it from here) Xdebug (get it from here)  Procedures      Setup Xdebug (if you haven&amp;rsquo;t done already).</description>
+    </item>
+    
+    <item>
+      <title>Setup XDebug in Ubuntu</title>
+      <link>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-ubuntu/</link>
+      <pubDate>Tue, 24 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-ubuntu/</guid>
+      <description>Xdebug&amp;rsquo;s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.
+Xdebug is a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install Xdebug in your machine by following these instructions.
+  Always run sudo apt-get update before installing any application.
+  There are two sources for installation.
+ Ubuntu: This will provide you the application compiled during the building of the OS you are using.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://sanjeevkpandit.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/about/</guid>
+      <description>A full-stack web developer interested in learning and implementing new technologies. Worked in Mobile Development, Web Development, API Development, Single Page Applications Development and Database.
+Technical skills     Javascript  NodeJS VueJS ReactJS AngularJS 1.x   Flutter/Dart PHP SQL  PostgreSQL MySQL MSSQL   Version Control System  Git   Deployment Tools  Docker Capistrano Boss-CLI    </description>
+    </item>
+    
+  </channel>
+</rss>

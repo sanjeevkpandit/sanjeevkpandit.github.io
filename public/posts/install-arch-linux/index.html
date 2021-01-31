@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    
+
+    <meta name="author" content="Sanjeev Kumar Pandit">
+    <meta name="description" content="Learn how to install arch linux.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install Arch Linux"/>
+<meta name="twitter:description" content="Learn how to install arch linux."/>
+
+    <meta property="og:title" content="Install Arch Linux" />
+<meta property="og:description" content="Learn how to install arch linux." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://sanjeevkpandit.github.io/posts/install-arch-linux/" />
+<meta property="article:published_time" content="2018-04-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-04-14T00:00:00+00:00" />
+
+
+    <title>
+  Install Arch Linux · Sanjeev Kumar Pandit
+</title>
+
+    
+      <link rel="canonical" href="http://sanjeevkpandit.github.io/posts/install-arch-linux/">
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.f48a4da9bd32cecaff90717ae85529411dd087c10fc0dfca9c9c329c7327e5e1.css" integrity="sha256-9IpNqb0yzsr/kHF66FUpQR3Qh8EPwN/KnJwynHMn5eE=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.89c82b6022b96f77aeb521b240daec4f87ea029d84d1c78b8acd0735b91b3c92.css" integrity="sha256-icgrYCK5b3eutSGyQNrsT4fqAp2E0ceLis0HNbkbPJI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
+        integrity="sha384-5f4X0lBluNY/Ib4VhGx0Pf6iDCF99VGXJIyYy7dDLY5QlEd7Ap0hICSSZA1XYbc4" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.80.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Sanjeev Kumar Pandit
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://sanjeevkpandit.github.io/posts/install-arch-linux/">
+              Install Arch Linux
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2018-04-14T00:00:00Z'>
+                Apr 14, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a>
+      <span class="separator">•</span>
+    <a href="/categories/tech/">Tech</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/arch/">arch</a>
+      <span class="separator">•</span>
+    <a href="/tags/arch-linux/">arch linux</a>
+      <span class="separator">•</span>
+    <a href="/tags/linux/">linux</a>
+      <span class="separator">•</span>
+    <a href="/tags/setup/">setup</a>
+      <span class="separator">•</span>
+    <a href="/tags/installation/">installation</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>It&rsquo;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&rsquo;s a pain to setup all those applications and configuration. That&rsquo;s why I am writing this where I can find the steps I have been following to install and setup my machine my way :).</p>
+<p>Okay, let&rsquo;s start with the installation. Previously, I tried to run a live Ubuntu OS and then install either by the bootstrap image or using the LiveCD Image. But, nowadays, it seems the installing from live arch USB seems to be the easiest and quickest as it skips a lot of steps.</p>
+<ol>
+<li>
+<p>Connect to the internet</p>
+<ul>
+<li>
+<p>Use ethernet or run <code>wifi-menu</code> command to connect to a WiFi Connection.</p>
+</li>
+<li>
+<p>Check connection:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ping archlinux.org
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>Partition the disks</p>
+<ul>
+<li>
+<p>The partitions can be listed from:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fdisk -l
+</code></pre></div></li>
+<li>
+<p>Usually, I prefer to prepare the partition before the installation. Still, you can find the steps <a href="https://wiki.archlinux.org/index.php/installation_guide#Partition_the_disks">here</a> to perform the partition actions.</p>
+</li>
+<li>
+<p>Format the partition</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkfs.ext4 /dev/sda1
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>Mount the file system</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mount /dev/sda1 /mnt
+</code></pre></div></li>
+<li>
+<p>Installation</p>
+<ul>
+<li>
+<p>Select and rank the mirrors, ranking the mirrors would help to perform the installation quicker.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#6272a4"># Backup</span>
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+<span style="color:#6272a4"># Uncomment every mirror</span>
+sed -i <span style="color:#f1fa8c">&#39;s/^#Server/Server/&#39;</span> /etc/pacman.d/mirrorlist.backup
+<span style="color:#6272a4"># Rank mirrors</span>
+rankmirrors /etc/pacman.d/mirrorlist.backup &gt; /etc/pacman.d/mirrorlist
+</code></pre></div></li>
+<li>
+<p>Install the base packages:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacstrap /mnt base base-devel
+</code></pre></div><p><code>base-devel</code> is optional, can be installed later.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Configure the system</p>
+<ul>
+<li>
+<p>Fstab</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre></div></li>
+<li>
+<p>Chroot</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">arch-chroot /mnt
+</code></pre></div></li>
+<li>
+<p>Time zone</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+hwclock --systohc
+</code></pre></div></li>
+<li>
+<p>Locale
+Uncomment <code>en_US.UTF-8 UTF-8</code> and other needed localizations in <code>/etc/locale.gen</code>, and generate them with:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">locale-gen
+</code></pre></div><p>Set the LANG variable in <code>/etc/locale.conf</code> accordingly:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">LANG=en_US.UTF<span style="color:#bd93f9">-8</span>
+</code></pre></div><p>To set the keyboard layout, make the changes persistent in <code>/etc/shell.conf</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">KEYMAP=us
+</code></pre></div></li>
+<li>
+<p>Hostname
+Create the <code>hostname</code> file <code>/etc/hostname</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">myhostname
+</code></pre></div><p>Add matching entries to <code>/etc/hosts</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">127.0.0.1    localhost
+::1          localhost
+127.0.1.1    myhostname.localdomain  myhostname
+</code></pre></div></li>
+<li>
+<p>Network configuration</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S networkmanager dhclient
+</code></pre></div><p>For wifi:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S iw wpa_supplicant dialog
+</code></pre></div></li>
+<li>
+<p>Initramfs</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkinitcpio -p linux
+</code></pre></div></li>
+<li>
+<p>Root password</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">passwd
+</code></pre></div></li>
+<li>
+<p>Boot loader (GRUB - UEFI)
+Install the package <code>grub</code> and <code>efibootmgr</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S grub efibootmgr
+</code></pre></div><p>Mount EFI partition(/dev/sda3):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkir /boot/efi
+mount /dev/sda3 /boot/efi
+</code></pre></div><p>Install GRUB UEFI to <code>/boot/efi</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">grub-install --target<span style="color:#ff79c6">=</span>x86_64-efi --efi-directory<span style="color:#ff79c6">=</span>/boot/efi --bootloader-id<span style="color:#ff79c6">=</span>arch_grub
+</code></pre></div><p>Generate the main configuration file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre></div><p><em><strong>Note:</strong> For NVIDIA card holders, unless you install the <code>nvidia</code> drivers, add <code>modprobe.blacklist=nouveau</code> in <code>/etc/default/grub</code> and re-generate the main configuration file.</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#8be9fd;font-style:italic">GRUB_CMDLINE_LINUX_DEFAULT</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;quiet modprobe.blacklist=nouveau&#34;</span>
+</code></pre></div><p><em>Remove <code>modprobe.blacklist=nouveau</code> after installing <code>nvidia</code> drivers.</em></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Reboot, enjoy.</p>
+</li>
+<li>
+<p>For post-installation steps, refer to <a href="/posts/arch-linux-post-installation/">Arch Linux post installation</a>.</p>
+</li>
+</ol>
+<h4 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<ul>
+<li><a href="https://wiki.archlinux.org/index.php/installation_guide">Installation guide - Arch</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2016 -
+        
+        2021
+         Sanjeev Kumar Pandit 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-78879488-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

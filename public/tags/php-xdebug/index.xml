@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php-xdebug on Sanjeev Kumar Pandit</title>
+    <link>http://sanjeevkpandit.github.io/tags/php-xdebug/</link>
+    <description>Recent content in php-xdebug on Sanjeev Kumar Pandit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 25 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://sanjeevkpandit.github.io/tags/php-xdebug/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup XDebug in PhpStorm</title>
+      <link>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</guid>
+      <description>PhpStorm is one of the good IDE for PHP application development available in current era. PHP Xdebug is a very strong tool for debugging, making the life easier for PHP developers to find out the logical mistakes.
+Integration of Xdebug into PhpStorm will ease the trouble of debugging for PHP developers. You can easily setup Xdebug in PhpStorm by following these steps.
+Requirements     PhpStorm (get it from here) Xdebug (get it from here)  Procedures      Setup Xdebug (if you haven&amp;rsquo;t done already).</description>
+    </item>
+    
+    <item>
+      <title>Setup XDebug in Ubuntu</title>
+      <link>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-ubuntu/</link>
+      <pubDate>Tue, 24 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-ubuntu/</guid>
+      <description>Xdebug&amp;rsquo;s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.
+Xdebug is a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install Xdebug in your machine by following these instructions.
+  Always run sudo apt-get update before installing any application.
+  There are two sources for installation.
+ Ubuntu: This will provide you the application compiled during the building of the OS you are using.</description>
+    </item>
+    
+  </channel>
+</rss>

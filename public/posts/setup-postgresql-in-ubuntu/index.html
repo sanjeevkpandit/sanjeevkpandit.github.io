@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    
+
+    <meta name="author" content="Sanjeev Kumar Pandit">
+    <meta name="description" content="Install PostgreSQL and know about first time setup including user management.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup PostgreSQL in Ubuntu"/>
+<meta name="twitter:description" content="Install PostgreSQL and know about first time setup including user management."/>
+
+    <meta property="og:title" content="Setup PostgreSQL in Ubuntu" />
+<meta property="og:description" content="Install PostgreSQL and know about first time setup including user management." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/" />
+<meta property="article:published_time" content="2016-06-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-06-19T00:00:00+00:00" />
+
+
+    <title>
+  Setup PostgreSQL in Ubuntu · Sanjeev Kumar Pandit
+</title>
+
+    
+      <link rel="canonical" href="http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/">
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.f48a4da9bd32cecaff90717ae85529411dd087c10fc0dfca9c9c329c7327e5e1.css" integrity="sha256-9IpNqb0yzsr/kHF66FUpQR3Qh8EPwN/KnJwynHMn5eE=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.89c82b6022b96f77aeb521b240daec4f87ea029d84d1c78b8acd0735b91b3c92.css" integrity="sha256-icgrYCK5b3eutSGyQNrsT4fqAp2E0ceLis0HNbkbPJI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
+        integrity="sha384-5f4X0lBluNY/Ib4VhGx0Pf6iDCF99VGXJIyYy7dDLY5QlEd7Ap0hICSSZA1XYbc4" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.80.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Sanjeev Kumar Pandit
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/">
+              Setup PostgreSQL in Ubuntu
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2016-06-19T00:00:00Z'>
+                Jun 19, 2016
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/tech/">Tech</a>
+      <span class="separator">•</span>
+    <a href="/categories/development/">Development</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/postgres/">postgres</a>
+      <span class="separator">•</span>
+    <a href="/tags/postgresql/">postgresql</a>
+      <span class="separator">•</span>
+    <a href="/tags/ubuntu/">ubuntu</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p><a href="https://www.postgresql.org/">PostgreSQL</a> is a powerful, open source object-relational database system.</p>
+<h3 id="install-postgresql">
+  Install PostgreSQL
+  <a class="heading-link" href="#install-postgresql">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<h4 id="1-from-ppa-recommended">
+  1. From PPA (Recommended)
+  <a class="heading-link" href="#1-from-ppa-recommended">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<ul>
+<li>
+<p>Create a file <code>/etc/apt/sources.list.d/pgdg.list</code>, and add following line for the repository</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#6272a4"># for ubuntu 16.04 users</span>
+deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main
+
+<span style="color:#6272a4"># for ubuntu 15.10 users</span>
+deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main
+
+<span style="color:#6272a4"># for ubuntu 14.04 users</span>
+deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main
+
+<span style="color:#6272a4"># for ubuntu 12.04 users</span>
+deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main
+</code></pre></div></li>
+<li>
+<p>Import the repository signing key, and update the package lists</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+</code></pre></div></li>
+<li>
+<p>Install postgreSQL and, check version</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt-get install postgresql-9.5
+psql --version
+</code></pre></div></li>
+</ul>
+<h4 id="2-from-native-store">
+  2. From native store
+  <a class="heading-link" href="#2-from-native-store">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>Enter following commands:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt-get update
+sudo apt-get install postgresql-9.4
+psql --version
+</code></pre></div><h3 id="first-time-setup">
+  First time setup
+  <a class="heading-link" href="#first-time-setup">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>
+<p>Connect to the default database with user <strong>postgres</strong>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo -u postgres psql template1
+</code></pre></div></li>
+<li>
+<p>Set the password for user postgres, then exit psql (Ctrl+D):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#ff79c6">ALTER</span> <span style="color:#ff79c6">USER</span> postgres <span style="color:#ff79c6">with</span> <span style="color:#ff79c6">encrypted</span> password <span style="color:#f1fa8c">&#39;xxxxxxxx&#39;</span>;
+</code></pre></div></li>
+<li>
+<p>Edit the <code>pg_hba.conf</code> file. And, change &lsquo;peer&rsquo; to &lsquo;md5&rsquo; on the line concerning postgres:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo vim /etc/postgresql/9.5/main/pg_hba.conf
+</code></pre></div><p>Before changes:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">local   all     postgres    peer
+</code></pre></div><p>After changes:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">local   all     postgres    md5
+</code></pre></div></li>
+<li>
+<p>Restart the database:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo service postgresql restart
+</code></pre></div></li>
+<li>
+<p>You can check the password with <code>psql -U postgres</code></p>
+</li>
+<li>
+<p>Create a user (with superuser access):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">createuser -U postgres -d -e -E -l -P -r -s &lt;new_username&gt;
+</code></pre></div></li>
+<li>
+<p>Again edit <code>pg_hba.conf</code> file, and change &lsquo;peer&rsquo; to &lsquo;md5&rsquo; on the line concerning &lsquo;all&rsquo; other users:</p>
+<p>Before changes:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">local   all     all     peer
+</code></pre></div><p>After changes:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">local   all     all     md5
+</code></pre></div></li>
+<li>
+<p>Restart, and check that you can login with new user</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">psql -U &lt;new_username&gt; template1
+</code></pre></div></li>
+</ul>
+<h4 id="to-access-with-you-as-a-user">
+  To access with you as a user
+  <a class="heading-link" href="#to-access-with-you-as-a-user">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<ul>
+<li>
+<p>Create user with your username(can be found by <code>whoami</code>):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">createuser -U postgres -d -e -E -l -P -r -s &lt;my_name&gt;
+</code></pre></div></li>
+<li>
+<p>Restart postgresql server and check that you can login without <code>-U postgres</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">psql template1
+</code></pre></div></li>
+<li>
+<p>You can create database easily now:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">createdb &lt;db_name&gt;
+</code></pre></div></li>
+</ul>
+<h3 id="resources">
+  Resources
+  <a class="heading-link" href="#resources">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li><a href="https://www.postgresql.org/download/linux/ubuntu/">https://www.postgresql.org/download/linux/ubuntu/</a></li>
+<li><a href="http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time">http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2016 -
+        
+        2021
+         Sanjeev Kumar Pandit 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-78879488-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

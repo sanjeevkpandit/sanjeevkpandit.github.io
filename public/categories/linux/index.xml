@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Sanjeev Kumar Pandit</title>
+    <link>http://sanjeevkpandit.github.io/categories/linux/</link>
+    <description>Recent content in Linux on Sanjeev Kumar Pandit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://sanjeevkpandit.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terminal enhancements</title>
+      <link>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</guid>
+      <description>Dropdown terminal    It seems Guake is an obvious choice for everyone, but Tilix gives terminator features of splitting a window with flavor of Guake.
+yaourt -S tilix-bin To use tilix as a dropdown terminal, you need to setup a key with tilix -q as action.
+Install zsh    sudo pacman -S zsh Install git    sudo pacman -S git Setup oh-my-zsh    wget https://github.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux post installation</title>
+      <link>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</guid>
+      <description>Update your system    pacman -Syu Install X server, Desktop Environment and Display Manager    pacman -S xorg To install GNOME:
+pacman -S gnome gnome-extra To install Cinnamon:
+pacman -S cinnamon nemo-fileroller To install XFCE:
+pacman -S xfce4 xfce4-goodies To install KDE:
+pacman -S plasma To install MATE:
+pacman -S mate mate-extra To install a display manager:
+pacman -S lightdm systemctl enable lightdm.service Add user    # Add new user useradd -m -G wheel -s /bin/bash username passwd username # Uncomment wheel group visudo %wheel ALL=(ALL) ALL # Install sudo package pacman -S sudo Install yaourt    Add followings to /etc/pacman.</description>
+    </item>
+    
+    <item>
+      <title>Install Arch Linux</title>
+      <link>http://sanjeevkpandit.github.io/posts/install-arch-linux/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/install-arch-linux/</guid>
+      <description>It&amp;rsquo;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&amp;rsquo;s a pain to setup all those applications and configuration.</description>
+    </item>
+    
+  </channel>
+</rss>

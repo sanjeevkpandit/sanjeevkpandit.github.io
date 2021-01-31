@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>terminal on Sanjeev Kumar Pandit</title>
+    <link>http://sanjeevkpandit.github.io/tags/terminal/</link>
+    <description>Recent content in terminal on Sanjeev Kumar Pandit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://sanjeevkpandit.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terminal enhancements</title>
+      <link>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</guid>
+      <description>Dropdown terminal    It seems Guake is an obvious choice for everyone, but Tilix gives terminator features of splitting a window with flavor of Guake.
+yaourt -S tilix-bin To use tilix as a dropdown terminal, you need to setup a key with tilix -q as action.
+Install zsh    sudo pacman -S zsh Install git    sudo pacman -S git Setup oh-my-zsh    wget https://github.</description>
+    </item>
+    
+  </channel>
+</rss>

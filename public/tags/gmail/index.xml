@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gmail on Sanjeev Kumar Pandit</title>
+    <link>http://sanjeevkpandit.github.io/tags/gmail/</link>
+    <description>Recent content in gmail on Sanjeev Kumar Pandit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://sanjeevkpandit.github.io/tags/gmail/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Filter emails using multiple senders in GMail</title>
+      <link>http://sanjeevkpandit.github.io/posts/filter-emails-using-multiple-senders-in-gmail/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/filter-emails-using-multiple-senders-in-gmail/</guid>
+      <description>Have you ever tried running filter with multiple senders or recipients in GMail? I was working on filtering a list of emails coming from GitHub and forward it to another email address.
+However, there was always an option to create individual filter. But, it felt hard or boring or lazy to do the same for 8 filters. So, I went for a search and found a solution after some time and would like to share it with you all.</description>
+    </item>
+    
+  </channel>
+</rss>

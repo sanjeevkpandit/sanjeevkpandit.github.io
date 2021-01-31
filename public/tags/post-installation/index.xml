@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>post installation on Sanjeev Kumar Pandit</title>
+    <link>http://sanjeevkpandit.github.io/tags/post-installation/</link>
+    <description>Recent content in post installation on Sanjeev Kumar Pandit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://sanjeevkpandit.github.io/tags/post-installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux post installation</title>
+      <link>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</guid>
+      <description>Update your system    pacman -Syu Install X server, Desktop Environment and Display Manager    pacman -S xorg To install GNOME:
+pacman -S gnome gnome-extra To install Cinnamon:
+pacman -S cinnamon nemo-fileroller To install XFCE:
+pacman -S xfce4 xfce4-goodies To install KDE:
+pacman -S plasma To install MATE:
+pacman -S mate mate-extra To install a display manager:
+pacman -S lightdm systemctl enable lightdm.service Add user    # Add new user useradd -m -G wheel -s /bin/bash username passwd username # Uncomment wheel group visudo %wheel ALL=(ALL) ALL # Install sudo package pacman -S sudo Install yaourt    Add followings to /etc/pacman.</description>
+    </item>
+    
+  </channel>
+</rss>

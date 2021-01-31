@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    
+
+    <meta name="author" content="Sanjeev Kumar Pandit">
+    <meta name="description" content="Post installation steps for arch linux users including user management and installation of apps.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Arch Linux post installation"/>
+<meta name="twitter:description" content="Post installation steps for arch linux users including user management and installation of apps."/>
+
+    <meta property="og:title" content="Arch Linux post installation" />
+<meta property="og:description" content="Post installation steps for arch linux users including user management and installation of apps." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/" />
+<meta property="article:published_time" content="2018-04-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-04-16T00:00:00+00:00" />
+
+
+    <title>
+  Arch Linux post installation · Sanjeev Kumar Pandit
+</title>
+
+    
+      <link rel="canonical" href="http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/">
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.f48a4da9bd32cecaff90717ae85529411dd087c10fc0dfca9c9c329c7327e5e1.css" integrity="sha256-9IpNqb0yzsr/kHF66FUpQR3Qh8EPwN/KnJwynHMn5eE=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.89c82b6022b96f77aeb521b240daec4f87ea029d84d1c78b8acd0735b91b3c92.css" integrity="sha256-icgrYCK5b3eutSGyQNrsT4fqAp2E0ceLis0HNbkbPJI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
+        integrity="sha384-5f4X0lBluNY/Ib4VhGx0Pf6iDCF99VGXJIyYy7dDLY5QlEd7Ap0hICSSZA1XYbc4" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.80.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Sanjeev Kumar Pandit
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/">
+              Arch Linux post installation
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2018-04-16T00:00:00Z'>
+                Apr 16, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a>
+      <span class="separator">•</span>
+    <a href="/categories/tech/">Tech</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/arch/">arch</a>
+      <span class="separator">•</span>
+    <a href="/tags/arch-linux/">arch linux</a>
+      <span class="separator">•</span>
+    <a href="/tags/linux/">linux</a>
+      <span class="separator">•</span>
+    <a href="/tags/post-installation/">post installation</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h3 id="update-your-system">
+  Update your system
+  <a class="heading-link" href="#update-your-system">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -Syu
+</code></pre></div><h3 id="install-x-server-desktop-environment-and-display-manager">
+  Install X server, Desktop Environment and Display Manager
+  <a class="heading-link" href="#install-x-server-desktop-environment-and-display-manager">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S xorg
+</code></pre></div><p>To install GNOME:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S gnome gnome-extra
+</code></pre></div><p>To install Cinnamon:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S cinnamon nemo-fileroller
+</code></pre></div><p>To install XFCE:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S xfce4 xfce4-goodies
+</code></pre></div><p>To install KDE:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S plasma
+</code></pre></div><p>To install MATE:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S mate mate-extra
+</code></pre></div><p>To install a display manager:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S lightdm
+systemctl <span style="color:#8be9fd;font-style:italic">enable</span> lightdm.service
+</code></pre></div><h3 id="add-user">
+  Add user
+  <a class="heading-link" href="#add-user">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#6272a4"># Add new user</span>
+useradd -m -G wheel -s /bin/bash username
+passwd username
+
+<span style="color:#6272a4"># Uncomment wheel group</span>
+visudo
+%wheel <span style="color:#8be9fd;font-style:italic">ALL</span><span style="color:#ff79c6">=(</span>ALL<span style="color:#ff79c6">)</span> ALL
+
+<span style="color:#6272a4"># Install sudo package</span>
+pacman -S sudo
+</code></pre></div><h3 id="install-yaourt">
+  Install yaourt
+  <a class="heading-link" href="#install-yaourt">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Add followings to <code>/etc/pacman.conf</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#ff79c6">[</span>archlinuxfr<span style="color:#ff79c6">]</span>
+<span style="color:#8be9fd;font-style:italic">SigLevel</span> <span style="color:#ff79c6">=</span> Never
+<span style="color:#8be9fd;font-style:italic">Server</span> <span style="color:#ff79c6">=</span> http://repo.archlinux.fr/<span style="color:#8be9fd;font-style:italic">$arch</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -Syu yaourt
+</code></pre></div><h3 id="install-applications">
+  Install applications
+  <a class="heading-link" href="#install-applications">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>
+<p>Internet</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S firefox
+pacman -S chromium
+pacman -S opera
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">yaourt -S google-chrome
+yaourt -S skypeforlinux-stable-bin
+</code></pre></div></li>
+<li>
+<p>Fonts</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S ttf-hack
+pacman -S noto-fonts
+pacman -S ttf-symbola
+pacman -S ttf-indic-otf
+pacman -S noto-fonts-extra
+pacman -S noto-fonts-emoji
+pacman -S adobe-source-code-pro-fonts
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">yaourt -S ttf-monaco
+</code></pre></div></li>
+<li>
+<p>Text Editors</p>
+<p>Install Sublime Text from <a href="https://www.sublimetext.com/docs/3/linux_repositories.html#pacman">here</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S atom
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">yaourt -S visual-studio-code-bin
+yaourt -S webstorm
+yaourt -S datagrip
+</code></pre></div></li>
+<li>
+<p>Media Players</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S mpv
+pacman -S vlc
+</code></pre></div></li>
+<li>
+<p>Utilities</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S redshift
+pacman -S htop
+pacman -S powertop
+pacman -S gparted
+</code></pre></div></li>
+<li>
+<p>Power management</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S tlp
+systemctl <span style="color:#8be9fd;font-style:italic">enable</span> tlp.service
+</code></pre></div></li>
+<li>
+<p>Download manager</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pacman -S aria2
+pacman -S qbittorent
+</code></pre></div></li>
+</ul>
+<p><strong>Reboot and enjoy!</strong></p>
+<h4 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<ul>
+<li><a href="https://itsfoss.com/things-to-do-after-installing-arch-linux/">7 Essential Things To Do After Installing Arch Linux</a></li>
+<li><a href="https://www.2daygeek.com/arch-linux-post-installation-30-things-to-do-after-installing-arch-linux/2/">Arch Linux Post Installation (30 Things to do after Installing Arch Linux)</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2016 -
+        
+        2021
+         Sanjeev Kumar Pandit 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-78879488-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>
