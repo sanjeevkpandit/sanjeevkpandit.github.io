@@ -1,12 +1,11 @@
----
-title: Avoid using <object> tag inside anchor <a> tag
-date: '2020-02-03T00:00:00Z'
-draft: false
-slug: 'avoid-using-object-tag-inside-anchor-tag'
-categories: ['Tech']
-tags: ['html', 'anchor', 'element']
-description: 'Avoid using the <object> element inside a anchor <a> element to give a proper definition of the links without any extra configuration'
----
++++
+date = '2020-02-03'
+title = 'Avoid using <object> tag inside anchor <a> tag'
+slug = 'avoid-using-object-tag-inside-anchor-tag'
+tags = ['html', 'anchor', 'element']
+categories = ['Tech']
+description = 'Avoid using the <object> element inside a anchor <a> element to give a proper definition of the links without any extra configuration'
++++
 
 I have been recently working on a project where I got an issue with the anchor
 [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) tag. The issue was with the hover effect on the

@@ -1,47 +1,46 @@
----
-title: Terminal enhancements
-date: '2018-04-20T00:00:00Z'
-draft: false
-slug: 'terminal-enhancements'
-categories: ['Linux', 'Terminal']
-tags: ['arch', 'arch linux', 'linux', 'terminal']
-description: 'Tweaks to make optimum use of terminal in Arch Linux'
----
++++
+title='Terminal enhancements'
+date='2018-04-20'
+slug='terminal-enhancements'
+categories=['Linux', 'Terminal']
+tags=['arch', 'arch linux', 'linux', 'terminal']
+description='Tweaks to make optimum use of terminal in Arch Linux'
++++
 
 ### Dropdown terminal
 
-It seems <a href="http://guake-project.org/" target="_blank">Guake</a> is an obvious choice for everyone, but <a href="https://gnunn1.github.io/tilix-web/" target="_blank">Tilix</a> gives terminator features of splitting a window with flavor of Guake.
+It seems [Guake](http://guake-project.org/) is an obvious choice for everyone, but [Tilix](https://gnunn1.github.io/tilix-web/) gives terminator features of splitting a window with flavor of Guake.
 
-```console
-$ yaourt -S tilix-bin
+```sh
+yaourt -S tilix-bin
 ```
 
 To use tilix as a dropdown terminal, you need to setup a key with `tilix -q` as action.
 
 ### Install zsh
 
-```console
-$ sudo pacman -S zsh
+```sh
+sudo pacman -S zsh
 ```
 
 ### Install git
 
-```console
-$ sudo pacman -S git
+```sh
+sudo pacman -S git
 ```
 
 ### Setup oh-my-zsh
 
-```console
-$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-$ chsh -s `which zsh`
+```sh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+chsh -s `which zsh`
 ```
 
 ### ZSH Theme
 
-I am using a custom theme inspired from <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes#juanghurtado" target="_blank">juanghurtado</a>.
+I am using a custom theme inspired from [juanghurtado](https://github.com/robbyrussell/oh-my-zsh/wiki/themes#juanghurtado).
 
-```console
+```sh
 # Color shortcuts
 RED=$fg[red]
 YELLOW=$fg[yellow]
@@ -90,5 +89,5 @@ PROMPT='
 
 #### References
 
-- <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes" target="_blank">ZSH Themes</a>
-- <a href="https://gist.github.com/tsabat/1498393" target="_blank">Getting oh-my-zsh to work in Ubuntu</a>
+- [ZSH Themes](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)
+- [Getting oh-my-zsh to work in Ubuntu](https://gist.github.com/tsabat/1498393)

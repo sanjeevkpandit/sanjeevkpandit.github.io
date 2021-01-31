@@ -1,14 +1,13 @@
----
-title: Getting started with gulp
-date: '2016-06-11T00:00:00Z'
-draft: false
-slug: 'getting-started-with-gulp'
-categories: ['Tech', 'Development']
-tags: ['gulp', 'nodejs']
-description: 'Learn basics of gulp.'
----
++++
+date = '2016-06-11'
+title = 'Getting started with gulp'
+slug = 'getting-started-with-gulp'
+tags = ['gulp', 'nodejs']
+categories = ['Tech', 'Development']
+description = 'Learn basics of gulp'
++++
 
-<a href="http://gulpjs.com/" target="_blank">Gulp</a> is an automated tool that helps to enhance workflow.
+[Gulp](http://gulpjs.com/) is an automated tool that helps to enhance workflow.
 
 ### Why gulp?
 
@@ -21,56 +20,56 @@ description: 'Learn basics of gulp.'
 
 #### Installation Instructions
 
-- <a href="http://npmjs.com/" target="_blank">Npm</a> needs to be installed in order to install <a href="http://gulpjs.com/" target="_blank">gulp</a>. Please find the installation instructions <a href="{{site.baseurl}}/install-node-and-npm/" target="_blank">here</a>.
+- [NPM](http://npmjs.com/) needs to be installed in order to install [gulp](http://gulpjs.com/). Please find the installation instructions [here](/posts/install-node-and-npm/).
 
 - Remove gulp (if installed before)
 
-```bash
-$ npm rm --global gulp
-```
+  ```sh
+  npm rm --global gulp
+  ```
 
 - Install gulp
 
-```
-# Globally
-npm install --global gulp-cli
+  ```sh
+  # Globally
+  npm install --global gulp-cli
 
-# Within a project
-npm install gulp --save-dev
-```
+  # Within a project
+  npm install gulp --save-dev
+  ```
 
 #### Implementation in a project
 
 - Create a file `gulpfile.js` in project's root folder and add following contents in it.
 
-```js
-var gulp = require('gulp');
+  ```js
+  var gulp = require('gulp');
 
-gulp.task('default', function() {
-  // default task
-});
-```
+  gulp.task('default', function() {
+    // default task
+  });
+  ```
 
 - Run gulp. This will run the default task as defined above.
 
-```bash
-gulp
-```
+  ```sh
+  gulp
+  ```
 
 - For a specific task
 
-```js
-gulp.task('test', function() {
-  console.log('This is a test task');
-});
-```
+  ```js
+  gulp.task('test', function() {
+    console.log('This is a test task');
+  });
+  ```
 
-```bash
-# gulp <task_name>
-gulp test
-```
+  ```sh
+  # gulp <task_name>
+  gulp test
+  ```
 
-#### Sample `gulpfile.js`.
+#### Sample `gulpfile.js`
 
 ```js
 var gulp = require('gulp');
@@ -160,9 +159,9 @@ gulp.task('watch', function() {
 });
 ```
 
-Download above gulpfile from <a href="https://gist.github.com/sanjeevkpandit/38e690d8c1625ee1486fa13e3d554700" target="_blank">here</a>.
+Download above gulp file from [here](https://gist.github.com/sanjeevkpandit/38e690d8c1625ee1486fa13e3d554700).
 
 #### Resources
 
-- <a href="http://gulpjs.com/" target="_blank">http://gulpjs.com/</a>
-- <a href="https://github.com/sanjeevkpandit/gulp-step-by-step" target="_blank">https://github.com/sanjeevkpandit/gulp-step-by-step</a>
+- [http://gulpjs.com/](http://gulpjs.com/)
+- [https://github.com/sanjeevkpandit/gulp-step-by-step](https://github.com/sanjeevkpandit/gulp-step-by-step)

@@ -1,40 +1,26 @@
----
-title: "About"
-date: 2018-04-15T00:00:00Z
-lastmod: 2019-12-28T00:00:00Z
-menu: "main"
-weight: 50
++++
+title = "About"
+slug = "about"
++++
 
-# you can close something for this content if you open it in config.toml.
-comment: false
-mathjax: false
----
+A full-stack web developer interested in learning and implementing new technologies. Worked in Mobile Development, Web Development, API Development, Single Page Applications Development and Database.
 
-A full-stack web developer interested in learning and implementing new technologies. Worked in Web Development, API Development, Single Page Applications Development and Database.
+### Technical skills
 
-### Technical Skills
-
-#### Back-end
-
-* PHP
-* NodeJS
-
-#### Front-end
-
-* React JS
-* Vue JS
-* Angular JS
-* Javascript/EcmaScript
-* jQuery
-
-#### Database
-
-* MySQL
-* PostgreSQL
-* MSSQL
-
-#### Deployment Tools
-
-* Docker
-* Capistrano
-* Boss-CLI
+- Javascript
+  - NodeJS
+  - VueJS
+  - ReactJS
+  - AngularJS 1.x
+- Flutter/Dart
+- PHP
+- SQL
+  - PostgreSQL
+  - MySQL
+  - MSSQL
+- Version Control System
+  - Git
+- Deployment Tools
+  - Docker
+  - Capistrano
+  - Boss-CLI
