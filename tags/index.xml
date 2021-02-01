@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Sanjeev</title>
+    <title>Tags on Sanjeev Kumar Pandit</title>
     <link>http://sanjeevkpandit.github.io/tags/</link>
-    <description>Recent content in Tags on Sanjeev</description>
+    <description>Recent content in Tags on Sanjeev Kumar Pandit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://sanjeevkpandit.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://sanjeevkpandit.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>anchor</title>
       <link>http://sanjeevkpandit.github.io/tags/anchor/</link>
@@ -156,6 +152,15 @@
     </item>
     
     <item>
+      <title>postgresql</title>
+      <link>http://sanjeevkpandit.github.io/tags/postgresql/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ubuntu</title>
       <link>http://sanjeevkpandit.github.io/tags/ubuntu/</link>
       <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
@@ -188,6 +193,51 @@
       <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/tags/npm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gulp</title>
+      <link>http://sanjeevkpandit.github.io/tags/gulp/</link>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/gulp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>http://sanjeevkpandit.github.io/tags/php/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php-xdebug</title>
+      <link>http://sanjeevkpandit.github.io/tags/php-xdebug/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/php-xdebug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>phpstorm</title>
+      <link>http://sanjeevkpandit.github.io/tags/phpstorm/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/phpstorm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xdebug</title>
+      <link>http://sanjeevkpandit.github.io/tags/xdebug/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://sanjeevkpandit.github.io/tags/xdebug/</guid>
       <description></description>
     </item>
     

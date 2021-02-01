@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on Sanjeev</title>
+    <title>linux on Sanjeev Kumar Pandit</title>
     <link>http://sanjeevkpandit.github.io/tags/linux/</link>
-    <description>Recent content in linux on Sanjeev</description>
+    <description>Recent content in linux on Sanjeev Kumar Pandit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://sanjeevkpandit.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://sanjeevkpandit.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Terminal enhancements</title>
       <link>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</link>
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</guid>
-      <description>Dropdown terminal It seems Guakeis an obvious choice for everyone, but Tilixgives terminator features of splitting a window with flavor of Guake.
-$ yaourt -S tilix-bin To use tilix as a dropdown terminal, you need to setup a key with tilix -q as action.
-Install zsh $ sudo pacman -S zsh Install git $ sudo pacman -S git Setup oh-my-zsh $ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh $ chsh -s `which zsh` ZSH Theme I am using a custom theme inspired from juanghurtado.</description>
+      <description>Dropdown terminal    It seems Guake is an obvious choice for everyone, but Tilix gives terminator features of splitting a window with flavor of Guake.
+yaourt -S tilix-bin To use tilix as a dropdown terminal, you need to setup a key with tilix -q as action.
+Install zsh    sudo pacman -S zsh Install git    sudo pacman -S git Setup oh-my-zsh    wget https://github.</description>
     </item>
     
     <item>
@@ -28,13 +24,13 @@ Install zsh $ sudo pacman -S zsh Install git $ sudo pacman -S git Setup oh-my-zs
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</guid>
-      <description>Update your system # pacman -Syu Install X server, Desktop Environment and Display Manager # pacman -S xorg To install GNOME:
-# pacman -S gnome gnome-extra To install Cinnamon:
-# pacman -S cinnamon nemo-fileroller To install XFCE:
-# pacman -S xfce4 xfce4-goodies To install KDE:
-# pacman -S plasma To install MATE:
-# pacman -S mate mate-extra To install a display manager:
-# pacman -S lightdm # systemctl enable lightdm.service Add user [Add new user] # useradd -m -G wheel -s /bin/bash username # passwd username [Uncomment wheel group] # visudo %wheel ALL=(ALL) ALL [Install sudo package] # pacman -S sudo Install yaourt Add followings to /etc/pacman.</description>
+      <description>Update your system    pacman -Syu Install X server, Desktop Environment and Display Manager    pacman -S xorg To install GNOME:
+pacman -S gnome gnome-extra To install Cinnamon:
+pacman -S cinnamon nemo-fileroller To install XFCE:
+pacman -S xfce4 xfce4-goodies To install KDE:
+pacman -S plasma To install MATE:
+pacman -S mate mate-extra To install a display manager:
+pacman -S lightdm systemctl enable lightdm.service Add user    # Add new user useradd -m -G wheel -s /bin/bash username passwd username # Uncomment wheel group visudo %wheel ALL=(ALL) ALL # Install sudo package pacman -S sudo Install yaourt    Add followings to /etc/pacman.</description>
     </item>
     
     <item>
@@ -52,8 +48,8 @@ Install zsh $ sudo pacman -S zsh Install git $ sudo pacman -S git Setup oh-my-zs
       <pubDate>Tue, 24 May 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-ubuntu/</guid>
-      <description>Xdebug&#39;s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.
-Xdebugis a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install xdebug in your machine by following these instructions.
+      <description>Xdebug&amp;rsquo;s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.
+Xdebug is a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install Xdebug in your machine by following these instructions.
   Always run sudo apt-get update before installing any application.
   There are two sources for installation.
  Ubuntu: This will provide you the application compiled during the building of the OS you are using.</description>

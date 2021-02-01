@@ -1,87 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sanjeev</title>
+    <title>Sanjeev Kumar Pandit</title>
     <link>http://sanjeevkpandit.github.io/</link>
-    <description>Recent content on Sanjeev</description>
+    <description>Recent content on Sanjeev Kumar Pandit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="http://sanjeevkpandit.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>About</title>
-      <link>http://sanjeevkpandit.github.io/about/</link>
-      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://sanjeevkpandit.github.io/about/</guid>
-      
-        <description>&lt;p&gt;A full-stack web developer interested in learning and implementing new technologies. Worked in Web Development, API Development, Single Page Applications Development and Database.&lt;/p&gt;
-&lt;h3 id=&#34;technical-skills&#34;&gt;Technical Skills&lt;/h3&gt;
-&lt;h4 id=&#34;back-end&#34;&gt;Back-end&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;PHP&lt;/li&gt;
-&lt;li&gt;NodeJS&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;front-end&#34;&gt;Front-end&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;React JS&lt;/li&gt;
-&lt;li&gt;Vue JS&lt;/li&gt;
-&lt;li&gt;Angular JS&lt;/li&gt;
-&lt;li&gt;Javascript/EcmaScript&lt;/li&gt;
-&lt;li&gt;jQuery&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;database&#34;&gt;Database&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;MySQL&lt;/li&gt;
-&lt;li&gt;PostgreSQL&lt;/li&gt;
-&lt;li&gt;MSSQL&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;deployment-tools&#34;&gt;Deployment Tools&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Docker&lt;/li&gt;
-&lt;li&gt;Capistrano&lt;/li&gt;
-&lt;li&gt;Boss-CLI&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      
-    </item>
-    
+    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://sanjeevkpandit.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Avoid using &lt;object&gt; tag inside anchor &lt;a&gt; tag</title>
       <link>http://sanjeevkpandit.github.io/posts/avoid-using-object-tag-inside-anchor-tag/</link>
       <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/avoid-using-object-tag-inside-anchor-tag/</guid>
-      
-        <description>&lt;p&gt;I have been recently working on a project where I got an issue with the anchor
-&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a&#34;&gt;&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/a&gt; tag. The issue was with the hover effect on the
-anchor tag. There was no hover effect over the link. Plus, the link was not working either. However,
-the hover effect was seen below the link for small space. The anchor element had a
-&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object&#34;&gt;&lt;code&gt;&amp;lt;object&amp;gt;&lt;/code&gt;&lt;/a&gt; element inside it and that was the
-reason of the issue. The link element looked like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;...&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;object&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;image/svg&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;path/to/svg/image&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;some-class-name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;object&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;With the help of some searches, I tried different solutions through CSS. But, could not get any luck. Later on, there
-was an easy fix to the solution. I replaced the
-&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object&#34;&gt;&lt;code&gt;&amp;lt;object&amp;gt;&lt;/code&gt;&lt;/a&gt; tag with
-&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img&#34;&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/a&gt; element and it worked like a charm without
-making any extra changes for the hover effect and link to work. The solution looks like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;...&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;path/to/svg/image&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;some-class-name&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The same class provided the same design as earlier. Also, it could not hamper the SEO as well.&lt;/p&gt;
-&lt;p&gt;Also, there was a similar case with the use of &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label&#34;&gt;&lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;&lt;/a&gt;
-inside the&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a&#34;&gt;&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/a&gt; element. Removing the
-&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label&#34;&gt;&lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;&lt;/a&gt; element resolved the issue. You can use a
-&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span&#34;&gt;&lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;&lt;/a&gt; element if needed.&lt;/p&gt;
-&lt;p&gt;Hope it helps.&lt;/p&gt;
-&lt;p&gt;Happy coding!!!&lt;/p&gt;
-</description>
-      
+      <description>I have been recently working on a project where I got an issue with the anchor &amp;lt;a&amp;gt; tag. The issue was with the hover effect on the anchor tag. There was no hover effect over the link. Plus, the link was not working either. However, the hover effect was seen below the link for small space. The anchor element had a &amp;lt;object&amp;gt; element inside it and that was the reason of the issue.</description>
     </item>
     
     <item>
@@ -90,19 +22,8 @@ inside the&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Elem
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/filter-emails-using-multiple-senders-in-gmail/</guid>
-      
-        <description>&lt;p&gt;Have you ever tried running filter with multiple senders or recipients in GMail? I was working on filtering a list of emails coming from GitHub and forward it to another email address.&lt;/p&gt;
-&lt;p&gt;However, there was always an option to create individual filter. But, it felt hard or boring or lazy to do the same for 8 filters. So, I went for a search and found a solution after some time and would like to share it with you all.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s not that hard, it seems. Here is the syntax to enter multiple emails in filter:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;from/to: (email1@example.com OR email2@example.com OR email3@example.com)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Isn&amp;rsquo;t it simple and easy?&lt;/p&gt;
-&lt;p&gt;Hope you liked it. Have fun.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://stackoverflow.com/a/46307723&#34;&gt;https://stackoverflow.com/a/46307723&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      
+      <description>Have you ever tried running filter with multiple senders or recipients in GMail? I was working on filtering a list of emails coming from GitHub and forward it to another email address.
+However, there was always an option to create individual filter. But, it felt hard or boring or lazy to do the same for 8 filters. So, I went for a search and found a solution after some time and would like to share it with you all.</description>
     </item>
     
     <item>
@@ -111,69 +32,9 @@ inside the&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Elem
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/terminal-enhancements/</guid>
-      
-        <description>&lt;h3 id=&#34;dropdown-terminal&#34;&gt;Dropdown terminal&lt;/h3&gt;
-&lt;p&gt;It seems &lt;!-- raw HTML omitted --&gt;Guake&lt;!-- raw HTML omitted --&gt; is an obvious choice for everyone, but &lt;!-- raw HTML omitted --&gt;Tilix&lt;!-- raw HTML omitted --&gt; gives terminator features of splitting a window with flavor of Guake.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ yaourt -S tilix-bin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To use tilix as a dropdown terminal, you need to setup a key with &lt;code&gt;tilix -q&lt;/code&gt; as action.&lt;/p&gt;
-&lt;h3 id=&#34;install-zsh&#34;&gt;Install zsh&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ sudo pacman -S zsh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;install-git&#34;&gt;Install git&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ sudo pacman -S git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;setup-oh-my-zsh&#34;&gt;Setup oh-my-zsh&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-$ chsh -s `which zsh`
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;zsh-theme&#34;&gt;ZSH Theme&lt;/h3&gt;
-&lt;p&gt;I am using a custom theme inspired from &lt;!-- raw HTML omitted --&gt;juanghurtado&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# Color shortcuts
-RED=$fg[red]
-YELLOW=$fg[yellow]
-GREEN=$fg[green]
-WHITE=$fg[white]
-BLUE=$fg[blue]
-RED_BOLD=$fg_bold[red]
-YELLOW_BOLD=$fg_bold[yellow]
-GREEN_BOLD=$fg_bold[green]
-WHITE_BOLD=$fg_bold[white]
-BLUE_BOLD=$fg_bold[blue]
-RESET_COLOR=$reset_color
-
-# Format for git_prompt_info()
-ZSH_THEME_GIT_PROMPT_PREFIX=&amp;#34;&amp;#34;
-ZSH_THEME_GIT_PROMPT_SUFFIX=&amp;#34;&amp;#34;
-
-# Format for parse_git_dirty()
-ZSH_THEME_GIT_PROMPT_DIRTY=&amp;#34; %{$RED%}(*)&amp;#34;
-ZSH_THEME_GIT_PROMPT_CLEAN=&amp;#34;&amp;#34;
-
-# Format for git_prompt_status()
-ZSH_THEME_GIT_PROMPT_UNMERGED=&amp;#34; %{$RED%}unmerged&amp;#34;
-ZSH_THEME_GIT_PROMPT_DELETED=&amp;#34; %{$RED%}deleted&amp;#34;
-ZSH_THEME_GIT_PROMPT_RENAMED=&amp;#34; %{$YELLOW%}renamed&amp;#34;
-ZSH_THEME_GIT_PROMPT_MODIFIED=&amp;#34; %{$YELLOW%}modified&amp;#34;
-ZSH_THEME_GIT_PROMPT_ADDED=&amp;#34; %{$GREEN%}added&amp;#34;
-ZSH_THEME_GIT_PROMPT_UNTRACKED=&amp;#34; %{$WHITE%}untracked&amp;#34;
-
-# Format for git_prompt_ahead()
-ZSH_THEME_GIT_PROMPT_AHEAD=&amp;#34; %{$RED%}(!)&amp;#34;
-
-# Format for git_prompt_long_sha() and git_prompt_short_sha()
-ZSH_THEME_GIT_PROMPT_SHA_BEFORE=&amp;#34; %{$WHITE%}[%{$YELLOW%}&amp;#34;
-ZSH_THEME_GIT_PROMPT_SHA_AFTER=&amp;#34;%{$WHITE%}]&amp;#34;
-
-# Prompt format
-PROMPT=&amp;#39;
-%{$GREEN_BOLD%}%{$YELLOW%}%~%u$(parse_git_dirty)$(git_prompt_ahead)%{$RESET_COLOR%} %{$GREEN_BOLD%}$(git_current_branch)
-%{$BLUE%}&amp;gt;%{$RESET_COLOR%} &amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;./my-custom-theme.png&#34; alt=&#34;My Custom ZSH Theme&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;reboot-or-log-out---log-in&#34;&gt;Reboot or log out - log in&lt;/h3&gt;
-&lt;h4 id=&#34;references&#34;&gt;References&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;ZSH Themes&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;Getting oh-my-zsh to work in Ubuntu&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      
+      <description>Dropdown terminal    It seems Guake is an obvious choice for everyone, but Tilix gives terminator features of splitting a window with flavor of Guake.
+yaourt -S tilix-bin To use tilix as a dropdown terminal, you need to setup a key with tilix -q as action.
+Install zsh    sudo pacman -S zsh Install git    sudo pacman -S git Setup oh-my-zsh    wget https://github.</description>
     </item>
     
     <item>
@@ -182,101 +43,13 @@ PROMPT=&amp;#39;
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/arch-linux-post-installation/</guid>
-      
-        <description>&lt;h3 id=&#34;update-your-system&#34;&gt;Update your system&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -Syu
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;install-x-server-desktop-environment-and-display-manager&#34;&gt;Install X server, Desktop Environment and Display Manager&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S xorg
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install GNOME:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S gnome gnome-extra
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install Cinnamon:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S cinnamon nemo-fileroller
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install XFCE:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S xfce4 xfce4-goodies
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install KDE:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S plasma
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install MATE:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S mate mate-extra
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install a display manager:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S lightdm
-# systemctl enable lightdm.service
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;add-user&#34;&gt;Add user&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[Add new user]
-# useradd -m -G wheel -s /bin/bash username
-# passwd username
-
-[Uncomment wheel group]
-# visudo
-%wheel ALL=(ALL) ALL
-
-[Install sudo package]
-# pacman -S sudo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;install-yaourt&#34;&gt;Install yaourt&lt;/h3&gt;
-&lt;p&gt;Add followings to &lt;code&gt;/etc/pacman.conf&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[archlinuxfr]
-SigLevel = Never
-Server = http://repo.archlinux.fr/$arch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -Syu yaourt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;install-applications&#34;&gt;Install applications&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Internet&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S firefox
-# pacman -S chromium
-# pacman -S opera
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ yaourt -S google-chrome
-$ yaourt -S skypeforlinux-stable-bin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fonts&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S ttf-hack
-# pacman -S noto-fonts
-# pacman -S ttf-symbola
-# pacman -S ttf-indic-otf
-# pacman -S noto-fonts-extra
-# pacman -S noto-fonts-emoji
-# pacman -S adobe-source-code-pro-fonts
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ yaourt -S ttf-monaco
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Text Editors&lt;/p&gt;
-&lt;p&gt;Install Sublime Text from &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S atom
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ yaourt -S visual-studio-code-bin
-$ yaourt -S webstorm
-$ yaourt -S datagrip
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Media Players&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S mpv
-# pacman -S vlc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Utilities&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S redshift
-# pacman -S htop
-# pacman -S powertop
-# pacman -S gparted
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Power management&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S tlp
-# systemctl enable tlp.service
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Download manager&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# pacman -S aria2
-# pacman -S qbittorent
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;reboot-and-enjoy&#34;&gt;Reboot and enjoy!&lt;/h3&gt;
-&lt;h4 id=&#34;reference&#34;&gt;Reference:&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;7 Essential Things To Do After Installing Arch Linux&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;Arch Linux Post Installation (30 Things to do after Installing Arch Linux)&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      
+      <description>Update your system    pacman -Syu Install X server, Desktop Environment and Display Manager    pacman -S xorg To install GNOME:
+pacman -S gnome gnome-extra To install Cinnamon:
+pacman -S cinnamon nemo-fileroller To install XFCE:
+pacman -S xfce4 xfce4-goodies To install KDE:
+pacman -S plasma To install MATE:
+pacman -S mate mate-extra To install a display manager:
+pacman -S lightdm systemctl enable lightdm.service Add user    # Add new user useradd -m -G wheel -s /bin/bash username passwd username # Uncomment wheel group visudo %wheel ALL=(ALL) ALL # Install sudo package pacman -S sudo Install yaourt    Add followings to /etc/pacman.</description>
     </item>
     
     <item>
@@ -285,232 +58,18 @@ $ yaourt -S datagrip
       <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/install-arch-linux/</guid>
-      
-        <description>&lt;p&gt;It&amp;rsquo;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&amp;rsquo;s a pain to setup all those applications and configuration. That&amp;rsquo;s why I am writing this where I can find the steps I have been following to install and setup my machine my way :).&lt;/p&gt;
-&lt;p&gt;Okay, let&amp;rsquo;s start with the installation. Previously, I tried to run a live Ubuntu OS and then install either by the bootstrap image or using the LiveCD Image. But, nowadays, it seems the installing from live arch USB seems to be the easiest and quickest as it skips a lot of steps.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Connect to the internet&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Use ethernet or run &lt;code&gt;wifi-menu&lt;/code&gt; command to connect to a WiFi Connection.&lt;/li&gt;
-&lt;li&gt;Check connection:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ping archlinux.org&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Partition the disks&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The partitions can be listed from:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# fdisk -l&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Usually, I prefer to prepare the partition before the installation. Still, you can find the steps &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt; to perform the partition actions.&lt;/li&gt;
-&lt;li&gt;Format the partition&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# mkfs.ext4 /dev/sda1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Mount the file system&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# mount /dev/sda1 /mnt&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Installation&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Select and rank the mirros, ranking the mirrors would help to perform the installation quicker.
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;// Backup
-&lt;span class=&#34;c1&#34;&gt;# cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup&lt;/span&gt;
-// Uncomment every mirror
-&lt;span class=&#34;c1&#34;&gt;# sed -i &amp;#39;s/^#Server/Server/&amp;#39; /etc/pacman.d/mirrorlist.backup&lt;/span&gt;
-// Rank mirrors
-&lt;span class=&#34;c1&#34;&gt;# rankmirrors /etc/pacman.d/mirrorlist.backup &amp;gt; /etc/pacman.d/mirrorlist&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;Install the base packages:
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# pacstrap /mnt base base-devel&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;base-devel&lt;/code&gt; is optional, can be installed later.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Configure the system&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Fstab&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Chroot&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# arch-chroot /mnt&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Time zone&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ln -sf /usr/share/zoneinfo/Region/City /etc/localtime&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# hwclock --systohc&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Locale
-Uncomment &lt;code&gt;en_US.UTF-8 UTF-8&lt;/code&gt; and other needed localizations in &lt;code&gt;/etc/locale.gen&lt;/code&gt;, and generate them with:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# locale-gen&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Set the LANG variable in &lt;code&gt;/etc/locale.conf&lt;/code&gt; accordingly:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;nv&#34;&gt;LANG&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;en_US.UTF-8
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To set the keyboard layout, make the changes persistent in &lt;code&gt;/etc/shell.conf&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;nv&#34;&gt;KEYMAP&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;us
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Hostname
-Create the &lt;code&gt;hostname&lt;/code&gt; file &lt;code&gt;/etc/hostname&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;myhostname
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Add matching entries to &lt;code&gt;/etc/hosts&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;127.0.0.1    localhost
-::1          localhost
-127.0.1.1    myhostname.localdomain	myhostname
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Network configuration&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# pacman -S networkmanager dhclient&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For wifi:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# pacman -S iw wpa_supplicant dialog&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Initramfs&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# mkinitcpio -p linux&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Root password&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# passwd&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Boot loader (GRUB - UEFI)
-Install the package &lt;code&gt;grub&lt;/code&gt; and &lt;code&gt;efibootmgr&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# pacman -S grub efibootmgr&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Mount EFI partition(/dev/sda3):&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# mkir /boot/efi&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# mount /dev/sda3 /boot/efi&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Install GRUB UEFI to &lt;code&gt;/boot/efi&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Generate the main configuration file:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# grub-mkconfig -o /boot/grub/grub.cfg&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note:&lt;/strong&gt; For NVIDIA card holders, unless you install the &lt;code&gt;nvidia&lt;/code&gt; drivers, add &lt;code&gt;modprobe.blacklist=nouveau&lt;/code&gt; in &lt;code&gt;/etc/default/grub&lt;/code&gt; and re-generate the main configuration file.&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;nv&#34;&gt;GRUB_CMDLINE_LINUX_DEFAULT&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;quiet modprobe.blacklist=nouveau&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Remove &lt;code&gt;modprobe.blacklist=nouveau&lt;/code&gt; after installing &lt;code&gt;nvidia&lt;/code&gt; drivers.&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Reboot, enjoy.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;For post-installation steps, refer to &lt;!-- raw HTML omitted --&gt;Arch Linux post installation&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;reference&#34;&gt;Reference:&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;Installation guide - Arch&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      
+      <description>It&amp;rsquo;s been a long time since I have been using Arch Linux and loving it since because of its flexibility. In the mean time, I have installed the same OS for many times because I tried new things and crashed a lot of installed things. Literally, thinking about the time to repair, I just re-installed the OS. It just feels quick and easy to clear out all your garbage. However, it&amp;rsquo;s a pain to setup all those applications and configuration.</description>
     </item>
     
     <item>
-      <title>Setup postgresql in Ubuntu</title>
+      <title>Setup PostgreSQL in Ubuntu</title>
       <link>http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/</link>
       <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/setup-postgresql-in-ubuntu/</guid>
-      
-        <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;PostgreSQL&lt;!-- raw HTML omitted --&gt; is a powerful, open source object-relational database system.&lt;/p&gt;
-&lt;h3 id=&#34;install-postgresql&#34;&gt;Install PostgreSQL&lt;/h3&gt;
-&lt;h4 id=&#34;1-from-ppa-recommended&#34;&gt;1. From PPA (Recommended)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a file &lt;code&gt;/etc/apt/sources.list.d/pgdg.list&lt;/code&gt;, and add following line for the repository&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# for ubuntu 16.04 users&lt;/span&gt;
-deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main
-
-&lt;span class=&#34;c1&#34;&gt;# for ubuntu 15.10 users&lt;/span&gt;
-deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main
-
-&lt;span class=&#34;c1&#34;&gt;# for ubuntu 14.04 users&lt;/span&gt;
-deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main
-
-&lt;span class=&#34;c1&#34;&gt;# for ubuntu 12.04 users&lt;/span&gt;
-deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Import the repository signing key, and update the package lists&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  sudo apt-key add -
-$ sudo apt-get update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Install postgreSQL and, check version&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt-get install postgresql-9.5
-$ psql --version
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;2-from-native-store&#34;&gt;2. From native store&lt;/h4&gt;
-&lt;p&gt;Enter following commands:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt-get update
-$ sudo apt-get install postgresql-9.4
-$ psql --version
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;first-time-setup&#34;&gt;First time setup&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Connect to the default database with user &lt;!-- raw HTML omitted --&gt;postgres&lt;!-- raw HTML omitted --&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo -u postgres psql template1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Set the password for user &lt;!-- raw HTML omitted --&gt;postgres&lt;!-- raw HTML omitted --&gt;, then exit psql (Ctrl+D):&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;USER&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;postgres&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;with&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;encrypted&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;password&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;xxxxxxxx&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Edit the &lt;code&gt;pg_hba.conf&lt;/code&gt; file. And, change &amp;lsquo;peer&amp;rsquo; to &amp;lsquo;md5&amp;rsquo; on the line concerning postgres:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo vim /etc/postgresql/9.5/main/pg_hba.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;    Before changes:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-vim&#34; data-lang=&#34;vim&#34;&gt;&lt;span class=&#34;nx&#34;&gt;local&lt;/span&gt;   &lt;span class=&#34;nx&#34;&gt;all&lt;/span&gt;     &lt;span class=&#34;nx&#34;&gt;postgres&lt;/span&gt;    &lt;span class=&#34;nx&#34;&gt;peer&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;    After changes:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-vim&#34; data-lang=&#34;vim&#34;&gt;&lt;span class=&#34;nx&#34;&gt;local&lt;/span&gt;   &lt;span class=&#34;nx&#34;&gt;all&lt;/span&gt;     &lt;span class=&#34;nx&#34;&gt;postgres&lt;/span&gt;    &lt;span class=&#34;nx&#34;&gt;md5&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Restart the database:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo service postgresql restart
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;You can check the password with &lt;code&gt;psql -U postgres&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Create a user (with superuser access):&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ createuser -U postgres -d -e -E -l -P -r -s &amp;lt;new_username&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Again edit &lt;code&gt;pg_hba.conf&lt;/code&gt; file, and change &amp;lsquo;peer&amp;rsquo; to &amp;lsquo;md5&amp;rsquo; on the line concerning &amp;lsquo;all&amp;rsquo; other users:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;    Before changes:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-vim&#34; data-lang=&#34;vim&#34;&gt;&lt;span class=&#34;nx&#34;&gt;local&lt;/span&gt;   &lt;span class=&#34;nx&#34;&gt;all&lt;/span&gt;     &lt;span class=&#34;nx&#34;&gt;all&lt;/span&gt;     &lt;span class=&#34;nx&#34;&gt;peer&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;    After changes:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-vim&#34; data-lang=&#34;vim&#34;&gt;&lt;span class=&#34;nx&#34;&gt;local&lt;/span&gt;   &lt;span class=&#34;nx&#34;&gt;all&lt;/span&gt;     &lt;span class=&#34;nx&#34;&gt;all&lt;/span&gt;     &lt;span class=&#34;nx&#34;&gt;md5&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Restart, and check that you can login with new user&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ psql -U &amp;lt;new_username&amp;gt; template1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;to-access-with-you-as-a-user&#34;&gt;To access with you as a user&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Create user with your username(can be found by &lt;code&gt;whoami&lt;/code&gt;):&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ createuser -U postgres -d -e -E -l -P -r -s &amp;lt;my_name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Restart postgresql server and check that you can login without &lt;code&gt;-U postgres&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ psql template1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;You can create database easily now:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ createdb &amp;lt;db_name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://www.postgresql.org/download/linux/ubuntu/&#34;&gt;https://www.postgresql.org/download/linux/ubuntu/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time&#34;&gt;http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      
+      <description>PostgreSQL is a powerful, open source object-relational database system.
+Install PostgreSQL    1. From PPA (Recommended)      Create a file /etc/apt/sources.list.d/pgdg.list, and add following line for the repository
+# for ubuntu 16.04 users deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main # for ubuntu 15.10 users deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main # for ubuntu 14.04 users deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main # for ubuntu 12.04 users deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main   Import the repository signing key, and update the package lists</description>
     </item>
     
     <item>
@@ -519,63 +78,9 @@ $ psql --version
       <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/install-node-and-npm/</guid>
-      
-        <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt; is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. &lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt; uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. &lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt;&amp;rsquo; package ecosystem, &lt;!-- raw HTML omitted --&gt;npm&lt;!-- raw HTML omitted --&gt;, is the largest ecosystem of open source libraries in the world.&lt;/p&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Npm&lt;!-- raw HTML omitted --&gt; is a package manager for JavaScript. Use &lt;!-- raw HTML omitted --&gt;npm&lt;!-- raw HTML omitted --&gt; to install, share, and distribute code; manage dependencies in your projects; and share &amp;amp; receive feedback with others.&lt;/p&gt;
-&lt;h2 id=&#34;install-node&#34;&gt;Install node&lt;/h2&gt;
-&lt;h3 id=&#34;for-windows-and-mac-users&#34;&gt;For Windows and Mac users&lt;/h3&gt;
-&lt;p&gt;The installer can be downloaded from &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;for-linux-users&#34;&gt;For Linux users,&lt;/h3&gt;
-&lt;p&gt;There are following ways available to install &lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt;:&lt;/p&gt;
-&lt;h4 id=&#34;1-from-ppa-recommended&#34;&gt;1. From PPA (Recommended)&lt;/h4&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt; is available from the NodeSource Debian and Ubuntu binary distributions repository (formerly Chris Lea&amp;rsquo;s Launchpad PPA). Support for this repository, along with its scripts, can be found on GitHub at &lt;!-- raw HTML omitted --&gt;nodesource/distributions&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
-&lt;p&gt;Open your terminal (Ctrl + Alt + T) and enter:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#for Node-4.x&lt;/span&gt;
-$ curl -sL https://deb.nodesource.com/setup_4.x &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo -E bash -
-$ sudo apt-get install -y nodejs
-
-&lt;span class=&#34;c1&#34;&gt;#For Node-6.x&lt;/span&gt;
-$ curl -sL https://deb.nodesource.com/setup_6.x &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo -E bash -
-$ sudo apt-get install -y nodejs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;2-from-node-package-managernpm&#34;&gt;2. From Node Package Manager(npm)&lt;/h4&gt;
-&lt;p&gt;Latest and stable, both versions of Node are available.
-Follow these steps to install node:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Install &lt;!-- raw HTML omitted --&gt;npm&lt;!-- raw HTML omitted --&gt;. If you have already installed it, skip to step 3.&lt;/li&gt;
-&lt;li&gt;To install &lt;!-- raw HTML omitted --&gt;npm&lt;!-- raw HTML omitted --&gt;, find the instructions &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.&lt;/li&gt;
-&lt;li&gt;Enter the following commands in terminal to install/upgrade latest stable version &lt;!-- raw HTML omitted --&gt;Node.js&lt;!-- raw HTML omitted --&gt;:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ sudo npm cache clean -f
-$ sudo npm install -g n
-$ sudo n stable
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;    The &lt;code&gt;n&lt;/code&gt; package represents a Node helper.&lt;/p&gt;
-&lt;p&gt;    Any specific version can be installed by:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ sudo n 6.2.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;3-from-native-software-center&#34;&gt;3. From native Software Center&lt;/h4&gt;
-&lt;p&gt;A stable version of node is available built at the time of release of your current OS.&lt;/p&gt;
-&lt;p&gt;To install, open terminal (Ctrl + Alt + T) and enter:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# for ubuntu user&lt;/span&gt;
-$ sudo apt-get install nodejs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once, any of the above step is completed, you can confirm the installation by:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ node -v
-v6.2.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;install-npm&#34;&gt;Install npm&lt;/h2&gt;
-&lt;h3 id=&#34;for-windows-and-macintosh-users&#34;&gt;For Windows and Macintosh users&lt;/h3&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Npm&lt;!-- raw HTML omitted --&gt; comes along with &lt;!-- raw HTML omitted --&gt;node.js&lt;!-- raw HTML omitted --&gt; installer which can be found &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;for-linux-users-1&#34;&gt;For Linux users&lt;/h3&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Npm&lt;!-- raw HTML omitted --&gt; is available in native software center&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# for ubuntu users&lt;/span&gt;
-$ sudo apt-get install npm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Check the version of npm by:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ npm --version
-3.9.3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;resources&#34;&gt;Resources&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://nodejs.org/en/&#34;&gt;https://nodejs.org/en/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://nodejs.org/en/download/package-manager/&#34;&gt;https://nodejs.org/en/download/package-manager/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      
+      <description>Node.js is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo;s package ecosystem, NPM, is the largest ecosystem of open source libraries in the world.
+NPM is a package manager for JavaScript. Use NPM to install, share, and distribute code; manage dependencies in your projects; and share &amp;amp; receive feedback with others.
+Install node    For Windows and Mac users    The installer can be downloaded from here.</description>
     </item>
     
     <item>
@@ -584,149 +89,10 @@ $ sudo apt-get install npm
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</guid>
-      
-        <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Gulp&lt;!-- raw HTML omitted --&gt; is an automated tool that helps to enhance workflow.&lt;/p&gt;
-&lt;h3 id=&#34;why-gulp&#34;&gt;Why gulp?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Simple&lt;/li&gt;
-&lt;li&gt;Automation of tasks&lt;/li&gt;
-&lt;li&gt;Platform independent&lt;/li&gt;
-&lt;li&gt;Plugins available in large number&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;getting-started&#34;&gt;Getting started&lt;/h3&gt;
-&lt;h4 id=&#34;installation-instructions&#34;&gt;Installation Instructions&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Npm&lt;!-- raw HTML omitted --&gt; needs to be installed in order to install &lt;!-- raw HTML omitted --&gt;gulp&lt;!-- raw HTML omitted --&gt;. Please find the installation instructions &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Remove gulp (if installed before)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ npm rm --global gulp
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Install gulp&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# Globally
-npm install --global gulp-cli
-
-# Within a project
-npm install gulp --save-dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;implementation-in-a-project&#34;&gt;Implementation in a project&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a file &lt;code&gt;gulpfile.js&lt;/code&gt; in project&amp;rsquo;s root folder and add following contents in it.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gulp&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;default&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;c1&#34;&gt;// default task
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Run gulp. This will run the default task as defined above.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;gulp
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;For a specific task&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;This is a test task&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# gulp &amp;lt;task_name&amp;gt;&lt;/span&gt;
-gulp &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;sample-gulpfilejs&#34;&gt;Sample &lt;code&gt;gulpfile.js&lt;/code&gt;.&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gulp&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sass&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gulp-sass&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;babel&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gulp-babel&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;notify&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gulp-notify&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;minify&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gulp-minify&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;concat&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gulp-concat&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;SCSS_FILES&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;src/sass/**/*.scss&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;JS_FILES&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;src/js/**/*.js&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;ES6_FILES&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;src/js/es6/**/*.js&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;// Handle any error that appears during execution of gulp tasks
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;errorHandler&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;notify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;onError&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;nx&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Task Failed [&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;plugin&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;]&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-    &lt;span class=&#34;nx&#34;&gt;message&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Oops! Something went north!&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-    &lt;span class=&#34;nx&#34;&gt;sound&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-  &lt;span class=&#34;c1&#34;&gt;// Prevent gulp watch from stopping
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;emit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;end&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;// Convert the sass files to css
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;sass&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;SCSS_FILES&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;sass&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;error&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;errorHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;public/css/&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
-      &lt;span class=&#34;nx&#34;&gt;notify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;nx&#34;&gt;message&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;SCSS completed&amp;#39;&lt;/span&gt;
-      &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;// Concat the css files to a single file
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;concat-css&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;SCSS_FILES&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;sass&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;concat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;compiled.scss&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;public/css/&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;// Concat the js files to a single file
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;concat-js&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;JS_FILES&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;concat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;compiled.js&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;public/js/&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;// Transpile ES6 into JavaScript(ES5)
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;es6&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ES6_FILES&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;babel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;error&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;errorHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;public/js/&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
-      &lt;span class=&#34;nx&#34;&gt;notify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;nx&#34;&gt;message&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;ES6 Compiled&amp;#39;&lt;/span&gt;
-      &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;// Minify js files
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;minify-js&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;JS_FILES&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;concat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;compiled.js&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;minify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;public/js/&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;// Default task
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;default&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;sass&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;es6&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;// Watch files for any change
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;watch&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;SCSS_FILES&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;sass&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;gulp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ES6_FILES&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;es6&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Download above gulpfile from &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;resources&#34;&gt;Resources&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://gulpjs.com/&#34;&gt;http://gulpjs.com/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://github.com/sanjeevkpandit/gulp-step-by-step&#34;&gt;https://github.com/sanjeevkpandit/gulp-step-by-step&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      
+      <description>Gulp is an automated tool that helps to enhance workflow.
+Why gulp?     Simple Automation of tasks Platform independent Plugins available in large number  Getting started    Installation Instructions      NPM needs to be installed in order to install gulp. Please find the installation instructions here.
+  Remove gulp (if installed before)
+npm rm --global gulp   Install gulp</description>
     </item>
     
     <item>
@@ -735,97 +101,9 @@ gulp &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;
       <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-phpstorm/</guid>
-      
-        <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;PhpStorm&lt;!-- raw HTML omitted --&gt; is one of the good IDE for PHP application development available in current era. &lt;!-- raw HTML omitted --&gt;PHP Xdebug&lt;!-- raw HTML omitted --&gt; is a very strong tool for debugging, making the life easier for &lt;!-- raw HTML omitted --&gt;PHP&lt;!-- raw HTML omitted --&gt; developers to find out the logical mistakes.&lt;/p&gt;
-&lt;p&gt;Integration of Xdebug into &lt;!-- raw HTML omitted --&gt;PhpStorm&lt;!-- raw HTML omitted --&gt; will ease the trouble of debugging for &lt;!-- raw HTML omitted --&gt;PHP&lt;!-- raw HTML omitted --&gt; developers. You can easily setup &lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; in &lt;!-- raw HTML omitted --&gt;PhpStorm&lt;!-- raw HTML omitted --&gt; by following these steps.&lt;/p&gt;
-&lt;h4 id=&#34;requirements&#34;&gt;Requirements&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;PhpStorm&lt;!-- raw HTML omitted --&gt; (get it from &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; (get it from &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;procedures&#34;&gt;Procedures&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Setup &lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; (if you haven&amp;rsquo;t done already). Find the steps &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.
-You should be able to see &lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; while checking the php version.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ php --version
-PHP 7.0.7-2+donate.sury.org~xenial+1 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;cli&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt; NTS &lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-Copyright &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;c&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 1997-2016 The PHP Group
-Zend Engine v3.0.0, Copyright &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;c&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 1998-2016 Zend Technologies
-    with Zend OPcache v7.0.6-dev, Copyright &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;c&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 1999-2016, by Zend Technologies
-    with Xdebug v2.4.0, Copyright &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;c&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 2002-2016, by Derick Rethans
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Now, configure xdebug for debugging. You need to change the &lt;code&gt;xdebug.ini&lt;/code&gt; file. You can find the location of file using this command using terminal: &lt;code&gt;php --ini | grep xdebug&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Mine returned like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ php --ini &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep xdebug
-/etc/php/7.0/cli/conf.d/20-xdebug.ini,
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Just copy the path of the file and open in your favourite text editor (&lt;!-- raw HTML omitted --&gt;Sublime Text&lt;!-- raw HTML omitted --&gt; for me). Don&amp;rsquo;t forget to use &lt;code&gt;sudo&lt;/code&gt; to edit the file otherwise, you won&amp;rsquo;t be able to save the changes you make.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# for sublime text users&lt;/span&gt;
-$ sudo subl /etc/php/7.0/cli/conf.d/20-xdebug.ini
-
-&lt;span class=&#34;c1&#34;&gt;# for gedit users&lt;/span&gt;
-$ sudo gedit /etc/php/7.0/cli/conf.d/20-xdebug.ini
-
-&lt;span class=&#34;c1&#34;&gt;# for vim users&lt;/span&gt;
-$ sudo vim /etc/php/7.0/cli/conf.d/20-xdebug.ini
-
-&lt;span class=&#34;c1&#34;&gt;# for atom users&lt;/span&gt;
-$ sudo atom /etc/php/7.0/cli/conf.d/20-xdebug.ini
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Add these lines of code at the end of file.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;xdebug.remote_enable&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;
-xdebug.remote_port&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;9000&amp;#34;&lt;/span&gt;   // Port &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; xdebug. Default is 9000.
-xdebug.profiler_enable&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
-xdebug.profiler_output_dir&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/tmp&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Time to change things in &lt;!-- raw HTML omitted --&gt;PhpStorm&lt;!-- raw HTML omitted --&gt;. Navigate to &lt;code&gt;File &amp;gt; Settings &amp;gt; Language &amp;amp; Frameworks &amp;gt; PHP&lt;/code&gt;. You will see the following screen.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-1.png&#34; alt=&#34;PhpStorm PHP&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Click on the &lt;code&gt;...&lt;/code&gt; in &lt;code&gt;Interpreters&lt;/code&gt; option to see more. You will get this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-2.png&#34; alt=&#34;PhpStorm PHP Debugger&#34;&gt;&lt;/p&gt;
-&lt;p&gt;If you are not able to see &lt;code&gt;Debugger: Xdebug 2.4.0&lt;/code&gt;, try to refresh by clicking the refresh button on the right of &lt;code&gt;PHP exectable&lt;/code&gt;. Again, if not seen, check the status of &lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; and try again.&lt;/p&gt;
-&lt;p&gt;This shows that that &lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; is ready in &lt;!-- raw HTML omitted --&gt;PhpStorm&lt;!-- raw HTML omitted --&gt;. Save before you exit!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Now, you need to set up a server. Navaigate to &lt;code&gt;File &amp;gt; Settings &amp;gt; Language &amp;amp; Framework &amp;gt; PHP &amp;gt; Servers&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-3.png&#34; alt=&#34;PhpStorm PHP Servers&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s add a server. Click on &lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt; icon to add. You will get the same window changed to this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-4.png&#34; alt=&#34;PhpStorm PHP Servers - Add new&#34;&gt;&lt;/p&gt;
-&lt;p&gt;By default, it tries to create a unnamed server. Let&amp;rsquo;s change this to &lt;code&gt;TEST_SERVER&lt;/code&gt; and fill the other fields as well as shown below.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-5.png&#34; alt=&#34;PhpStorm PHP Servers - Test Server&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Choose &lt;code&gt;Xdebug&lt;/code&gt; as the &lt;code&gt;Debugger&lt;/code&gt; option on the right. You can choose different port (default is 80).&lt;/p&gt;
-&lt;p&gt;Save before you close the window!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Now a server is ready, configure debug options. Navigate to &lt;code&gt;Run &amp;gt; Edit Configurations&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-6.png&#34; alt=&#34;PhpStorm PHP Servers - Configure Debug Options&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Add new option by clicking on &lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt; icon on top left. Choose &lt;code&gt;PHP Web Application&lt;/code&gt; from number of options.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-7.png&#34; alt=&#34;PhpStorm PHP Servers - New Configuration&#34;&gt;&lt;/p&gt;
-&lt;p&gt;You will get a unnamed configuration as shown below.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-8.png&#34; alt=&#34;PhpStorm PHP Servers - PHP Web Application&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Set up a configuration for &lt;code&gt;TEST_SERVER&lt;/code&gt; created earlier. I have named it to &lt;code&gt;TEST_CHROME&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-9.png&#34; alt=&#34;PhpStorm PHP Servers - New Configuration&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Choose the created server and appropriate browser availabe from the options. Also, you can see the url that will open in the browser.&lt;/p&gt;
-&lt;p&gt;Click on &lt;code&gt;OK&lt;/code&gt; to save this.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Now, open the project in &lt;!-- raw HTML omitted --&gt;PhpStorm&lt;!-- raw HTML omitted --&gt;.&lt;/li&gt;
-&lt;li&gt;Set a breakpoint where you want to check your logic. To set a breakpoint, just click on the left side of the line of code. Click on the position of red round mark. Click on th same position to remove the breakpoint.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-10.png&#34; alt=&#34;PhpStorm PHP Servers - PhpStorm Breakpoint&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Now open the link in your browser in debugging mode by navigating &lt;code&gt;Run &amp;gt; Debug &#39;TEST_CHROME&#39;&lt;/code&gt;. The browser may ask you to install a &lt;!-- raw HTML omitted --&gt;JetBrains Extension (in Chrome)&lt;!-- raw HTML omitted --&gt; in your browser.&lt;/li&gt;
-&lt;li&gt;You will see a webpage opening in the browser you set in configurtion. Navigate to the point where you want to check your logic. When you reach to the breakpoint, the browser will keep itself in the loading position. In the mean time, you will see &lt;!-- raw HTML omitted --&gt;PhpStorm&lt;!-- raw HTML omitted --&gt; being highlighted in taskbar or focused on top with the breakpoint highlighted with different color as shown below:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;./xdebug-phpstorm-11.png&#34; alt=&#34;PhpStorm PHP Servers - PhpStorm Highlighted Breakpoint&#34;&gt;&lt;/p&gt;
-&lt;p&gt;You can see the debugging window right at the bottom part of &lt;!-- raw HTML omitted --&gt;PhpStorm&lt;!-- raw HTML omitted --&gt; window. You can find &lt;code&gt;Step Over&lt;/code&gt;, &lt;code&gt;Step Into&lt;/code&gt;, &lt;code&gt;Step Out&lt;/code&gt;, &lt;code&gt;Watch&lt;/code&gt; etc. controls in the Debugging Window.&lt;/p&gt;
-&lt;p&gt;See the shortcuts or set up your own shortcuts, they will help you a lot.&lt;/p&gt;
-&lt;p&gt;Hope you will feel ease to find any logical mistakes in your PHP code by debugging using &lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; in &lt;!-- raw HTML omitted --&gt;PhpStorm&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
-</description>
-      
+      <description>PhpStorm is one of the good IDE for PHP application development available in current era. PHP Xdebug is a very strong tool for debugging, making the life easier for PHP developers to find out the logical mistakes.
+Integration of Xdebug into PhpStorm will ease the trouble of debugging for PHP developers. You can easily setup Xdebug in PhpStorm by following these steps.
+Requirements     PhpStorm (get it from here) Xdebug (get it from here)  Procedures      Setup Xdebug (if you haven&amp;rsquo;t done already).</description>
     </item>
     
     <item>
@@ -834,116 +112,21 @@ xdebug.profiler_output_dir&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span c
       <pubDate>Tue, 24 May 2016 00:00:00 +0000</pubDate>
       
       <guid>http://sanjeevkpandit.github.io/posts/setup-xdebug-in-ubuntu/</guid>
+      <description>Xdebug&amp;rsquo;s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.
+Xdebug is a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install Xdebug in your machine by following these instructions.
+  Always run sudo apt-get update before installing any application.
+  There are two sources for installation.
+ Ubuntu: This will provide you the application compiled during the building of the OS you are using.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://sanjeevkpandit.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-        <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt;&#39;s basic functions include the display of stack traces on error conditions, maximum nesting level protection and time tracking.&lt;/p&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; is a very powerful tool for finding out the errors and testing the implementation of logics using PHP. You can easily install xdebug in your machine by following these instructions.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Always run &lt;code&gt;sudo apt-get update&lt;/code&gt; before installing any application.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;There are two sources for installation.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Ubuntu&lt;/strong&gt;: This will provide you the application compiled during the building of the OS you are using. Thus, you may get older version of the application and might not get updates frequently.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;PPA&lt;/strong&gt;: You will get the latest version of the application and frequent updates on the application.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[Optional] Add PPA to your Softwares List. Skip to step #4 if you don&amp;rsquo;t want to use PPA for installation. But, I recommend to use PPA for frequent updates.
-Enter these commands in your terminal.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ sudo add-apt-repository ppa:ondrej/php
-$ sudo apt-get update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Enter the following command in your terminal to install xdebug.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ sudo apt-get install php-xdebug
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;After the installation, check the version of xdebug.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ php --version
-PHP 7.0.7-2+donate.sury.org~xenial+1 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;cli&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt; NTS &lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-Copyright &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;c&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 1997-2016 The PHP Group
-Zend Engine v3.0.0, Copyright &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;c&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 1998-2016 Zend Technologies
-    with Zend OPcache v7.0.6-dev, Copyright &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;c&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 1999-2016, by Zend Technologies
-    with Xdebug v2.4.0, Copyright &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;c&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 2002-2016, by Derick Rethans
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Also, you can find the xdebug configuration file using this command in terminal:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ php --ini &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep xdebug
-/etc/php/7.0/cli/conf.d/20-xdebug.ini,
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The configuration settings of xdebug can be listed by:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ php -i &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep xdebug
-/etc/php/7.0/cli/conf.d/20-xdebug.ini,
-xdebug
-xdebug &lt;span class=&#34;nv&#34;&gt;support&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; enabled
-xdebug.auto_trace &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.cli_color &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
-xdebug.collect_assignments &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.collect_includes &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;On&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; On
-xdebug.collect_params &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
-xdebug.collect_return &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.collect_vars &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.coverage_enable &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;On&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; On
-xdebug.default_enable &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;On&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; On
-xdebug.dump.COOKIE &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.dump.ENV &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.dump.FILES &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.dump.GET &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.dump.POST &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.dump.REQUEST &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.dump.SERVER &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.dump.SESSION &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.dump_globals &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;On&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; On
-xdebug.dump_once &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;On&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; On
-xdebug.dump_undefined &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.extended_info &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;On&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; On
-xdebug.file_link_format &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.force_display_errors &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.force_error_reporting &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
-xdebug.halt_level &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
-xdebug.idekey &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.max_nesting_level &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;256&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;256&lt;/span&gt;
-xdebug.max_stack_frames &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; -1 &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; -1
-xdebug.overload_var_dump &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;On&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; On
-xdebug.profiler_aggregate &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.profiler_append &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.profiler_enable &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;On&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; On
-xdebug.profiler_enable_trigger &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.profiler_enable_trigger_value &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.profiler_output_dir &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; /tmp &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; /tmp
-xdebug.profiler_output_name &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; cachegrind.out.%p &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; cachegrind.out.%p
-xdebug.remote_addr_header &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.remote_autostart &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.remote_connect_back &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.remote_cookie_expire_time &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;3600&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;3600&lt;/span&gt;
-xdebug.remote_enable &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;On&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; On
-xdebug.remote_handler &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;dbgp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; dbgp
-xdebug.remote_host &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;localhost&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; localhost
-xdebug.remote_log &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.remote_mode &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;req&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; req
-xdebug.remote_port &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;9000&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;9000&lt;/span&gt;
-xdebug.scream &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.show_error_trace &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.show_exception_trace &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.show_local_vars &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.show_mem_delta &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.trace_enable_trigger &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;Off&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Off
-xdebug.trace_enable_trigger_value &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; no value
-xdebug.trace_format &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
-xdebug.trace_options &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
-xdebug.trace_output_dir &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; /tmp &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; /tmp
-xdebug.trace_output_name &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; trace.%c &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; trace.%c
-xdebug.var_display_max_children &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;128&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;128&lt;/span&gt;
-xdebug.var_display_max_data &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;512&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;512&lt;/span&gt;
-xdebug.var_display_max_depth &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To change the configurations, just change the &lt;code&gt;ini&lt;/code&gt; file presented in result of above command.&lt;/p&gt;
-&lt;p&gt;Enjoy debugging with &lt;!-- raw HTML omitted --&gt;Xdebug&lt;!-- raw HTML omitted --&gt; in &lt;!-- raw HTML omitted --&gt;Ubuntu&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;resources&#34;&gt;Resources&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://xdebug.org/&#34;&gt;https://xdebug.org/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      
+      <guid>http://sanjeevkpandit.github.io/about/</guid>
+      <description>A full-stack web developer interested in learning and implementing new technologies. Worked in Mobile Development, Web Development, API Development, Single Page Applications Development and Database.
+Technical skills     Javascript  NodeJS VueJS ReactJS AngularJS 1.x   Flutter/Dart PHP SQL  PostgreSQL MySQL MSSQL   Version Control System  Git   Deployment Tools  Docker Capistrano Boss-CLI    </description>
     </item>
     
   </channel>
