@@ -1,0 +1,83 @@
+[anchor]
+other = "Anchor"
+
+[arch]
+other = "Arch"
+
+["arch linux"]
+other = "Arch Linux"
+
+[development]
+other = "Development"
+
+[element]
+other = "Element"
+
+[email]
+other = "Email"
+
+[filter]
+other = "Filter"
+
+[gmail]
+other = "Gmail"
+
+[gulp]
+other = "Gulp"
+
+[html]
+other = "HTML"
+
+[installation]
+other = "Installation"
+
+[linux]
+other = "Linux"
+
+[multiple]
+other = "Multiple"
+
+[node]
+other = "Node"
+
+[nodejs]
+other = "Node.js"
+
+[npm]
+other = "npm"
+
+[php]
+other = "PHP"
+
+["php-xdebug"]
+other = "PHP Xdebug"
+
+[phpstorm]
+other = "PhpStorm"
+
+["post installation"]
+other = "Post Installation"
+
+[postgres]
+other = "Postgres"
+
+[postgresql]
+other = "PostgreSQL"
+
+[senders]
+other = "Senders"
+
+[setup]
+other = "Setup"
+
+[tech]
+other = "Tech"
+
+[terminal]
+other = "Terminal"
+
+[ubuntu]
+other = "Ubuntu"
+
+[xdebug]
+other = "Xdebug"
