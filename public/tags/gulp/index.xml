@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>gulp on Sanjeev Kumar Pandit</title>
-    <link>http://sanjeevkpandit.github.io/tags/gulp/</link>
-    <description>Recent content in gulp on Sanjeev Kumar Pandit</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Gulp on Sanjeev Kumar Pandit</title>
+    <link>https://sanjeevkpandit.github.io/tags/gulp/</link>
+    <description>Recent content in Gulp on Sanjeev Kumar Pandit</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 11 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://sanjeevkpandit.github.io/tags/gulp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sanjeevkpandit.github.io/tags/gulp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting started with gulp</title>
-      <link>http://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</link>
+      <link>https://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</link>
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</guid>
-      <description>Gulp is an automated tool that helps to enhance workflow.
-Why gulp?     Simple Automation of tasks Platform independent Plugins available in large number  Getting started    Installation Instructions      NPM needs to be installed in order to install gulp. Please find the installation instructions here.
-  Remove gulp (if installed before)
-npm rm --global gulp   Install gulp</description>
+      <guid>https://sanjeevkpandit.github.io/posts/getting-started-with-gulp/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://gulpjs.com/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gulp&lt;/a&gt; is an automated tool that helps to enhance workflow.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-gulp&#34;&gt;&#xA;  Why gulp?&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#why-gulp&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Simple&lt;/li&gt;&#xA;&lt;li&gt;Automation of tasks&lt;/li&gt;&#xA;&lt;li&gt;Platform independent&lt;/li&gt;&#xA;&lt;li&gt;Plugins available in large number&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;getting-started&#34;&gt;&#xA;  Getting started&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#getting-started&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h4 id=&#34;installation-instructions&#34;&gt;&#xA;  Installation Instructions&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#installation-instructions&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://npmjs.com/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NPM&lt;/a&gt; needs to be installed in order to install &lt;a href=&#34;http://gulpjs.com/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gulp&lt;/a&gt;. Please find the installation instructions &lt;a href=&#34;https://sanjeevkpandit.github.io/posts/install-node-and-npm/&#34; &gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Remove gulp (if installed before)&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

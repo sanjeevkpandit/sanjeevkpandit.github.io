@@ -1,18 +1,26 @@
-baseurl = "http://sanjeevkpandit.github.io"
+baseURL = "https://sanjeevkpandit.github.io/"
 title = "Sanjeev Kumar Pandit"
 theme = "hugo-coder"
-languagecode = "en"
-defaultcontentlanguage = "en"
+languageCode = "en"
+defaultContentLanguage = "en"
 enableRobotsTXT = true
-
-paginate = 10
 
 pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 # disqusShortname = "sanjeevkpanditcomnp"
-googleAnalytics = "G-WSTRHS448Q"
+
+[pagination]
+  pagerSize = 10
+
+[services]
+  [services.googleAnalytics]
+    id = "G-WSTRHS448Q"
+
+[module]
+  [module.hugoVersion]
+    min = "0.160.1"
 
 [params]
   author = "Sanjeev Kumar Pandit"
