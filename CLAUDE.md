@@ -15,26 +15,52 @@ hugo
 hugo --minify
 ```
 
-Hugo v0.160.1 is required. The `deploy.sh` script enforces this version check before building.
-
 ## Deployment
 
-Pushing to the `dev` branch triggers GitHub Actions (`.github/workflows/deploy.yml`), which builds the site and pushes the generated `public/` output to the `master` branch. The live site is served from `master`.
+Pushing to `dev` triggers GitHub Actions (`.github/workflows/deploy.yml`), which:
+1. Builds the site with `hugo --minify`
+2. Deploys via `actions/deploy-pages` to GitHub Pages (live at sanjeevkpandit.com.np)
+3. Syncs the build to the `master` branch as a reference copy
 
-Do **not** manually edit the `public/` directory — it is a git submodule tracking the `master` branch of this same repo and is managed entirely by CI.
+Do **not** push content changes (posts, TILs) directly to `dev`. Open a PR instead. See Content Workflow below.
 
 ## Architecture
 
-This is a [Hugo](https://gohugo.io/) static site using the **hugo-coder** theme (active), with `hugo-theme-jane` also present as a submodule but unused.
+Hugo static site using the **PaperMod** theme (`themes/PaperMod/` git submodule).
 
-- `config.toml` — site configuration, theme selection, social links, nav menu
-- `content/` — Markdown source files; `about.md` (About page) and `posts/` (blog posts)
-- `static/` — static assets (images, favicons)
-- `i18n/en.toml` — UI string translations
-- `themes/hugo-coder/` — git submodule; do not modify directly
-- `archetypes/` — templates for `hugo new` content creation
+- `config.toml` — site config, theme, social icons, nav menu, Google Analytics
+- `content/posts/` — all blog posts and TIL entries (Markdown, YAML front matter)
+- `content/about.md` — About page
+- `static/` — static assets (images, CNAME)
+- `archetypes/default.md` — template for new posts
+- `themes/PaperMod/` — theme submodule; do not modify directly
 
-To create a new blog post: `hugo new posts/my-post.md`
+To create a new post manually: `hugo new posts/YYYY-MM-DD-my-title.md`
+
+## Content Workflow
+
+All posts and TIL entries must go through a PR, not a direct push to `dev`.
+
+**TIL posts:**
+- Use the `/til` skill in Claude Code or Claude Desktop
+- The skill creates a `til/<date>-<slug>` branch, opens a preview, then raises a PR against `dev` on confirmation
+
+**Longer posts:**
+- Create a branch: `post/<slug>`
+- Write the post in `content/posts/YYYY-MM-DD-slug.md`
+- Open a PR against `dev`
+
+**Front matter format (all posts):**
+```yaml
+---
+title: "Post title"
+date: YYYY-MM-DD
+tags: ["tag1", "tag2"]
+description: "One sentence summary."
+---
+```
+
+TIL posts always include `"til"` in tags. The `/tags/til/` page lists all TILs.
 
 ## Conversation/Writing style
 
@@ -69,11 +95,3 @@ To create a new blog post: `hugo new posts/my-post.md`
 ### Self-Check
 
 Review every response before sending. Confirm zero em dashes, zero asterisks, and proper punctuation. Make sure the response is direct, precise, free of any unnecessary embellishments, no sugar-coating, no extra stuffs, no overwhelming tone.
-
-## TIL Workflow
-
-Use the `/til` skill in Claude Code or Claude Desktop to publish a Today I Learned post.
-
-The skill handles: prompting for content → creating `content/posts/YYYY-MM-DD-slug.md` → local preview via `hugo server` → commit and push to `dev` on confirmation.
-
-TIL posts are regular posts tagged with `til`. All posts live in `content/posts/`. The `/tags/til/` page on the site lists all TILs.

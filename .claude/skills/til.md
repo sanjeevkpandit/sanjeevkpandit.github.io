@@ -1,6 +1,6 @@
 ---
 name: til
-description: Publish a Today I Learned post to the blog. Prompts for what was learned, creates the post, opens a local preview, then commits and pushes on confirmation.
+description: Publish a Today I Learned post to the blog. Prompts for what was learned, creates the post, opens a local preview, then opens a PR against dev on confirmation.
 ---
 
 # TIL Publisher
@@ -27,9 +27,15 @@ Derive from the user's input:
 - **title**: `"TIL: "` + user's answer in sentence case
 - **description**: user's answer trimmed to one sentence, ending with a period
 - **tags**: always includes `"til"` plus any extra tags provided (lowercase, hyphenated, no spaces)
+- **branch**: `til/<date>-<slug>`
 - **filename**: `content/posts/<date>-<slug>.md`
 
-Write the file with this structure:
+First, create the branch:
+```bash
+git checkout -b til/<date>-<slug>
+```
+
+Then write the file with this structure:
 
 ```yaml
 ---
@@ -60,13 +66,21 @@ Wait for the user's response.
    ```bash
    pkill -f "hugo server"
    ```
-2. Commit and push:
+2. Commit, push the branch, and open a PR:
    ```bash
    git add content/posts/<filename>.md
    git commit -m "TIL: <slug with hyphens replaced by spaces>"
-   git push origin dev
+   git push origin til/<date>-<slug>
+   gh pr create --title "TIL: <title>" --base dev --body "$(cat <<'EOF'
+   Today I Learned: <description>
+   EOF
+   )"
    ```
-3. Tell the user: "Done. GitHub Actions will deploy in about a minute."
+3. Tell the user the PR URL and: "PR open. Merge it when ready to deploy."
+4. Switch back to dev:
+   ```bash
+   git checkout dev
+   ```
 
 **On cancel (or any negative — "no", "cancel", "discard", etc.):**
 
@@ -74,8 +88,9 @@ Wait for the user's response.
    ```bash
    pkill -f "hugo server"
    ```
-2. Delete the file:
+2. Switch back to dev and delete the branch:
    ```bash
-   rm content/posts/<filename>.md
+   git checkout dev
+   git branch -D til/<date>-<slug>
    ```
-3. Tell the user: "Cancelled. File deleted."
+3. Tell the user: "Cancelled. Branch deleted."
