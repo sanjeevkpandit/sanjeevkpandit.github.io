@@ -33,4 +33,9 @@ jobs:
         run: hugo --minify
 
       - name: Deploy to master
-        run: npx --yes gh-pages@latest --dist public --branch master --message "Deploy from ${GITHUB_SHA}" --user "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master
+          commit_message: "Deploy from ${{ github.sha }}"
