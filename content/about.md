@@ -1,26 +1,10 @@
-+++
-title = "About"
-slug = "about"
-+++
+---
+title: "About"
+slug: "about"
+---
 
-A full-stack web developer interested in learning and implementing new technologies. Worked in Mobile Development, Web Development, API Development, Single Page Applications Development and Database.
+Full Stack Developer based in Nepal.
 
-### Technical skills
+I write about things I learn, both technical and non-technical. This is where I keep those notes public.
 
-- Javascript
-  - NodeJS
-  - VueJS
-  - ReactJS
-  - AngularJS 1.x
-- Flutter/Dart
-- PHP
-- SQL
-  - PostgreSQL
-  - MySQL
-  - MSSQL
-- Version Control System
-  - Git
-- Deployment Tools
-  - Docker
-  - Capistrano
-  - Boss-CLI
+Find me on [GitHub](https://github.com/sanjeevkpandit), [LinkedIn](https://np.linkedin.com/in/sanjeevkpandit), or [Twitter](https://twitter.com/sanjeevkpandit).
