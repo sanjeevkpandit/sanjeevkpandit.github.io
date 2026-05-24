@@ -1,2 +1,6 @@
 .hugo_build.lock
 resources/_gen/
+public/
+
+!CLAUDE.md
+!.claude
