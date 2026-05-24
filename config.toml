@@ -1,6 +1,6 @@
-baseURL = "https://sanjeevkpandit.github.io/"
+baseURL = "https://sanjeevkpandit.com.np/"
 title = "Sanjeev Kumar Pandit"
-theme = "hugo-coder"
+theme = "PaperMod"
 languageCode = "en"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
@@ -8,8 +8,6 @@ enableRobotsTXT = true
 pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
-# disqusShortname = "sanjeevkpanditcomnp"
 
 [pagination]
   pagerSize = 10
@@ -24,62 +22,48 @@ pygmentscodefencesguesssyntax = true
 
 [params]
   author = "Sanjeev Kumar Pandit"
-  info = "Full Stack Developer"
-  description = "My personal website"
-  keywords = "blog,developer,personal"
-  avatarurl = "images/avatar.jpg"
-  #gravatar = "john.doe@example.com"
+  description = "Full Stack Developer sharing things I learn."
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowTags = true
+  ShowRssButtonInSectionTermList = true
+  ShowShareButtons = false
 
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+  [params.homeInfoParams]
+    Title = "Hi, I'm Sanjeev"
+    Content = "Full Stack Developer. I write about what I learn, technical and otherwise."
 
-  footercontent = ""
-  hideFooter = false
-  hideCredits = false
-  hideCopyright = false
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/sanjeevkpandit"
 
-  dateFormat = "Jan 2, 2006"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://np.linkedin.com/in/sanjeevkpandit"
 
-  since = 2016
-
-  enableTwemoji = true
-
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
-
-  # customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/sanjeevkpandit"
 
 [taxonomies]
   category = "categories"
   series = "series"
   tag = "tags"
-  author = "authors"
 
-# Social links
-[[params.social]]
-  name = "Github"
-  icon = "fa fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/sanjeevkpandit"
-[[params.social]]
-  name = "LinkedIn"
-  icon = "fa fa-linkedin fa-2x"
-  weight = 2
-  url = "https://np.linked.com/sanjeevkpandit"
-[[params.social]]
-  name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
-  weight = 3
-  url = "https://twitter.com/sanjeevkpandit"
-
-# Menu links
 [[menu.main]]
   name = "Posts"
+  url = "/posts/"
   weight = 1
-  url  = "posts/"
+
+[[menu.main]]
+  name = "TIL"
+  url = "/tags/til/"
+  weight = 2
+
 [[menu.main]]
   name = "About"
-  weight = 2
-  url = "about/"
+  url = "/about/"
+  weight = 3
