@@ -59,11 +59,6 @@ pygmentscodefencesguesssyntax = true
   weight = 1
 
 [[menu.main]]
-  name = "TIL"
-  url = "/tags/til/"
-  weight = 2
-
-[[menu.main]]
   name = "About"
   url = "/about/"
-  weight = 3
+  weight = 2
