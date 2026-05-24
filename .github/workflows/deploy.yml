@@ -6,7 +6,7 @@ on:
       - dev
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -47,3 +47,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Sync build to master
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master
+          commit_message: "Sync build from ${{ github.sha }}"
